@@ -21,5 +21,5 @@ d <- read.csv("data/sample_data.csv")
 asv <- read.csv("data/ASV_table.csv")
 ```
 
-In total, we have 575 samples, each of them with `r dim(asv)` ASV.
+In total, we have 575 samples, each of them with `dim(asv)` ASV.
 
