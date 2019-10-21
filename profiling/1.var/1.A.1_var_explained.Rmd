@@ -55,7 +55,7 @@ hist(d$Shannon)
 hist(log(d$ASV_counts))
 
 ## Model One:
-fit <- lmer(data=d, Shannon ~ (1|Year) + (1|Species) + (1|Rotation) + (1|Nitrogen) + (1|Fraction) + (1|Block) + (1|Rep))
+fit <- lmer(data=d, Shannon ~ (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen) + (1|Fraction) + (1|Block) + (1|Rep))
 df <- as.data.frame(VarCorr(fit))
 df$p <- df$vcov/sum(df$vcov)*100
 
