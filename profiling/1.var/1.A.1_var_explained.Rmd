@@ -63,6 +63,52 @@ df$p <- df$vcov/sum(df$vcov)*100
 ```
 
 
+### Seperate fractions
+
+```{r}
+soil <- subset(d, Fraction %in% "Bulk Soil") #192
+endo <- subset(d, Fraction %in% "Endosphere") #191
+rhizo <- subset(d, Fraction %in% "Rhizosphere") #192
+
+fit <- lmer(data=rhizo, log10(ASV_counts+1) ~  (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen)  + (1|Block) + (1|Rep))
+df <- as.data.frame(VarCorr(fit))
+df$p <- df$vcov/sum(df$vcov)*100
+
+
+ggplot(df[-8, ], aes(x=grp, y=p, fill=grp))+
+geom_bar(stat="identity", color="black")+
+#scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+  theme_minimal()
+```
+
+### Endo
+
+```{r}
+fit <- lmer(data=endo, log10(ASV_counts+1) ~  (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen)  + (1|Block) + (1|Rep))
+df <- as.data.frame(VarCorr(fit))
+df$p <- df$vcov/sum(df$vcov)*100
+
+
+ggplot(df[-8, ], aes(x=grp, y=p, fill=grp))+
+geom_bar(stat="identity", color="black")+
+#scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+  theme_minimal()
+```
+
+### Soil
+
+```{r}
+fit <- lmer(data=soil, log10(ASV_counts+1) ~  (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen)  + (1|Block) + (1|Rep))
+df <- as.data.frame(VarCorr(fit))
+df$p <- df$vcov/sum(df$vcov)*100
+
+
+ggplot(df[-8, ], aes(x=grp, y=p, fill=grp))+
+geom_bar(stat="identity", color="black")+
+#scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))+
+  theme_minimal()
+```
+
 # Simple visulation
 
 ```{r}
