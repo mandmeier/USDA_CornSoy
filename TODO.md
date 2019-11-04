@@ -9,7 +9,7 @@ https://www.rdocumentation.org/packages/EnvStats/versions/2.3.1/topics/boxcox
 
 plot percentage of variance explained (with all-random model)
 
-# once distribution is good tweak models: make year/month fixed,nested models?
+once distribution is good tweak models: make year/month fixed,nested models?
 
 
 ### Beta diversity
