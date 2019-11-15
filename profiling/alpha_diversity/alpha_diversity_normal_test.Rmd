@@ -1,0 +1,205 @@
+---
+title: "alpha_diversity_metrics"
+author: "Michael Meier"
+date: "11/14/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+
+### Diversity metrics used:
+Richness: observed number of unique ASVs in each sample ("Observed")
+Simpson: Simpson's diversity index, number between 0 (least diverse) and 1 (most diverse)
+InvSimpson:  1 / Simpson's diversity index, number between 1 (least diverse) and total number of distinct ASVs in sample (most diverse), takes into account eichness and evenness.
+Evenness: Simpson's Evenness = InvSimpson/Richness: low numbers: one or a few ASVs dominate
+Shannon: Shannon's diversity index: compund of richness and evenness.
+
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224527/
+
+
+### data import
+
+```{r}
+
+### load phyloseq object
+library("phyloseq")
+
+load("data/ps_noMCft.RData")
+
+# calculate diversity indices 
+alpha_div <- estimate_richness(ps, measures = c("Observed", "Shannon", "Simpson", "InvSimpson"))
+alpha_div$Evenness = alpha_div$InvSimpson/log2(nrow(alpha_div)) 
+
+### merge with sample data
+d <- read.csv("data/sample_data.csv")
+alpha_div <- cbind(d[,c(1:10)], alpha_div)
+
+
+### filter out samples with 0 or only 1 ASV
+library("dplyr")
+
+end_discard <- dplyr::filter(alpha_div, Fraction == "Endosphere" & Observed <= 1)
+rhz_discard <- dplyr::filter(alpha_div, Fraction == "Rhizosphere" & Observed <= 2)
+sol_discard <- dplyr::filter(alpha_div, Fraction == "Bulk Soil" & Observed <= 5)
+
+
+discarded_samples <- rbind(end_discard, rhz_discard, sol_discard)
+
+
+alpha_div <- dplyr::filter(alpha_div, !(Sample_ID %in% discarded_samples$Sample_ID))
+
+
+
+```
+
+
+#### plot histograms
+
+```{r}
+library("ggplot2")
+library("tidyverse")
+
+
+### gather relevant columns
+plot_set <- alpha_div[, c("Fraction", "Observed", "Shannon", "Simpson", "InvSimpson", "Evenness")]
+m <- gather(plot_set, "Index", "value", -Fraction)
+
+### histograms
+ggplot(m, aes_string(x="value", color="Fraction")) +
+  geom_histogram(fill="white") +
+  facet_wrap(Fraction ~ Index, ncol = 5, scales = "free")
+  
+
+### qq plots
+ggplot(m, aes_string(sample="value", color="Fraction")) +
+  stat_qq() +
+  stat_qq_line() +
+  facet_wrap(Fraction ~ Index, ncol = 5, scales = "free")
+  
+
+```
+
+
+
+### find best power transformation with boxcox
+
+```{r}
+
+library("EnvStats")
+
+df <- rbind(c("dummy", "dummy",  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95, -1,  0.95), c("dummy", "dummy",  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95,  0.95, -1,  0.95))
+
+for (index in c("Observed", "Shannon", "Simpson", "InvSimpson", "Evenness")){
+  for (fraction in c("Endosphere", "Rhizosphere", "Bulk Soil")){
+    #index <- "Observed"
+    #fraction <- "Rhizosphere"
+    d <- dplyr::filter(alpha_div, Fraction == fraction)
+    b <- boxcox(d[, index])
+    highest_l <- b$lambda[which.max(b$objective)]
+    highest_ppcc <- max(b$objective)
+    ppcc_m2 <- b$objective[1]
+    ppcc_m1.5 <- b$objective[2]
+    ppcc_m1 <- b$objective[3]
+    ppcc_m0.5 <- b$objective[4]
+    ppcc_0 <- b$objective[5]
+    ppcc_0.5 <- b$objective[6]
+    ppcc_1 <- b$objective[7]
+    ppcc_1.5 <- b$objective[8]
+    ppcc_2 <- b$objective[9]
+    df <- rbind(df, c(index, fraction, ppcc_m2, ppcc_m1.5, ppcc_m1, ppcc_m0.5, ppcc_0, ppcc_0.5, ppcc_1, ppcc_1.5, ppcc_2, highest_l, highest_ppcc))
+  }
+}
+
+df <- data.frame(df[-c(1,2), ])
+colnames(df) <- c("Index", "Fraction","PPCC_-2", "PPCC_-1.5", "PPCC_-1", "PPCC_-0.5", "PPCC_0", "PPCC_0.5", "PPCC_1", "PPCC_1.5", "PPCC_2", "highest_lambda", "highest_PPCC")
+
+df
+
+```
+
+# based on this the best lambda values are:
+Observed: 0.5
+Shannon: 2
+Simpson: 2, but all bad, don't use
+InvSimpson: 0.5
+Evenness: 0.5
+
+
+
+
+#### plot histograms after power transformation
+
+```{r}
+
+### gather relevant columns
+plot_set <- alpha_div[, c("Fraction", "Observed", "Shannon", "Simpson", "InvSimpson", "Evenness")]
+
+### do transformations
+
+plot_set$Observed <- sqrt(plot_set$Observed)
+plot_set$Shannon <- plot_set$Shannon^2
+plot_set$Simpson <- plot_set$Simpson^2
+plot_set$InvSimpson <- sqrt(plot_set$InvSimpson)
+plot_set$Evenness <- sqrt(plot_set$Evenness)
+
+m <- gather(plot_set, "Index", "value", -Fraction)
+
+### histograms
+ggplot(m, aes_string(x="value", color="Fraction")) +
+  geom_histogram(fill="white") +
+  facet_wrap(Fraction ~ Index, ncol = 5, scales = "free")
+  
+
+### qq plots
+ggplot(m, aes_string(sample="value", color="Fraction")) +
+  stat_qq() +
+  stat_qq_line() +
+  facet_wrap(Fraction ~ Index, ncol = 5, scales = "free")
+  
+
+```
+
+
+### shapiro test
+
+```{r}
+
+library("stats")
+
+### function to calculate shapiro p
+
+get_shapiro_p <- function(dat, fraction, index){
+  d <- filter(plot_set, Fraction == fraction)
+  t <- shapiro.test(d[, index])
+  return(t$p.value)
+}
+
+### make data frame with shapiro p values
+
+shapiro <- data.frame("Fraction" = c("Bulk Soil", "Endosphere", "Rhizosphere"))
+
+for (index in c("Evenness", "InvSimpson", "Observed", "Shannon", "Simpson")){
+  column = c()
+  for (fraction in c("Bulk Soil", "Endosphere", "Rhizosphere")){
+    p <- round(get_shapiro_p(plot_set, fraction, index), 6)
+    column = append(column, p)
+  }
+  shapiro <- data.frame(shapiro, column)
+  colnames(shapiro)[ncol(shapiro)] <- index
+}
+
+shapiro
+
+```
+
+
+# Use sqrt(Observed) and sqrt(InvSimpson) to calculate variance components
+# don't need evenness, shows same pattern as InvSimpson
+# Endosphere is not normal at all, no matter what.
+
