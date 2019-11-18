@@ -1,4 +1,20 @@
 
+double check funny rhizosphere block effect
+
+do year, month, block(location) fixed
+
+take variable microbiome
+make ASV table with corn specific and soy specific microbes
+diversity metrics for families
+
+
+
+
+
+
+
+
+
 
 ### Alpha diversity:
 find meaningful response variables: richness, evenness, Shannon diversity, other Alpha diversity indices
