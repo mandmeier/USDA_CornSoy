@@ -40,17 +40,23 @@ alpha_div$Evenness = alpha_div$InvSimpson/log2(nrow(alpha_div))
 d <- read.csv("data/sample_data.csv")
 alpha_div <- cbind(d[,c(1:10)], alpha_div)
 
+### save new sample data with diversity metrics
+#write_csv(alpha_div, "data/sample_data.csv")
+
+
 
 ### filter out samples with 0 or only 1 ASV
 library("dplyr")
 
 end_discard <- dplyr::filter(alpha_div, Fraction == "Endosphere" & Observed <= 1)
 rhz_discard <- dplyr::filter(alpha_div, Fraction == "Rhizosphere" & Observed <= 2)
-sol_discard <- dplyr::filter(alpha_div, Fraction == "Bulk Soil" & Observed <= 5)
+sol_discard <- dplyr::filter(alpha_div, Fraction == "Bulk Soil" & Observed <= 1)
 
 
-discarded_samples <- rbind(end_discard, rhz_discard, sol_discard)
+discarded_samples <- as.data.frame(rbind(end_discard, rhz_discard, sol_discard))
 
+### save discarded samples for future filtering
+#write_csv(discarded_samples, "data/discarded_samples.csv")
 
 alpha_div <- dplyr::filter(alpha_div, !(Sample_ID %in% discarded_samples$Sample_ID))
 
@@ -166,7 +172,7 @@ ggplot(m, aes_string(sample="value", color="Fraction")) +
 ```
 
 
-### shapiro test
+### Shapiro - Wilk test
 
 ```{r}
 
@@ -202,4 +208,6 @@ shapiro
 # Use sqrt(Observed) and sqrt(InvSimpson) to calculate variance components
 # don't need evenness, shows same pattern as InvSimpson
 # Endosphere is not normal at all, no matter what.
+# Shannon and Simpson not normal
+
 

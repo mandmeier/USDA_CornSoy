@@ -1,576 +1,576 @@
-Sample_ID,Year,Month,Species,Rotation,Nitrogen,Fraction,Block,Rep,ASV_counts,unique_ASVs,Shannon,,,,,,,,,,,,,,,,,,
-USDA_121,2017,Jun,Soybean,rotated,Low_N,Endosphere,1,1,21980,67,3.732249615,,,,,,,,,,,,,,,,,,
-USDA_122,2017,Jun,Soybean,rotated,Low_N,Endosphere,1,2,23496,38,3.523726221,,,,,,,,,,,,,,,,,,
-USDA_123,2017,Jun,Soybean,rotated,Std_N,Endosphere,1,1,407,16,2.618944397,,,,,,,,,,,,,,,,,,
-USDA_124,2017,Jun,Soybean,rotated,Std_N,Endosphere,1,2,5318,37,3.544919052,,,,,,,,,,,,,,,,,,
-USDA_125,2017,Jun,Soybean,continuous,Low_N,Endosphere,1,1,11206,39,3.546217832,,,,,,,,,,,,,,,,,,
-USDA_126,2017,Jun,Soybean,continuous,Low_N,Endosphere,1,2,83,1,0,,,,,,,,,,,,,,,,,,
-USDA_127,2017,Jun,Soybean,continuous,Std_N,Endosphere,1,1,11501,43,3.598907747,,,,,,,,,,,,,,,,,,
-USDA_128,2017,Jun,Soybean,continuous,Std_N,Endosphere,1,2,10257,39,3.534591574,,,,,,,,,,,,,,,,,,
-USDA_129,2017,Jun,Corn,rotated,Low_N,Endosphere,1,1,721,26,3.115994048,,,,,,,,,,,,,,,,,,
-USDA_130,2017,Jun,Corn,rotated,Low_N,Endosphere,1,2,983,30,3.234677844,,,,,,,,,,,,,,,,,,
-USDA_131,2017,Jun,Corn,rotated,Std_N,Endosphere,1,1,739,25,3.017618804,,,,,,,,,,,,,,,,,,
-USDA_132,2017,Jun,Corn,rotated,Std_N,Endosphere,1,2,297,9,2.081490709,,,,,,,,,,,,,,,,,,
-USDA_137,2017,Jun,Corn,continuous,Low_N,Endosphere,1,1,870,24,3.066352947,,,,,,,,,,,,,,,,,,
-USDA_138,2017,Jun,Corn,continuous,Low_N,Endosphere,1,2,449,17,2.691246835,,,,,,,,,,,,,,,,,,
-USDA_139,2017,Jun,Corn,continuous,Std_N,Endosphere,1,1,204,7,1.634424291,,,,,,,,,,,,,,,,,,
-USDA_140,2017,Jun,Corn,continuous,Std_N,Endosphere,1,2,1064,37,3.510780524,,,,,,,,,,,,,,,,,,
-USDA_141,2017,Jun,Corn,rotated,Low_N,Endosphere,2,1,245,9,2.028591742,,,,,,,,,,,,,,,,,,
-USDA_142,2017,Jun,Corn,rotated,Low_N,Endosphere,2,2,42,3,0.982900728,,,,,,,,,,,,,,,,,,
-USDA_143,2017,Jun,Corn,rotated,Std_N,Endosphere,2,1,2284,69,4.083671721,,,,,,,,,,,,,,,,,,
-USDA_144,2017,Jun,Corn,rotated,Std_N,Endosphere,2,2,2340,39,3.518432428,,,,,,,,,,,,,,,,,,
-USDA_149,2017,Jun,Corn,continuous,Low_N,Endosphere,2,1,33,1,0,,,,,,,,,,,,,,,,,,
-USDA_150,2017,Jun,Corn,continuous,Low_N,Endosphere,2,2,95,3,0.991050285,,,,,,,,,,,,,,,,,,
-USDA_151,2017,Jun,Corn,continuous,Std_N,Endosphere,2,1,54,1,0,,,,,,,,,,,,,,,,,,
-USDA_152,2017,Jun,Corn,continuous,Std_N,Endosphere,2,2,120,8,1.86806678,,,,,,,,,,,,,,,,,,
-USDA_153,2017,Jun,Soybean,rotated,Low_N,Endosphere,2,1,9259,68,3.888202216,,,,,,,,,,,,,,,,,,
-USDA_154,2017,Jun,Soybean,rotated,Low_N,Endosphere,2,2,0,0,0,,,,,,,,,,,,,,,,,,
-USDA_155,2017,Jun,Soybean,rotated,Std_N,Endosphere,2,1,11764,79,4.127604761,,,,,,,,,,,,,,,,,,
-USDA_156,2017,Jun,Soybean,rotated,Std_N,Endosphere,2,2,11488,68,4.128462805,,,,,,,,,,,,,,,,,,
-USDA_157,2017,Jun,Soybean,continuous,Low_N,Endosphere,2,1,4947,37,3.524711433,,,,,,,,,,,,,,,,,,
-USDA_158,2017,Jun,Soybean,continuous,Low_N,Endosphere,2,2,804,34,3.423907236,,,,,,,,,,,,,,,,,,
-USDA_159,2017,Jun,Soybean,continuous,Std_N,Endosphere,2,1,441,13,2.399997508,,,,,,,,,,,,,,,,,,
-USDA_160,2017,Jun,Soybean,continuous,Std_N,Endosphere,2,2,89,5,1.376739066,,,,,,,,,,,,,,,,,,
-USDA_161,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,1,1,15158,246,5.093653399,,,,,,,,,,,,,,,,,,
-USDA_162,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,1,2,11893,281,5.399640299,,,,,,,,,,,,,,,,,,
-USDA_163,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,1,1,8974,259,5.403113178,,,,,,,,,,,,,,,,,,
-USDA_164,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,1,2,8474,241,5.3764161,,,,,,,,,,,,,,,,,,
-USDA_165,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,1,1,1846,49,3.710400866,,,,,,,,,,,,,,,,,,
-USDA_166,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,1,2,6094,185,5.077963576,,,,,,,,,,,,,,,,,,
-USDA_167,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,1,1,5948,184,5.061339961,,,,,,,,,,,,,,,,,,
-USDA_168,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,1,2,7985,247,5.325811338,,,,,,,,,,,,,,,,,,
-USDA_169,2017,Jun,Corn,rotated,Low_N,Rhizosphere,1,1,6379,183,5.072339434,,,,,,,,,,,,,,,,,,
-USDA_170,2017,Jun,Corn,rotated,Low_N,Rhizosphere,1,2,8860,256,5.340188006,,,,,,,,,,,,,,,,,,
-USDA_171,2017,Jun,Corn,rotated,Std_N,Rhizosphere,1,1,4424,101,4.478584464,,,,,,,,,,,,,,,,,,
-USDA_172,2017,Jun,Corn,rotated,Std_N,Rhizosphere,1,2,3723,79,4.254541047,,,,,,,,,,,,,,,,,,
-USDA_177,2017,Jun,Corn,continuous,Low_N,Rhizosphere,1,1,10892,243,5.315244277,,,,,,,,,,,,,,,,,,
-USDA_178,2017,Jun,Corn,continuous,Low_N,Rhizosphere,1,2,9218,214,5.107491497,,,,,,,,,,,,,,,,,,
-USDA_179,2017,Jun,Corn,continuous,Std_N,Rhizosphere,1,1,3803,128,4.716950892,,,,,,,,,,,,,,,,,,
-USDA_180,2017,Jun,Corn,continuous,Std_N,Rhizosphere,1,2,8005,247,5.350600702,,,,,,,,,,,,,,,,,,
-USDA_181,2017,Jun,Corn,rotated,Low_N,Rhizosphere,2,1,2675,70,4.086645852,,,,,,,,,,,,,,,,,,
-USDA_182,2017,Jun,Corn,rotated,Low_N,Rhizosphere,2,2,3462,91,4.361264493,,,,,,,,,,,,,,,,,,
-USDA_183,2017,Jun,Corn,rotated,Std_N,Rhizosphere,2,1,3663,102,4.465717651,,,,,,,,,,,,,,,,,,
-USDA_184,2017,Jun,Corn,rotated,Std_N,Rhizosphere,2,2,8533,203,5.053784227,,,,,,,,,,,,,,,,,,
-USDA_189,2017,Jun,Corn,continuous,Low_N,Rhizosphere,2,1,1893,53,3.828963148,,,,,,,,,,,,,,,,,,
-USDA_190,2017,Jun,Corn,continuous,Low_N,Rhizosphere,2,2,2517,75,4.151983637,,,,,,,,,,,,,,,,,,
-USDA_191,2017,Jun,Corn,continuous,Std_N,Rhizosphere,2,1,4169,110,4.548034683,,,,,,,,,,,,,,,,,,
-USDA_192,2017,Jun,Corn,continuous,Std_N,Rhizosphere,2,2,5171,138,4.770760893,,,,,,,,,,,,,,,,,,
-USDA_193,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,2,1,7228,227,5.284745141,,,,,,,,,,,,,,,,,,
-USDA_194,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,2,2,8778,260,5.418864598,,,,,,,,,,,,,,,,,,
-USDA_195,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,2,1,8099,247,5.354672281,,,,,,,,,,,,,,,,,,
-USDA_196,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,2,2,7672,212,5.213076087,,,,,,,,,,,,,,,,,,
-USDA_197,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,2,1,2931,71,4.169765979,,,,,,,,,,,,,,,,,,
-USDA_198,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,2,2,5082,144,4.835866716,,,,,,,,,,,,,,,,,,
-USDA_199,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,2,1,5973,159,4.924838796,,,,,,,,,,,,,,,,,,
-USDA_200,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,2,2,3352,93,4.408872082,,,,,,,,,,,,,,,,,,
-USDA_201,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,1,1,3241,74,4.171521571,,,,,,,,,,,,,,,,,,
-USDA_202,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,1,2,4555,116,4.59884273,,,,,,,,,,,,,,,,,,
-USDA_203,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,1,1,3815,100,4.407372133,,,,,,,,,,,,,,,,,,
-USDA_204,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,1,2,3049,78,4.218226685,,,,,,,,,,,,,,,,,,
-USDA_205,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,1,1,512,13,2.432759318,,,,,,,,,,,,,,,,,,
-USDA_206,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,1,2,1292,38,3.442275162,,,,,,,,,,,,,,,,,,
-USDA_207,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,1,1,2831,77,4.174379298,,,,,,,,,,,,,,,,,,
-USDA_208,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,1,2,3664,92,4.364832264,,,,,,,,,,,,,,,,,,
-USDA_209,2017,Jun,Corn,rotated,Low_N,Bulk Soil,1,1,5577,155,4.880942658,,,,,,,,,,,,,,,,,,
-USDA_210,2017,Jun,Corn,rotated,Low_N,Bulk Soil,1,2,4600,112,4.526523,,,,,,,,,,,,,,,,,,
-USDA_211,2017,Jun,Corn,rotated,Std_N,Bulk Soil,1,1,4139,126,4.609628597,,,,,,,,,,,,,,,,,,
-USDA_212,2017,Jun,Corn,rotated,Std_N,Bulk Soil,1,2,7159,219,5.1872362,,,,,,,,,,,,,,,,,,
-USDA_217,2017,Jun,Corn,continuous,Low_N,Bulk Soil,1,1,1772,41,3.534848404,,,,,,,,,,,,,,,,,,
-USDA_218,2017,Jun,Corn,continuous,Low_N,Bulk Soil,1,2,1585,26,3.181818028,,,,,,,,,,,,,,,,,,
-USDA_219,2017,Jun,Corn,continuous,Std_N,Bulk Soil,1,1,484,13,2.463949733,,,,,,,,,,,,,,,,,,
-USDA_220,2017,Jun,Corn,continuous,Std_N,Bulk Soil,1,2,2003,46,3.723128591,,,,,,,,,,,,,,,,,,
-USDA_221,2017,Jun,Corn,rotated,Low_N,Bulk Soil,2,1,2671,54,3.819625027,,,,,,,,,,,,,,,,,,
-USDA_222,2017,Jun,Corn,rotated,Low_N,Bulk Soil,2,2,4297,117,4.527986378,,,,,,,,,,,,,,,,,,
-USDA_223,2017,Jun,Corn,rotated,Std_N,Bulk Soil,2,1,3481,96,4.370959934,,,,,,,,,,,,,,,,,,
-USDA_224,2017,Jun,Corn,rotated,Std_N,Bulk Soil,2,2,1829,44,3.589584453,,,,,,,,,,,,,,,,,,
-USDA_229,2017,Jun,Corn,continuous,Low_N,Bulk Soil,2,1,2623,62,3.971037363,,,,,,,,,,,,,,,,,,
-USDA_230,2017,Jun,Corn,continuous,Low_N,Bulk Soil,2,2,2831,79,4.137551407,,,,,,,,,,,,,,,,,,
-USDA_231,2017,Jun,Corn,continuous,Std_N,Bulk Soil,2,1,2134,53,3.84069665,,,,,,,,,,,,,,,,,,
-USDA_232,2017,Jun,Corn,continuous,Std_N,Bulk Soil,2,2,828,25,3.091731715,,,,,,,,,,,,,,,,,,
-USDA_233,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,2,1,4448,110,4.547501084,,,,,,,,,,,,,,,,,,
-USDA_234,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,2,2,886,18,2.756710716,,,,,,,,,,,,,,,,,,
-USDA_235,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,2,1,1109,22,3.004494993,,,,,,,,,,,,,,,,,,
-USDA_236,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,2,2,3285,110,4.401586372,,,,,,,,,,,,,,,,,,
-USDA_237,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,2,1,2400,49,3.765653849,,,,,,,,,,,,,,,,,,
-USDA_238,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,2,2,4066,108,4.504110657,,,,,,,,,,,,,,,,,,
-USDA_239,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,2,1,4297,121,4.550326245,,,,,,,,,,,,,,,,,,
-USDA_240,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,2,2,1639,43,3.607686238,,,,,,,,,,,,,,,,,,
-USDA_241,2017,Aug,Soybean,rotated,Low_N,Endosphere,1,1,15202,49,3.66706183,,,,,,,,,,,,,,,,,,
-USDA_242,2017,Aug,Soybean,rotated,Low_N,Endosphere,1,2,6834,36,3.566329378,,,,,,,,,,,,,,,,,,
-USDA_243,2017,Aug,Soybean,rotated,Std_N,Endosphere,1,1,1942,39,3.630099611,,,,,,,,,,,,,,,,,,
-USDA_244,2017,Aug,Soybean,rotated,Std_N,Endosphere,1,2,568,18,2.783871991,,,,,,,,,,,,,,,,,,
-USDA_245,2017,Aug,Soybean,continuous,Low_N,Endosphere,1,1,1596,44,3.740535996,,,,,,,,,,,,,,,,,,
-USDA_246,2017,Aug,Soybean,continuous,Low_N,Endosphere,1,2,1031,14,2.469148639,,,,,,,,,,,,,,,,,,
-USDA_247,2017,Aug,Soybean,continuous,Std_N,Endosphere,1,1,21074,149,4.731040933,,,,,,,,,,,,,,,,,,
-USDA_248,2017,Aug,Soybean,continuous,Std_N,Endosphere,1,2,841,30,3.346779208,,,,,,,,,,,,,,,,,,
-USDA_249,2017,Aug,Corn,rotated,Low_N,Endosphere,1,1,2800,76,4.176661013,,,,,,,,,,,,,,,,,,
-USDA_250,2017,Aug,Corn,rotated,Low_N,Endosphere,1,2,818,24,3.077553283,,,,,,,,,,,,,,,,,,
-USDA_251,2017,Aug,Corn,rotated,Std_N,Endosphere,1,1,1361,49,3.764062032,,,,,,,,,,,,,,,,,,
-USDA_252,2017,Aug,Corn,rotated,Std_N,Endosphere,1,2,2474,81,4.309171379,,,,,,,,,,,,,,,,,,
-USDA_257,2017,Aug,Corn,continuous,Low_N,Endosphere,1,1,681,22,2.925996863,,,,,,,,,,,,,,,,,,
-USDA_258,2017,Aug,Corn,continuous,Low_N,Endosphere,1,2,6068,110,4.537649458,,,,,,,,,,,,,,,,,,
-USDA_259,2017,Aug,Corn,continuous,Std_N,Endosphere,1,1,894,25,3.016943588,,,,,,,,,,,,,,,,,,
-USDA_260,2017,Aug,Corn,continuous,Std_N,Endosphere,1,2,406,12,2.463335359,,,,,,,,,,,,,,,,,,
-USDA_261,2017,Aug,Corn,rotated,Low_N,Endosphere,2,1,574,19,2.789421824,,,,,,,,,,,,,,,,,,
-USDA_262,2017,Aug,Corn,rotated,Low_N,Endosphere,2,2,188,8,1.946387774,,,,,,,,,,,,,,,,,,
-USDA_263,2017,Aug,Corn,rotated,Std_N,Endosphere,2,1,532,17,2.686895234,,,,,,,,,,,,,,,,,,
-USDA_264,2017,Aug,Corn,rotated,Std_N,Endosphere,2,2,909,30,3.261152754,,,,,,,,,,,,,,,,,,
-USDA_269,2017,Aug,Corn,continuous,Low_N,Endosphere,2,1,88,4,1.232184036,,,,,,,,,,,,,,,,,,
-USDA_270,2017,Aug,Corn,continuous,Low_N,Endosphere,2,2,692,22,2.951647653,,,,,,,,,,,,,,,,,,
-USDA_271,2017,Aug,Corn,continuous,Std_N,Endosphere,2,1,4932,115,4.640472422,,,,,,,,,,,,,,,,,,
-USDA_272,2017,Aug,Corn,continuous,Std_N,Endosphere,2,2,2283,75,4.200591342,,,,,,,,,,,,,,,,,,
-USDA_273,2017,Aug,Soybean,rotated,Low_N,Endosphere,2,1,21739,61,3.701445834,,,,,,,,,,,,,,,,,,
-USDA_274,2017,Aug,Soybean,rotated,Low_N,Endosphere,2,2,4328,47,3.754253109,,,,,,,,,,,,,,,,,,
-USDA_275,2017,Aug,Soybean,rotated,Std_N,Endosphere,2,1,1725,53,3.879603226,,,,,,,,,,,,,,,,,,
-USDA_276,2017,Aug,Soybean,rotated,Std_N,Endosphere,2,2,1331,37,3.559271694,,,,,,,,,,,,,,,,,,
-USDA_277,2017,Aug,Soybean,continuous,Low_N,Endosphere,2,1,692,32,3.41009067,,,,,,,,,,,,,,,,,,
-USDA_278,2017,Aug,Soybean,continuous,Low_N,Endosphere,2,2,32963,45,3.610529442,,,,,,,,,,,,,,,,,,
-USDA_279,2017,Aug,Soybean,continuous,Std_N,Endosphere,2,1,1405,42,3.652218282,,,,,,,,,,,,,,,,,,
-USDA_280,2017,Aug,Soybean,continuous,Std_N,Endosphere,2,2,282,13,2.37773167,,,,,,,,,,,,,,,,,,
-USDA_281,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,1,1,21385,296,5.168653831,,,,,,,,,,,,,,,,,,
-USDA_282,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,1,2,13188,218,5.056520225,,,,,,,,,,,,,,,,,,
-USDA_283,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,1,1,16523,234,5.041790911,,,,,,,,,,,,,,,,,,
-USDA_284,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,1,2,11277,249,5.350767818,,,,,,,,,,,,,,,,,,
-USDA_285,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,1,1,13165,220,5.195488399,,,,,,,,,,,,,,,,,,
-USDA_286,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,1,2,14303,208,5.018506203,,,,,,,,,,,,,,,,,,
-USDA_287,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,1,1,10747,223,5.20831342,,,,,,,,,,,,,,,,,,
-USDA_288,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,1,2,9850,246,5.352641394,,,,,,,,,,,,,,,,,,
-USDA_289,2017,Aug,Corn,rotated,Low_N,Rhizosphere,1,1,8725,206,5.130258066,,,,,,,,,,,,,,,,,,
-USDA_290,2017,Aug,Corn,rotated,Low_N,Rhizosphere,1,2,15741,227,5.009960393,,,,,,,,,,,,,,,,,,
-USDA_291,2017,Aug,Corn,rotated,Std_N,Rhizosphere,1,1,6721,180,4.998751008,,,,,,,,,,,,,,,,,,
-USDA_292,2017,Aug,Corn,rotated,Std_N,Rhizosphere,1,2,8671,238,5.332251776,,,,,,,,,,,,,,,,,,
-USDA_297,2017,Aug,Corn,continuous,Low_N,Rhizosphere,1,1,4786,127,4.754320838,,,,,,,,,,,,,,,,,,
-USDA_298,2017,Aug,Corn,continuous,Low_N,Rhizosphere,1,2,38779,413,5.38056778,,,,,,,,,,,,,,,,,,
-USDA_299,2017,Aug,Corn,continuous,Std_N,Rhizosphere,1,1,1416,36,3.471928728,,,,,,,,,,,,,,,,,,
-USDA_300,2017,Aug,Corn,continuous,Std_N,Rhizosphere,1,2,3457,84,4.26624882,,,,,,,,,,,,,,,,,,
-USDA_301,2017,Aug,Corn,rotated,Low_N,Rhizosphere,2,1,6823,163,4.968842494,,,,,,,,,,,,,,,,,,
-USDA_302,2017,Aug,Corn,rotated,Low_N,Rhizosphere,2,2,8471,189,5.108173583,,,,,,,,,,,,,,,,,,
-USDA_303,2017,Aug,Corn,rotated,Std_N,Rhizosphere,2,1,6251,162,4.952542265,,,,,,,,,,,,,,,,,,
-USDA_304,2017,Aug,Corn,rotated,Std_N,Rhizosphere,2,2,6060,135,4.765639069,,,,,,,,,,,,,,,,,,
-USDA_309,2017,Aug,Corn,continuous,Low_N,Rhizosphere,2,1,15625,302,5.522565491,,,,,,,,,,,,,,,,,,
-USDA_310,2017,Aug,Corn,continuous,Low_N,Rhizosphere,2,2,12436,279,5.463256704,,,,,,,,,,,,,,,,,,
-USDA_311,2017,Aug,Corn,continuous,Std_N,Rhizosphere,2,1,6332,175,5.029646769,,,,,,,,,,,,,,,,,,
-USDA_312,2017,Aug,Corn,continuous,Std_N,Rhizosphere,2,2,5460,156,4.926289252,,,,,,,,,,,,,,,,,,
-USDA_313,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,2,1,20997,220,4.735187012,,,,,,,,,,,,,,,,,,
-USDA_314,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,2,2,22189,319,5.381937888,,,,,,,,,,,,,,,,,,
-USDA_315,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,2,1,21449,324,5.442710868,,,,,,,,,,,,,,,,,,
-USDA_316,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,2,2,17583,272,5.151202078,,,,,,,,,,,,,,,,,,
-USDA_317,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,2,1,20664,353,5.504707344,,,,,,,,,,,,,,,,,,
-USDA_318,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,2,2,36343,307,4.612895253,,,,,,,,,,,,,,,,,,
-USDA_319,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,2,1,32581,348,4.960394184,,,,,,,,,,,,,,,,,,
-USDA_320,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,2,2,28819,341,4.987809959,,,,,,,,,,,,,,,,,,
-USDA_321,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,1,1,5712,151,4.81503616,,,,,,,,,,,,,,,,,,
-USDA_322,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,1,2,5593,117,4.652648544,,,,,,,,,,,,,,,,,,
-USDA_323,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,1,1,7843,212,5.135063554,,,,,,,,,,,,,,,,,,
-USDA_324,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,1,2,8617,223,5.238900934,,,,,,,,,,,,,,,,,,
-USDA_325,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,1,1,10342,288,5.459015036,,,,,,,,,,,,,,,,,,
-USDA_326,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,1,2,9476,248,5.287019551,,,,,,,,,,,,,,,,,,
-USDA_327,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,1,1,10336,238,5.309838171,,,,,,,,,,,,,,,,,,
-USDA_328,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,1,2,8918,229,5.223147837,,,,,,,,,,,,,,,,,,
-USDA_329,2017,Aug,Corn,rotated,Low_N,Bulk Soil,1,1,4940,127,4.654978396,,,,,,,,,,,,,,,,,,
-USDA_330,2017,Aug,Corn,rotated,Low_N,Bulk Soil,1,2,3697,90,4.316396365,,,,,,,,,,,,,,,,,,
-USDA_331,2017,Aug,Corn,rotated,Std_N,Bulk Soil,1,1,19812,172,4.303516019,,,,,,,,,,,,,,,,,,
-USDA_332,2017,Aug,Corn,rotated,Std_N,Bulk Soil,1,2,18775,205,4.527152603,,,,,,,,,,,,,,,,,,
-USDA_337,2017,Aug,Corn,continuous,Low_N,Bulk Soil,1,1,6542,137,4.805292792,,,,,,,,,,,,,,,,,,
-USDA_338,2017,Aug,Corn,continuous,Low_N,Bulk Soil,1,2,9658,64,3.981629063,,,,,,,,,,,,,,,,,,
-USDA_339,2017,Aug,Corn,continuous,Std_N,Bulk Soil,1,1,4061,84,4.354206984,,,,,,,,,,,,,,,,,,
-USDA_340,2017,Aug,Corn,continuous,Std_N,Bulk Soil,1,2,1488,33,3.398750096,,,,,,,,,,,,,,,,,,
-USDA_341,2017,Aug,Corn,rotated,Low_N,Bulk Soil,2,1,5686,169,4.971546374,,,,,,,,,,,,,,,,,,
-USDA_342,2017,Aug,Corn,rotated,Low_N,Bulk Soil,2,2,6032,175,4.974161227,,,,,,,,,,,,,,,,,,
-USDA_343,2017,Aug,Corn,rotated,Std_N,Bulk Soil,2,1,8192,151,4.781393907,,,,,,,,,,,,,,,,,,
-USDA_344,2017,Aug,Corn,rotated,Std_N,Bulk Soil,2,2,5754,137,4.754004677,,,,,,,,,,,,,,,,,,
-USDA_349,2017,Aug,Corn,continuous,Low_N,Bulk Soil,2,1,7280,204,5.116507439,,,,,,,,,,,,,,,,,,
-USDA_350,2017,Aug,Corn,continuous,Low_N,Bulk Soil,2,2,5364,122,4.658523332,,,,,,,,,,,,,,,,,,
-USDA_351,2017,Aug,Corn,continuous,Std_N,Bulk Soil,2,1,5464,137,4.774623306,,,,,,,,,,,,,,,,,,
-USDA_352,2017,Aug,Corn,continuous,Std_N,Bulk Soil,2,2,8562,178,4.910867565,,,,,,,,,,,,,,,,,,
-USDA_353,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,2,1,4808,88,4.225112022,,,,,,,,,,,,,,,,,,
-USDA_354,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,2,2,7042,173,4.951058285,,,,,,,,,,,,,,,,,,
-USDA_355,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,2,1,5540,171,4.914354986,,,,,,,,,,,,,,,,,,
-USDA_356,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,2,2,5201,167,4.834360773,,,,,,,,,,,,,,,,,,
-USDA_357,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,2,1,12107,185,4.724637134,,,,,,,,,,,,,,,,,,
-USDA_358,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,2,2,1871,45,3.659170932,,,,,,,,,,,,,,,,,,
-USDA_359,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,2,1,5264,112,4.48699151,,,,,,,,,,,,,,,,,,
-USDA_360,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,2,2,14502,331,5.680325196,,,,,,,,,,,,,,,,,,
-USDA_361,2017,Sep,Soybean,rotated,Low_N,Endosphere,1,1,3835,39,3.624258073,,,,,,,,,,,,,,,,,,
-USDA_362,2017,Sep,Soybean,rotated,Low_N,Endosphere,1,2,57207,68,3.917993867,,,,,,,,,,,,,,,,,,
-USDA_363,2017,Sep,Soybean,rotated,Std_N,Endosphere,1,1,591,24,2.989470955,,,,,,,,,,,,,,,,,,
-USDA_364,2017,Sep,Soybean,rotated,Std_N,Endosphere,1,2,13202,42,3.598166014,,,,,,,,,,,,,,,,,,
-USDA_365,2017,Sep,Soybean,continuous,Low_N,Endosphere,1,1,121,4,1.326588178,,,,,,,,,,,,,,,,,,
-USDA_366,2017,Sep,Soybean,continuous,Low_N,Endosphere,1,2,4140,66,4.045566251,,,,,,,,,,,,,,,,,,
-USDA_367,2017,Sep,Soybean,continuous,Std_N,Endosphere,1,1,10484,42,3.60890296,,,,,,,,,,,,,,,,,,
-USDA_368,2017,Sep,Soybean,continuous,Std_N,Endosphere,1,2,5311,44,3.704392203,,,,,,,,,,,,,,,,,,
-USDA_369,2017,Sep,Corn,rotated,Low_N,Endosphere,1,1,12349,251,5.252062809,,,,,,,,,,,,,,,,,,
-USDA_370,2017,Sep,Corn,rotated,Low_N,Endosphere,1,2,12422,213,5.091896084,,,,,,,,,,,,,,,,,,
-USDA_371,2017,Sep,Corn,rotated,Std_N,Endosphere,1,1,7235,240,5.390957432,,,,,,,,,,,,,,,,,,
-USDA_372,2017,Sep,Corn,rotated,Std_N,Endosphere,1,2,6248,153,4.954849472,,,,,,,,,,,,,,,,,,
-USDA_377,2017,Sep,Corn,continuous,Low_N,Endosphere,1,1,4824,110,4.619955684,,,,,,,,,,,,,,,,,,
-USDA_378,2017,Sep,Corn,continuous,Low_N,Endosphere,1,2,37173,316,5.488659216,,,,,,,,,,,,,,,,,,
-USDA_379,2017,Sep,Corn,continuous,Std_N,Endosphere,1,1,4974,96,4.454504234,,,,,,,,,,,,,,,,,,
-USDA_380,2017,Sep,Corn,continuous,Std_N,Endosphere,1,2,12171,175,4.805104421,,,,,,,,,,,,,,,,,,
-USDA_381,2017,Sep,Corn,rotated,Low_N,Endosphere,2,1,599,11,2.272247561,,,,,,,,,,,,,,,,,,
-USDA_382,2017,Sep,Corn,rotated,Low_N,Endosphere,2,2,5539,125,4.730425454,,,,,,,,,,,,,,,,,,
-USDA_383,2017,Sep,Corn,rotated,Std_N,Endosphere,2,1,8924,126,4.743875297,,,,,,,,,,,,,,,,,,
-USDA_384,2017,Sep,Corn,rotated,Std_N,Endosphere,2,2,11083,294,5.567243556,,,,,,,,,,,,,,,,,,
-USDA_389,2017,Sep,Corn,continuous,Low_N,Endosphere,2,1,1677,44,3.638168487,,,,,,,,,,,,,,,,,,
-USDA_390,2017,Sep,Corn,continuous,Low_N,Endosphere,2,2,712,14,2.48345504,,,,,,,,,,,,,,,,,,
-USDA_391,2017,Sep,Corn,continuous,Std_N,Endosphere,2,1,1024,38,3.257536347,,,,,,,,,,,,,,,,,,
-USDA_392,2017,Sep,Corn,continuous,Std_N,Endosphere,2,2,5493,124,4.724416131,,,,,,,,,,,,,,,,,,
-USDA_393,2017,Sep,Soybean,rotated,Low_N,Endosphere,2,1,16448,40,3.589745767,,,,,,,,,,,,,,,,,,
-USDA_394,2017,Sep,Soybean,rotated,Low_N,Endosphere,2,2,26085,44,3.583882299,,,,,,,,,,,,,,,,,,
-USDA_395,2017,Sep,Soybean,rotated,Std_N,Endosphere,2,1,2652,53,3.845811365,,,,,,,,,,,,,,,,,,
-USDA_396,2017,Sep,Soybean,rotated,Std_N,Endosphere,2,2,29005,42,3.577720089,,,,,,,,,,,,,,,,,,
-USDA_397,2017,Sep,Soybean,continuous,Low_N,Endosphere,2,1,325,8,1.866841056,,,,,,,,,,,,,,,,,,
-USDA_398,2017,Sep,Soybean,continuous,Low_N,Endosphere,2,2,0,0,0,,,,,,,,,,,,,,,,,,
-USDA_399,2017,Sep,Soybean,continuous,Std_N,Endosphere,2,1,3553,41,3.624380529,,,,,,,,,,,,,,,,,,
-USDA_400,2017,Sep,Soybean,continuous,Std_N,Endosphere,2,2,354,4,1.362625765,,,,,,,,,,,,,,,,,,
-USDA_401,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,1,1,37567,384,5.09921044,,,,,,,,,,,,,,,,,,
-USDA_402,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,1,2,29125,437,5.463868649,,,,,,,,,,,,,,,,,,
-USDA_403,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,1,1,11259,157,4.856347391,,,,,,,,,,,,,,,,,,
-USDA_404,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,1,2,20336,284,5.118114869,,,,,,,,,,,,,,,,,,
-USDA_405,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,1,1,601,14,2.478792532,,,,,,,,,,,,,,,,,,
-USDA_406,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,1,2,2981,67,4.020744288,,,,,,,,,,,,,,,,,,
-USDA_407,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,1,1,21285,321,5.286297991,,,,,,,,,,,,,,,,,,
-USDA_408,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,1,2,19499,365,5.630832682,,,,,,,,,,,,,,,,,,
-USDA_409,2017,Sep,Corn,rotated,Low_N,Rhizosphere,1,1,7084,129,4.712542525,,,,,,,,,,,,,,,,,,
-USDA_410,2017,Sep,Corn,rotated,Low_N,Rhizosphere,1,2,14466,327,5.648450696,,,,,,,,,,,,,,,,,,
-USDA_411,2017,Sep,Corn,rotated,Std_N,Rhizosphere,1,1,10669,208,5.184482693,,,,,,,,,,,,,,,,,,
-USDA_412,2017,Sep,Corn,rotated,Std_N,Rhizosphere,1,2,10784,218,5.261122541,,,,,,,,,,,,,,,,,,
-USDA_417,2017,Sep,Corn,continuous,Low_N,Rhizosphere,1,1,12814,282,5.473539378,,,,,,,,,,,,,,,,,,
-USDA_418,2017,Sep,Corn,continuous,Low_N,Rhizosphere,1,2,21859,386,5.761305958,,,,,,,,,,,,,,,,,,
-USDA_419,2017,Sep,Corn,continuous,Std_N,Rhizosphere,1,1,3985,124,4.593779543,,,,,,,,,,,,,,,,,,
-USDA_420,2017,Sep,Corn,continuous,Std_N,Rhizosphere,1,2,5365,150,4.894606514,,,,,,,,,,,,,,,,,,
-USDA_421,2017,Sep,Corn,rotated,Low_N,Rhizosphere,2,1,36342,518,5.714739903,,,,,,,,,,,,,,,,,,
-USDA_422,2017,Sep,Corn,rotated,Low_N,Rhizosphere,2,2,35741,465,5.501124874,,,,,,,,,,,,,,,,,,
-USDA_423,2017,Sep,Corn,rotated,Std_N,Rhizosphere,2,1,11436,271,5.52040256,,,,,,,,,,,,,,,,,,
-USDA_424,2017,Sep,Corn,rotated,Std_N,Rhizosphere,2,2,13557,335,5.64385118,,,,,,,,,,,,,,,,,,
-USDA_429,2017,Sep,Corn,continuous,Low_N,Rhizosphere,2,1,16602,431,5.885870406,,,,,,,,,,,,,,,,,,
-USDA_430,2017,Sep,Corn,continuous,Low_N,Rhizosphere,2,2,2550,52,3.83498968,,,,,,,,,,,,,,,,,,
-USDA_431,2017,Sep,Corn,continuous,Std_N,Rhizosphere,2,1,10236,247,5.38458699,,,,,,,,,,,,,,,,,,
-USDA_432,2017,Sep,Corn,continuous,Std_N,Rhizosphere,2,2,15110,344,5.717345466,,,,,,,,,,,,,,,,,,
-USDA_433,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,2,1,9893,87,4.251356977,,,,,,,,,,,,,,,,,,
-USDA_434,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,2,2,14499,125,4.430239295,,,,,,,,,,,,,,,,,,
-USDA_435,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,2,1,27792,408,5.477023126,,,,,,,,,,,,,,,,,,
-USDA_436,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,2,2,23527,368,5.403361417,,,,,,,,,,,,,,,,,,
-USDA_437,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,2,1,24372,292,5.013944347,,,,,,,,,,,,,,,,,,
-USDA_438,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,2,2,15615,246,5.144387834,,,,,,,,,,,,,,,,,,
-USDA_439,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,2,1,13947,271,5.262461138,,,,,,,,,,,,,,,,,,
-USDA_440,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,2,2,22490,454,5.789580131,,,,,,,,,,,,,,,,,,
-USDA_441,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,1,1,1924,30,3.299453639,,,,,,,,,,,,,,,,,,
-USDA_442,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,1,2,2481,40,3.605798834,,,,,,,,,,,,,,,,,,
-USDA_443,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,1,1,6377,181,4.945373564,,,,,,,,,,,,,,,,,,
-USDA_444,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,1,2,9704,228,5.210720583,,,,,,,,,,,,,,,,,,
-USDA_445,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,1,1,9632,268,5.43354953,,,,,,,,,,,,,,,,,,
-USDA_446,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,1,2,15316,408,5.879392786,,,,,,,,,,,,,,,,,,
-USDA_447,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,1,1,14908,414,5.857694893,,,,,,,,,,,,,,,,,,
-USDA_448,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,1,2,7527,222,5.217913294,,,,,,,,,,,,,,,,,,
-USDA_449,2017,Sep,Corn,rotated,Low_N,Bulk Soil,1,1,2074,36,3.38840202,,,,,,,,,,,,,,,,,,
-USDA_450,2017,Sep,Corn,rotated,Low_N,Bulk Soil,1,2,2258,41,3.576187888,,,,,,,,,,,,,,,,,,
-USDA_451,2017,Sep,Corn,rotated,Std_N,Bulk Soil,1,1,9881,264,5.355328098,,,,,,,,,,,,,,,,,,
-USDA_452,2017,Sep,Corn,rotated,Std_N,Bulk Soil,1,2,5556,127,4.594624896,,,,,,,,,,,,,,,,,,
-USDA_457,2017,Sep,Corn,continuous,Low_N,Bulk Soil,1,1,1035,15,2.643194673,,,,,,,,,,,,,,,,,,
-USDA_458,2017,Sep,Corn,continuous,Low_N,Bulk Soil,1,2,2330,48,3.754214867,,,,,,,,,,,,,,,,,,
-USDA_459,2017,Sep,Corn,continuous,Std_N,Bulk Soil,1,1,264,5,1.262297613,,,,,,,,,,,,,,,,,,
-USDA_460,2017,Sep,Corn,continuous,Std_N,Bulk Soil,1,2,5779,112,4.567423474,,,,,,,,,,,,,,,,,,
-USDA_461,2017,Sep,Corn,rotated,Low_N,Bulk Soil,2,1,3707,86,4.205326626,,,,,,,,,,,,,,,,,,
-USDA_462,2017,Sep,Corn,rotated,Low_N,Bulk Soil,2,2,7988,182,5.029883259,,,,,,,,,,,,,,,,,,
-USDA_463,2017,Sep,Corn,rotated,Std_N,Bulk Soil,2,1,6586,159,4.867647393,,,,,,,,,,,,,,,,,,
-USDA_464,2017,Sep,Corn,rotated,Std_N,Bulk Soil,2,2,6922,165,4.921679093,,,,,,,,,,,,,,,,,,
-USDA_469,2017,Sep,Corn,continuous,Low_N,Bulk Soil,2,1,4454,97,4.346682605,,,,,,,,,,,,,,,,,,
-USDA_470,2017,Sep,Corn,continuous,Low_N,Bulk Soil,2,2,8134,204,5.021615222,,,,,,,,,,,,,,,,,,
-USDA_471,2017,Sep,Corn,continuous,Std_N,Bulk Soil,2,1,4119,104,4.429723293,,,,,,,,,,,,,,,,,,
-USDA_472,2017,Sep,Corn,continuous,Std_N,Bulk Soil,2,2,8972,247,5.376254168,,,,,,,,,,,,,,,,,,
-USDA_473,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,2,1,217,5,1.52147122,,,,,,,,,,,,,,,,,,
-USDA_474,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,2,2,3185,64,3.989587297,,,,,,,,,,,,,,,,,,
-USDA_475,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,2,1,6702,199,5.076771627,,,,,,,,,,,,,,,,,,
-USDA_476,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,2,2,8190,186,5.018975571,,,,,,,,,,,,,,,,,,
-USDA_477,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,2,1,3794,69,4.135306149,,,,,,,,,,,,,,,,,,
-USDA_478,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,2,2,2666,71,4.109186905,,,,,,,,,,,,,,,,,,
-USDA_479,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,2,1,2757,74,4.068148059,,,,,,,,,,,,,,,,,,
-USDA_480,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,2,2,2101,88,4.12649188,,,,,,,,,,,,,,,,,,
-USDA_481,2018,Jun,Corn,rotated,Low_N,Endosphere,1,1,8816,197,5.053378662,,,,,,,,,,,,,,,,,,
-USDA_482,2018,Jun,Corn,rotated,Low_N,Endosphere,1,2,378,12,2.288945971,,,,,,,,,,,,,,,,,,
-USDA_483,2018,Jun,Corn,rotated,Std_N,Endosphere,1,1,1478,40,3.530990716,,,,,,,,,,,,,,,,,,
-USDA_484,2018,Jun,Corn,rotated,Std_N,Endosphere,1,2,1803,66,4.024116685,,,,,,,,,,,,,,,,,,
-USDA_485,2018,Jun,Soybean,continuous,Low_N,Endosphere,1,1,3672,41,3.652691304,,,,,,,,,,,,,,,,,,
-USDA_486,2018,Jun,Soybean,continuous,Low_N,Endosphere,1,2,4188,88,4.429895047,,,,,,,,,,,,,,,,,,
-USDA_487,2018,Jun,Soybean,continuous,Std_N,Endosphere,1,1,569,22,2.943701366,,,,,,,,,,,,,,,,,,
-USDA_488,2018,Jun,Soybean,continuous,Std_N,Endosphere,1,2,199,7,1.840942132,,,,,,,,,,,,,,,,,,
-USDA_489,2018,Jun,Soybean,rotated,Low_N,Endosphere,1,1,12,1,0,,,,,,,,,,,,,,,,,,
-USDA_490,2018,Jun,Soybean,rotated,Low_N,Endosphere,1,2,7704,92,4.353803937,,,,,,,,,,,,,,,,,,
-USDA_491,2018,Jun,Soybean,rotated,Std_N,Endosphere,1,1,18396,72,4.155858898,,,,,,,,,,,,,,,,,,
-USDA_492,2018,Jun,Soybean,rotated,Std_N,Endosphere,1,2,1210,38,3.608999427,,,,,,,,,,,,,,,,,,
-USDA_497,2018,Jun,Corn,continuous,Low_N,Endosphere,1,1,5613,89,4.222836349,,,,,,,,,,,,,,,,,,
-USDA_498,2018,Jun,Corn,continuous,Low_N,Endosphere,1,2,1131,41,3.586198684,,,,,,,,,,,,,,,,,,
-USDA_499,2018,Jun,Corn,continuous,Std_N,Endosphere,1,1,980,35,3.35415879,,,,,,,,,,,,,,,,,,
-USDA_500,2018,Jun,Corn,continuous,Std_N,Endosphere,1,2,6071,123,4.623650139,,,,,,,,,,,,,,,,,,
-USDA_501,2018,Jun,Soybean,rotated,Low_N,Endosphere,2,1,14707,42,3.62654654,,,,,,,,,,,,,,,,,,
-USDA_502,2018,Jun,Soybean,rotated,Low_N,Endosphere,2,2,179,5,1.545515346,,,,,,,,,,,,,,,,,,
-USDA_503,2018,Jun,Soybean,rotated,Std_N,Endosphere,2,1,7632,72,3.968738682,,,,,,,,,,,,,,,,,,
-USDA_504,2018,Jun,Soybean,rotated,Std_N,Endosphere,2,2,7,1,0,,,,,,,,,,,,,,,,,,
-USDA_509,2018,Jun,Corn,continuous,Low_N,Endosphere,2,1,3088,66,4.09573696,,,,,,,,,,,,,,,,,,
-USDA_510,2018,Jun,Corn,continuous,Low_N,Endosphere,2,2,311,10,2.125323248,,,,,,,,,,,,,,,,,,
-USDA_511,2018,Jun,Corn,continuous,Std_N,Endosphere,2,1,1919,80,4.1911119,,,,,,,,,,,,,,,,,,
-USDA_512,2018,Jun,Corn,continuous,Std_N,Endosphere,2,2,1680,59,3.911645623,,,,,,,,,,,,,,,,,,
-USDA_513,2018,Jun,Corn,rotated,Low_N,Endosphere,2,1,237,10,2.095723661,,,,,,,,,,,,,,,,,,
-USDA_514,2018,Jun,Corn,rotated,Low_N,Endosphere,2,2,518,17,2.630116194,,,,,,,,,,,,,,,,,,
-USDA_515,2018,Jun,Corn,rotated,Std_N,Endosphere,2,1,526,17,2.74654027,,,,,,,,,,,,,,,,,,
-USDA_516,2018,Jun,Corn,rotated,Std_N,Endosphere,2,2,191,5,1.56989216,,,,,,,,,,,,,,,,,,
-USDA_517,2018,Jun,Soybean,continuous,Low_N,Endosphere,2,1,6180,46,3.675625164,,,,,,,,,,,,,,,,,,
-USDA_518,2018,Jun,Soybean,continuous,Low_N,Endosphere,2,2,2575,37,3.572523026,,,,,,,,,,,,,,,,,,
-USDA_519,2018,Jun,Soybean,continuous,Std_N,Endosphere,2,1,573,21,2.875968232,,,,,,,,,,,,,,,,,,
-USDA_520,2018,Jun,Soybean,continuous,Std_N,Endosphere,2,2,16845,74,3.927300569,,,,,,,,,,,,,,,,,,
-USDA_521,2018,Jun,Corn,rotated,Low_N,Rhizosphere,1,1,13678,450,5.947010894,,,,,,,,,,,,,,,,,,
-USDA_522,2018,Jun,Corn,rotated,Low_N,Rhizosphere,1,2,12507,344,5.576832417,,,,,,,,,,,,,,,,,,
-USDA_523,2018,Jun,Corn,rotated,Std_N,Rhizosphere,1,1,10674,270,5.417116817,,,,,,,,,,,,,,,,,,
-USDA_524,2018,Jun,Corn,rotated,Std_N,Rhizosphere,1,2,8136,270,5.381678933,,,,,,,,,,,,,,,,,,
-USDA_525,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,1,1,19549,523,5.997255653,,,,,,,,,,,,,,,,,,
-USDA_526,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,1,2,22422,625,6.185791388,,,,,,,,,,,,,,,,,,
-USDA_527,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,1,1,22471,532,5.7225244,,,,,,,,,,,,,,,,,,
-USDA_528,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,1,2,20522,612,6.246942834,,,,,,,,,,,,,,,,,,
-USDA_529,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,1,1,16975,461,5.901058617,,,,,,,,,,,,,,,,,,
-USDA_530,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,1,2,3020,64,3.994532625,,,,,,,,,,,,,,,,,,
-USDA_531,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,1,1,15001,424,5.784581721,,,,,,,,,,,,,,,,,,
-USDA_532,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,1,2,10408,300,5.51171834,,,,,,,,,,,,,,,,,,
-USDA_537,2018,Jun,Corn,continuous,Low_N,Rhizosphere,1,1,9464,290,5.494743121,,,,,,,,,,,,,,,,,,
-USDA_538,2018,Jun,Corn,continuous,Low_N,Rhizosphere,1,2,11898,384,5.746472118,,,,,,,,,,,,,,,,,,
-USDA_539,2018,Jun,Corn,continuous,Std_N,Rhizosphere,1,1,2600,80,4.243778009,,,,,,,,,,,,,,,,,,
-USDA_540,2018,Jun,Corn,continuous,Std_N,Rhizosphere,1,2,8457,282,5.453219726,,,,,,,,,,,,,,,,,,
-USDA_541,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,2,1,19368,503,5.992074028,,,,,,,,,,,,,,,,,,
-USDA_542,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,2,2,22805,536,6.089174031,,,,,,,,,,,,,,,,,,
-USDA_543,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,2,1,27,2,0.572280699,,,,,,,,,,,,,,,,,,
-USDA_544,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,2,2,7224,182,5.039708859,,,,,,,,,,,,,,,,,,
-USDA_549,2018,Jun,Corn,continuous,Low_N,Rhizosphere,2,1,8331,243,5.300370437,,,,,,,,,,,,,,,,,,
-USDA_550,2018,Jun,Corn,continuous,Low_N,Rhizosphere,2,2,9288,297,5.462011351,,,,,,,,,,,,,,,,,,
-USDA_551,2018,Jun,Corn,continuous,Std_N,Rhizosphere,2,1,5634,142,4.790940666,,,,,,,,,,,,,,,,,,
-USDA_552,2018,Jun,Corn,continuous,Std_N,Rhizosphere,2,2,4067,100,4.428484146,,,,,,,,,,,,,,,,,,
-USDA_553,2018,Jun,Corn,rotated,Low_N,Rhizosphere,2,1,9491,293,5.493702075,,,,,,,,,,,,,,,,,,
-USDA_554,2018,Jun,Corn,rotated,Low_N,Rhizosphere,2,2,8580,288,5.443525799,,,,,,,,,,,,,,,,,,
-USDA_555,2018,Jun,Corn,rotated,Std_N,Rhizosphere,2,1,9167,304,5.501187402,,,,,,,,,,,,,,,,,,
-USDA_556,2018,Jun,Corn,rotated,Std_N,Rhizosphere,2,2,4981,182,4.971967228,,,,,,,,,,,,,,,,,,
-USDA_557,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,2,1,17336,445,5.907605812,,,,,,,,,,,,,,,,,,
-USDA_558,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,2,2,14110,372,5.779071621,,,,,,,,,,,,,,,,,,
-USDA_559,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,2,1,13366,408,5.875245682,,,,,,,,,,,,,,,,,,
-USDA_560,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,2,2,15729,507,6.044691969,,,,,,,,,,,,,,,,,,
-USDA_561,2018,Jun,Corn,rotated,Low_N,Bulk Soil,1,1,6703,194,5.070482023,,,,,,,,,,,,,,,,,,
-USDA_562,2018,Jun,Corn,rotated,Low_N,Bulk Soil,1,2,8009,245,5.29521179,,,,,,,,,,,,,,,,,,
-USDA_563,2018,Jun,Corn,rotated,Std_N,Bulk Soil,1,1,8400,239,5.336483304,,,,,,,,,,,,,,,,,,
-USDA_564,2018,Jun,Corn,rotated,Std_N,Bulk Soil,1,2,8319,256,5.394131711,,,,,,,,,,,,,,,,,,
-USDA_565,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,1,1,9972,320,5.567631659,,,,,,,,,,,,,,,,,,
-USDA_566,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,1,2,12257,327,5.646983183,,,,,,,,,,,,,,,,,,
-USDA_567,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,1,1,12245,337,5.630034882,,,,,,,,,,,,,,,,,,
-USDA_568,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,1,2,8997,175,4.717899099,,,,,,,,,,,,,,,,,,
-USDA_569,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,1,1,6765,207,5.06280798,,,,,,,,,,,,,,,,,,
-USDA_570,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,1,2,9234,299,5.500497583,,,,,,,,,,,,,,,,,,
-USDA_571,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,1,1,10379,308,5.543081844,,,,,,,,,,,,,,,,,,
-USDA_572,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,1,2,5419,204,5.08886075,,,,,,,,,,,,,,,,,,
-USDA_577,2018,Jun,Corn,continuous,Low_N,Bulk Soil,1,1,8171,260,5.359214395,,,,,,,,,,,,,,,,,,
-USDA_578,2018,Jun,Corn,continuous,Low_N,Bulk Soil,1,2,10423,299,5.506228567,,,,,,,,,,,,,,,,,,
-USDA_579,2018,Jun,Corn,continuous,Std_N,Bulk Soil,1,1,2143,58,3.920991151,,,,,,,,,,,,,,,,,,
-USDA_580,2018,Jun,Corn,continuous,Std_N,Bulk Soil,1,2,3569,97,4.38733588,,,,,,,,,,,,,,,,,,
-USDA_581,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,2,1,8337,276,5.385714049,,,,,,,,,,,,,,,,,,
-USDA_582,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,2,2,7645,279,5.44233804,,,,,,,,,,,,,,,,,,
-USDA_583,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,2,1,7348,255,5.358509915,,,,,,,,,,,,,,,,,,
-USDA_584,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,2,2,8669,267,5.427624365,,,,,,,,,,,,,,,,,,
-USDA_589,2018,Jun,Corn,continuous,Low_N,Bulk Soil,2,1,5579,179,4.889192629,,,,,,,,,,,,,,,,,,
-USDA_590,2018,Jun,Corn,continuous,Low_N,Bulk Soil,2,2,6460,228,5.238719104,,,,,,,,,,,,,,,,,,
-USDA_591,2018,Jun,Corn,continuous,Std_N,Bulk Soil,2,1,4163,123,4.567099051,,,,,,,,,,,,,,,,,,
-USDA_592,2018,Jun,Corn,continuous,Std_N,Bulk Soil,2,2,2402,59,3.906761262,,,,,,,,,,,,,,,,,,
-USDA_593,2018,Jun,Corn,rotated,Low_N,Bulk Soil,2,1,11328,351,5.670263028,,,,,,,,,,,,,,,,,,
-USDA_594,2018,Jun,Corn,rotated,Low_N,Bulk Soil,2,2,5762,136,4.74413866,,,,,,,,,,,,,,,,,,
-USDA_595,2018,Jun,Corn,rotated,Std_N,Bulk Soil,2,1,9759,297,5.542627691,,,,,,,,,,,,,,,,,,
-USDA_596,2018,Jun,Corn,rotated,Std_N,Bulk Soil,2,2,7460,261,5.366440562,,,,,,,,,,,,,,,,,,
-USDA_597,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,2,1,12192,348,5.695652283,,,,,,,,,,,,,,,,,,
-USDA_598,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,2,2,10455,313,5.594622014,,,,,,,,,,,,,,,,,,
-USDA_599,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,2,1,9488,274,5.462281766,,,,,,,,,,,,,,,,,,
-USDA_600,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,2,2,9354,292,5.534778297,,,,,,,,,,,,,,,,,,
-USDA_601,2018,Aug,Corn,rotated,Low_N,Endosphere,1,1,9617,159,4.521810347,,,,,,,,,,,,,,,,,,
-USDA_602,2018,Aug,Corn,rotated,Low_N,Endosphere,1,2,2667,86,4.295294408,,,,,,,,,,,,,,,,,,
-USDA_603,2018,Aug,Corn,rotated,Std_N,Endosphere,1,1,2365,68,4.106919333,,,,,,,,,,,,,,,,,,
-USDA_604,2018,Aug,Corn,rotated,Std_N,Endosphere,1,2,219,9,1.915870332,,,,,,,,,,,,,,,,,,
-USDA_605,2018,Aug,Soybean,continuous,Low_N,Endosphere,1,1,148,5,1.553907914,,,,,,,,,,,,,,,,,,
-USDA_606,2018,Aug,Soybean,continuous,Low_N,Endosphere,1,2,170,5,1.446004628,,,,,,,,,,,,,,,,,,
-USDA_607,2018,Aug,Soybean,continuous,Std_N,Endosphere,1,1,42,2,0.548874384,,,,,,,,,,,,,,,,,,
-USDA_608,2018,Aug,Soybean,continuous,Std_N,Endosphere,1,2,1204,45,3.6787978,,,,,,,,,,,,,,,,,,
-USDA_609,2018,Aug,Soybean,rotated,Low_N,Endosphere,1,1,165,4,1.369407378,,,,,,,,,,,,,,,,,,
-USDA_610,2018,Aug,Soybean,rotated,Low_N,Endosphere,1,2,4170,38,3.584256724,,,,,,,,,,,,,,,,,,
-USDA_611,2018,Aug,Soybean,rotated,Std_N,Endosphere,1,1,45,2,0.673011667,,,,,,,,,,,,,,,,,,
-USDA_612,2018,Aug,Soybean,rotated,Std_N,Endosphere,1,2,683,19,2.710381532,,,,,,,,,,,,,,,,,,
-USDA_617,2018,Aug,Corn,continuous,Low_N,Endosphere,1,1,1205,67,3.941180833,,,,,,,,,,,,,,,,,,
-USDA_618,2018,Aug,Corn,continuous,Low_N,Endosphere,1,2,1066,26,3.174144152,,,,,,,,,,,,,,,,,,
-USDA_619,2018,Aug,Corn,continuous,Std_N,Endosphere,1,1,28434,45,3.610512176,,,,,,,,,,,,,,,,,,
-USDA_621,2018,Aug,Soybean,rotated,Low_N,Endosphere,2,1,13462,310,5.572140184,,,,,,,,,,,,,,,,,,
-USDA_622,2018,Aug,Soybean,rotated,Low_N,Endosphere,2,2,23994,61,3.692983222,,,,,,,,,,,,,,,,,,
-USDA_623,2018,Aug,Soybean,rotated,Std_N,Endosphere,2,1,12934,82,4.194635829,,,,,,,,,,,,,,,,,,
-USDA_624,2018,Aug,Soybean,rotated,Std_N,Endosphere,2,2,3529,89,4.42171378,,,,,,,,,,,,,,,,,,
-USDA_629,2018,Aug,Corn,continuous,Low_N,Endosphere,2,1,869,27,3.160574664,,,,,,,,,,,,,,,,,,
-USDA_630,2018,Aug,Corn,continuous,Low_N,Endosphere,2,2,1287,40,3.526772822,,,,,,,,,,,,,,,,,,
-USDA_631,2018,Aug,Corn,continuous,Std_N,Endosphere,2,1,3490,149,4.900674993,,,,,,,,,,,,,,,,,,
-USDA_632,2018,Aug,Corn,continuous,Std_N,Endosphere,2,2,1453,50,3.773363348,,,,,,,,,,,,,,,,,,
-USDA_633,2018,Aug,Corn,rotated,Low_N,Endosphere,2,1,1246,33,3.338182626,,,,,,,,,,,,,,,,,,
-USDA_634,2018,Aug,Corn,rotated,Low_N,Endosphere,2,2,707,20,2.924633149,,,,,,,,,,,,,,,,,,
-USDA_635,2018,Aug,Corn,rotated,Std_N,Endosphere,2,1,3270,75,4.224301178,,,,,,,,,,,,,,,,,,
-USDA_636,2018,Aug,Corn,rotated,Std_N,Endosphere,2,2,380,10,2.201199028,,,,,,,,,,,,,,,,,,
-USDA_637,2018,Aug,Soybean,continuous,Low_N,Endosphere,2,1,55,1,0,,,,,,,,,,,,,,,,,,
-USDA_638,2018,Aug,Soybean,continuous,Low_N,Endosphere,2,2,83,4,1.281319908,,,,,,,,,,,,,,,,,,
-USDA_639,2018,Aug,Soybean,continuous,Std_N,Endosphere,2,1,1269,36,3.543077485,,,,,,,,,,,,,,,,,,
-USDA_640,2018,Aug,Soybean,continuous,Std_N,Endosphere,2,2,2051,39,3.61709377,,,,,,,,,,,,,,,,,,
-USDA_641,2018,Aug,Corn,rotated,Low_N,Rhizosphere,1,1,7006,230,5.235806404,,,,,,,,,,,,,,,,,,
-USDA_642,2018,Aug,Corn,rotated,Low_N,Rhizosphere,1,2,3669,110,4.498686298,,,,,,,,,,,,,,,,,,
-USDA_643,2018,Aug,Corn,rotated,Std_N,Rhizosphere,1,1,4530,134,4.668353609,,,,,,,,,,,,,,,,,,
-USDA_644,2018,Aug,Corn,rotated,Std_N,Rhizosphere,1,2,3174,95,4.341707857,,,,,,,,,,,,,,,,,,
-USDA_645,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,1,1,8706,316,5.581696973,,,,,,,,,,,,,,,,,,
-USDA_646,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,1,2,2169,70,4.014799323,,,,,,,,,,,,,,,,,,
-USDA_647,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,1,1,8113,290,5.492832108,,,,,,,,,,,,,,,,,,
-USDA_648,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,1,2,8744,312,5.554945567,,,,,,,,,,,,,,,,,,
-USDA_649,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,1,1,14539,397,5.745738264,,,,,,,,,,,,,,,,,,
-USDA_650,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,1,2,12828,410,5.842954454,,,,,,,,,,,,,,,,,,
-USDA_651,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,1,1,12205,347,5.718622044,,,,,,,,,,,,,,,,,,
-USDA_652,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,1,2,17426,429,5.870428886,,,,,,,,,,,,,,,,,,
-USDA_657,2018,Aug,Corn,continuous,Low_N,Rhizosphere,1,1,25542,499,5.827821533,,,,,,,,,,,,,,,,,,
-USDA_658,2018,Aug,Corn,continuous,Low_N,Rhizosphere,1,2,20878,410,5.744352714,,,,,,,,,,,,,,,,,,
-USDA_659,2018,Aug,Corn,continuous,Std_N,Rhizosphere,1,1,14411,333,5.577588677,,,,,,,,,,,,,,,,,,
-USDA_660,2018,Aug,Corn,continuous,Std_N,Rhizosphere,1,2,38769,313,5.367532927,,,,,,,,,,,,,,,,,,
-USDA_661,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,2,1,29516,610,6.140048026,,,,,,,,,,,,,,,,,,
-USDA_662,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,2,2,39746,640,5.986446766,,,,,,,,,,,,,,,,,,
-USDA_663,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,2,1,25478,621,6.16800874,,,,,,,,,,,,,,,,,,
-USDA_664,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,2,2,18972,439,5.851071691,,,,,,,,,,,,,,,,,,
-USDA_669,2018,Aug,Corn,continuous,Low_N,Rhizosphere,2,1,27115,481,5.858954909,,,,,,,,,,,,,,,,,,
-USDA_670,2018,Aug,Corn,continuous,Low_N,Rhizosphere,2,2,24280,557,6.057438623,,,,,,,,,,,,,,,,,,
-USDA_671,2018,Aug,Corn,continuous,Std_N,Rhizosphere,2,1,20207,324,5.41739672,,,,,,,,,,,,,,,,,,
-USDA_672,2018,Aug,Corn,continuous,Std_N,Rhizosphere,2,2,19038,365,5.503937243,,,,,,,,,,,,,,,,,,
-USDA_673,2018,Aug,Corn,rotated,Low_N,Rhizosphere,2,1,26346,474,5.902262115,,,,,,,,,,,,,,,,,,
-USDA_674,2018,Aug,Corn,rotated,Low_N,Rhizosphere,2,2,20406,457,5.962054362,,,,,,,,,,,,,,,,,,
-USDA_675,2018,Aug,Corn,rotated,Std_N,Rhizosphere,2,1,18849,449,5.879570275,,,,,,,,,,,,,,,,,,
-USDA_676,2018,Aug,Corn,rotated,Std_N,Rhizosphere,2,2,22625,477,5.883001258,,,,,,,,,,,,,,,,,,
-USDA_677,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,2,1,19215,368,5.710077128,,,,,,,,,,,,,,,,,,
-USDA_678,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,2,2,23673,555,6.025693284,,,,,,,,,,,,,,,,,,
-USDA_679,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,2,1,22070,535,6.017634108,,,,,,,,,,,,,,,,,,
-USDA_680,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,2,2,13530,357,5.703427461,,,,,,,,,,,,,,,,,,
-USDA_681,2018,Aug,Corn,rotated,Low_N,Bulk Soil,1,1,5991,193,5.0959194,,,,,,,,,,,,,,,,,,
-USDA_682,2018,Aug,Corn,rotated,Low_N,Bulk Soil,1,2,5302,188,5.064071326,,,,,,,,,,,,,,,,,,
-USDA_683,2018,Aug,Corn,rotated,Std_N,Bulk Soil,1,1,6919,265,5.382771164,,,,,,,,,,,,,,,,,,
-USDA_684,2018,Aug,Corn,rotated,Std_N,Bulk Soil,1,2,5317,200,5.03014227,,,,,,,,,,,,,,,,,,
-USDA_685,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,1,1,5564,226,5.247819629,,,,,,,,,,,,,,,,,,
-USDA_686,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,1,2,8357,251,5.397922456,,,,,,,,,,,,,,,,,,
-USDA_687,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,1,1,4792,143,4.826871369,,,,,,,,,,,,,,,,,,
-USDA_688,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,1,2,5940,186,5.124239799,,,,,,,,,,,,,,,,,,
-USDA_689,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,1,1,6333,220,5.22342585,,,,,,,,,,,,,,,,,,
-USDA_690,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,1,2,10951,348,5.687857655,,,,,,,,,,,,,,,,,,
-USDA_691,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,1,1,9806,302,5.539207328,,,,,,,,,,,,,,,,,,
-USDA_692,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,1,2,97,5,1.575753169,,,,,,,,,,,,,,,,,,
-USDA_697,2018,Aug,Corn,continuous,Low_N,Bulk Soil,1,1,4432,134,4.70401339,,,,,,,,,,,,,,,,,,
-USDA_698,2018,Aug,Corn,continuous,Low_N,Bulk Soil,1,2,7948,294,5.48345929,,,,,,,,,,,,,,,,,,
-USDA_699,2018,Aug,Corn,continuous,Std_N,Bulk Soil,1,1,8951,301,5.560662765,,,,,,,,,,,,,,,,,,
-USDA_700,2018,Aug,Corn,continuous,Std_N,Bulk Soil,1,2,6933,167,4.951968929,,,,,,,,,,,,,,,,,,
-USDA_701,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,2,1,7239,186,5.076301396,,,,,,,,,,,,,,,,,,
-USDA_702,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,2,2,10495,293,5.50069143,,,,,,,,,,,,,,,,,,
-USDA_703,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,2,1,12006,348,5.649125716,,,,,,,,,,,,,,,,,,
-USDA_704,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,2,2,2997,62,3.949240457,,,,,,,,,,,,,,,,,,
-USDA_709,2018,Aug,Corn,continuous,Low_N,Bulk Soil,2,1,7983,301,5.518148125,,,,,,,,,,,,,,,,,,
-USDA_710,2018,Aug,Corn,continuous,Low_N,Bulk Soil,2,2,16744,506,5.983956767,,,,,,,,,,,,,,,,,,
-USDA_711,2018,Aug,Corn,continuous,Std_N,Bulk Soil,2,1,9220,259,5.358407872,,,,,,,,,,,,,,,,,,
-USDA_712,2018,Aug,Corn,continuous,Std_N,Bulk Soil,2,2,7373,274,5.480130018,,,,,,,,,,,,,,,,,,
-USDA_713,2018,Aug,Corn,rotated,Low_N,Bulk Soil,2,1,15597,428,5.753984044,,,,,,,,,,,,,,,,,,
-USDA_714,2018,Aug,Corn,rotated,Low_N,Bulk Soil,2,2,14309,382,5.767157716,,,,,,,,,,,,,,,,,,
-USDA_715,2018,Aug,Corn,rotated,Std_N,Bulk Soil,2,1,7595,259,5.379265525,,,,,,,,,,,,,,,,,,
-USDA_716,2018,Aug,Corn,rotated,Std_N,Bulk Soil,2,2,16718,479,5.902779424,,,,,,,,,,,,,,,,,,
-USDA_717,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,2,1,7165,247,5.377706864,,,,,,,,,,,,,,,,,,
-USDA_718,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,2,2,13238,396,5.776202769,,,,,,,,,,,,,,,,,,
-USDA_719,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,2,1,23064,551,6.037486489,,,,,,,,,,,,,,,,,,
-USDA_720,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,2,2,18441,494,5.999755233,,,,,,,,,,,,,,,,,,
-USDA_721,2018,Sep,Corn,rotated,Low_N,Endosphere,1,1,16188,303,5.215980109,,,,,,,,,,,,,,,,,,
-USDA_722,2018,Sep,Corn,rotated,Low_N,Endosphere,1,2,13882,346,5.656094249,,,,,,,,,,,,,,,,,,
-USDA_723,2018,Sep,Corn,rotated,Std_N,Endosphere,1,1,22098,331,5.493930571,,,,,,,,,,,,,,,,,,
-USDA_724,2018,Sep,Corn,rotated,Std_N,Endosphere,1,2,11838,322,5.565861397,,,,,,,,,,,,,,,,,,
-USDA_725,2018,Sep,Soybean,continuous,Low_N,Endosphere,1,1,23550,104,4.363716271,,,,,,,,,,,,,,,,,,
-USDA_726,2018,Sep,Soybean,continuous,Low_N,Endosphere,1,2,4252,95,4.361078394,,,,,,,,,,,,,,,,,,
-USDA_727,2018,Sep,Soybean,continuous,Std_N,Endosphere,1,1,2759,74,4.213976562,,,,,,,,,,,,,,,,,,
-USDA_728,2018,Sep,Soybean,continuous,Std_N,Endosphere,1,2,1274,45,3.681292881,,,,,,,,,,,,,,,,,,
-USDA_729,2018,Sep,Soybean,rotated,Low_N,Endosphere,1,1,7031,201,5.133359315,,,,,,,,,,,,,,,,,,
-USDA_730,2018,Sep,Soybean,rotated,Low_N,Endosphere,1,2,13963,47,3.641913505,,,,,,,,,,,,,,,,,,
-USDA_731,2018,Sep,Soybean,rotated,Std_N,Endosphere,1,1,1872,72,4.182145988,,,,,,,,,,,,,,,,,,
-USDA_732,2018,Sep,Soybean,rotated,Std_N,Endosphere,1,2,982,35,3.379163366,,,,,,,,,,,,,,,,,,
-USDA_733,2018,Sep,Corn,continuous,Low_N,Endosphere,1,1,13952,302,5.48673249,,,,,,,,,,,,,,,,,,
-USDA_734,2018,Sep,Corn,continuous,Low_N,Endosphere,1,2,17055,242,5.199834257,,,,,,,,,,,,,,,,,,
-USDA_735,2018,Sep,Corn,continuous,Std_N,Endosphere,1,1,17908,216,5.037720063,,,,,,,,,,,,,,,,,,
-USDA_736,2018,Sep,Corn,continuous,Std_N,Endosphere,1,2,20287,274,5.223089712,,,,,,,,,,,,,,,,,,
-USDA_737,2018,Sep,Soybean,rotated,Low_N,Endosphere,2,1,5239,89,4.42196703,,,,,,,,,,,,,,,,,,
-USDA_738,2018,Sep,Soybean,rotated,Low_N,Endosphere,2,2,8078,95,4.233288013,,,,,,,,,,,,,,,,,,
-USDA_739,2018,Sep,Soybean,rotated,Std_N,Endosphere,2,1,1405,33,3.381649227,,,,,,,,,,,,,,,,,,
-USDA_740,2018,Sep,Soybean,rotated,Std_N,Endosphere,2,2,15034,134,4.360161955,,,,,,,,,,,,,,,,,,
-USDA_741,2018,Sep,Corn,continuous,Low_N,Endosphere,2,1,5828,186,5.037694383,,,,,,,,,,,,,,,,,,
-USDA_742,2018,Sep,Corn,continuous,Low_N,Endosphere,2,2,10490,204,4.993846218,,,,,,,,,,,,,,,,,,
-USDA_743,2018,Sep,Corn,continuous,Std_N,Endosphere,2,1,9132,222,5.168511368,,,,,,,,,,,,,,,,,,
-USDA_744,2018,Sep,Corn,continuous,Std_N,Endosphere,2,2,17621,239,5.276837844,,,,,,,,,,,,,,,,,,
-USDA_745,2018,Sep,Corn,rotated,Low_N,Endosphere,2,1,4867,203,5.127840783,,,,,,,,,,,,,,,,,,
-USDA_746,2018,Sep,Corn,rotated,Low_N,Endosphere,2,2,2121,72,4.179939497,,,,,,,,,,,,,,,,,,
-USDA_747,2018,Sep,Corn,rotated,Std_N,Endosphere,2,1,6318,121,4.320132838,,,,,,,,,,,,,,,,,,
-USDA_748,2018,Sep,Corn,rotated,Std_N,Endosphere,2,2,8234,230,5.248134127,,,,,,,,,,,,,,,,,,
-USDA_749,2018,Sep,Soybean,continuous,Low_N,Endosphere,2,1,709,37,3.507707397,,,,,,,,,,,,,,,,,,
-USDA_750,2018,Sep,Soybean,continuous,Low_N,Endosphere,2,2,1341,32,3.431177211,,,,,,,,,,,,,,,,,,
-USDA_751,2018,Sep,Soybean,continuous,Std_N,Endosphere,2,1,161,3,1.062259875,,,,,,,,,,,,,,,,,,
-USDA_752,2018,Sep,Soybean,continuous,Std_N,Endosphere,2,2,550,23,2.884984103,,,,,,,,,,,,,,,,,,
-USDA_753,2018,Sep,Corn,rotated,Low_N,Rhizosphere,1,1,19121,442,5.900707319,,,,,,,,,,,,,,,,,,
-USDA_754,2018,Sep,Corn,rotated,Low_N,Rhizosphere,1,2,11250,333,5.587729363,,,,,,,,,,,,,,,,,,
-USDA_755,2018,Sep,Corn,rotated,Std_N,Rhizosphere,1,1,15791,251,5.16337765,,,,,,,,,,,,,,,,,,
-USDA_756,2018,Sep,Corn,rotated,Std_N,Rhizosphere,1,2,10916,244,5.171742482,,,,,,,,,,,,,,,,,,
-USDA_757,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,1,1,24261,314,5.543625333,,,,,,,,,,,,,,,,,,
-USDA_758,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,1,2,3626,130,4.716418936,,,,,,,,,,,,,,,,,,
-USDA_759,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,1,1,21630,385,5.587326398,,,,,,,,,,,,,,,,,,
-USDA_760,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,1,2,23648,342,5.404766822,,,,,,,,,,,,,,,,,,
-USDA_761,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,1,1,35359,486,5.821841034,,,,,,,,,,,,,,,,,,
-USDA_762,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,1,2,41308,490,5.752615505,,,,,,,,,,,,,,,,,,
-USDA_763,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,1,1,35305,349,5.532937672,,,,,,,,,,,,,,,,,,
-USDA_764,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,1,2,49773,433,5.527032045,,,,,,,,,,,,,,,,,,
-USDA_765,2018,Sep,Corn,continuous,Low_N,Rhizosphere,1,1,5339,128,4.682674332,,,,,,,,,,,,,,,,,,
-USDA_766,2018,Sep,Corn,continuous,Low_N,Rhizosphere,1,2,32737,579,6.108265962,,,,,,,,,,,,,,,,,,
-USDA_767,2018,Sep,Corn,continuous,Std_N,Rhizosphere,1,1,21356,234,5.025280895,,,,,,,,,,,,,,,,,,
-USDA_768,2018,Sep,Corn,continuous,Std_N,Rhizosphere,1,2,17235,224,4.983803353,,,,,,,,,,,,,,,,,,
-USDA_769,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,2,1,49595,468,5.774209702,,,,,,,,,,,,,,,,,,
-USDA_770,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,2,2,48467,499,5.653502629,,,,,,,,,,,,,,,,,,
-USDA_771,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,2,1,41740,435,5.421204982,,,,,,,,,,,,,,,,,,
-USDA_772,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,2,2,56447,490,5.529516466,,,,,,,,,,,,,,,,,,
-USDA_773,2018,Sep,Corn,continuous,Low_N,Rhizosphere,2,1,43965,668,6.00463628,,,,,,,,,,,,,,,,,,
-USDA_774,2018,Sep,Corn,continuous,Low_N,Rhizosphere,2,2,37041,646,6.05605999,,,,,,,,,,,,,,,,,,
-USDA_775,2018,Sep,Corn,continuous,Std_N,Rhizosphere,2,1,34767,402,5.424950806,,,,,,,,,,,,,,,,,,
-USDA_776,2018,Sep,Corn,continuous,Std_N,Rhizosphere,2,2,33350,529,5.826159193,,,,,,,,,,,,,,,,,,
-USDA_777,2018,Sep,Corn,rotated,Low_N,Rhizosphere,2,1,26424,540,6.058288127,,,,,,,,,,,,,,,,,,
-USDA_778,2018,Sep,Corn,rotated,Low_N,Rhizosphere,2,2,25568,575,6.166638926,,,,,,,,,,,,,,,,,,
-USDA_779,2018,Sep,Corn,rotated,Std_N,Rhizosphere,2,1,30919,427,5.520391953,,,,,,,,,,,,,,,,,,
-USDA_780,2018,Sep,Corn,rotated,Std_N,Rhizosphere,2,2,18805,347,5.495730925,,,,,,,,,,,,,,,,,,
-USDA_781,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,2,1,67604,478,5.672389689,,,,,,,,,,,,,,,,,,
-USDA_782,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,2,2,55856,522,5.672921467,,,,,,,,,,,,,,,,,,
-USDA_783,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,2,1,40208,442,5.625935289,,,,,,,,,,,,,,,,,,
-USDA_784,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,2,2,71725,426,5.576808153,,,,,,,,,,,,,,,,,,
-USDA_785,2018,Sep,Corn,rotated,Low_N,Bulk Soil,1,1,22947,478,5.804314681,,,,,,,,,,,,,,,,,,
-USDA_786,2018,Sep,Corn,rotated,Low_N,Bulk Soil,1,2,30131,484,5.529751099,,,,,,,,,,,,,,,,,,
-USDA_787,2018,Sep,Corn,rotated,Std_N,Bulk Soil,1,1,20349,495,5.965933419,,,,,,,,,,,,,,,,,,
-USDA_788,2018,Sep,Corn,rotated,Std_N,Bulk Soil,1,2,16994,383,5.778170312,,,,,,,,,,,,,,,,,,
-USDA_789,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,1,1,19781,433,5.825068646,,,,,,,,,,,,,,,,,,
-USDA_790,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,1,2,15658,465,5.935296477,,,,,,,,,,,,,,,,,,
-USDA_791,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,1,1,19112,537,6.116557523,,,,,,,,,,,,,,,,,,
-USDA_792,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,1,2,12142,417,5.861909062,,,,,,,,,,,,,,,,,,
-USDA_793,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,1,1,16945,445,5.919755405,,,,,,,,,,,,,,,,,,
-USDA_794,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,1,2,20148,491,5.901096592,,,,,,,,,,,,,,,,,,
-USDA_795,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,1,1,11827,369,5.705795039,,,,,,,,,,,,,,,,,,
-USDA_796,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,1,2,21278,433,5.795769859,,,,,,,,,,,,,,,,,,
-USDA_797,2018,Sep,Corn,continuous,Low_N,Bulk Soil,1,1,3300,119,4.574814161,,,,,,,,,,,,,,,,,,
-USDA_798,2018,Sep,Corn,continuous,Low_N,Bulk Soil,1,2,8202,247,5.350160726,,,,,,,,,,,,,,,,,,
-USDA_799,2018,Sep,Corn,continuous,Std_N,Bulk Soil,1,1,7412,163,4.886406439,,,,,,,,,,,,,,,,,,
-USDA_800,2018,Sep,Corn,continuous,Std_N,Bulk Soil,1,2,2099,78,4.215900224,,,,,,,,,,,,,,,,,,
-USDA_801,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,2,1,3430,90,4.380815533,,,,,,,,,,,,,,,,,,
-USDA_802,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,2,2,3306,133,4.72593881,,,,,,,,,,,,,,,,,,
-USDA_803,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,2,1,6836,240,5.297343239,,,,,,,,,,,,,,,,,,
-USDA_804,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,2,2,11,1,0,,,,,,,,,,,,,,,,,,
-USDA_805,2018,Sep,Corn,continuous,Low_N,Bulk Soil,2,1,7818,279,5.48923336,,,,,,,,,,,,,,,,,,
-USDA_806,2018,Sep,Corn,continuous,Low_N,Bulk Soil,2,2,7767,248,5.392438051,,,,,,,,,,,,,,,,,,
-USDA_807,2018,Sep,Corn,continuous,Std_N,Bulk Soil,2,1,7385,256,5.423051809,,,,,,,,,,,,,,,,,,
-USDA_808,2018,Sep,Corn,continuous,Std_N,Bulk Soil,2,2,4264,156,4.791100297,,,,,,,,,,,,,,,,,,
-USDA_809,2018,Sep,Corn,rotated,Low_N,Bulk Soil,2,1,2541,65,4.058941246,,,,,,,,,,,,,,,,,,
-USDA_810,2018,Sep,Corn,rotated,Low_N,Bulk Soil,2,2,8239,319,5.619446314,,,,,,,,,,,,,,,,,,
-USDA_811,2018,Sep,Corn,rotated,Std_N,Bulk Soil,2,1,9329,310,5.485216005,,,,,,,,,,,,,,,,,,
-USDA_812,2018,Sep,Corn,rotated,Std_N,Bulk Soil,2,2,13365,323,5.505778476,,,,,,,,,,,,,,,,,,
-USDA_813,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,2,1,6179,154,4.877829481,,,,,,,,,,,,,,,,,,
-USDA_814,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,2,2,8449,281,5.512685492,,,,,,,,,,,,,,,,,,
-USDA_815,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,2,1,6547,237,5.276216144,,,,,,,,,,,,,,,,,,
-USDA_816,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,2,2,6107,141,4.792768398,,,,,,,,,,,,,,,,,,
+Sample_ID,Year,Month,Species,Rotation,Nitrogen,Fraction,Block,Rep,ASV_counts,Observed,Shannon,Simpson,InvSimpson,Evenness
+USDA_121,2017,Jun,Soybean,rotated,Low_N,Endosphere,1,1,21980,67,3.732249615045297,0.9720229201664844,35.743544571154025,3.8989761351080054
+USDA_122,2017,Jun,Soybean,rotated,Low_N,Endosphere,1,2,23496,38,3.5237262211886557,0.9686561808302349,31.904216731974348,3.480174703984745
+USDA_123,2017,Jun,Soybean,rotated,Std_N,Endosphere,1,1,407,16,2.6189443967427235,0.9178081364813552,12.16665442526625,1.3271625916614496
+USDA_124,2017,Jun,Soybean,rotated,Std_N,Endosphere,1,2,5318,37,3.5449190520776264,0.9694512141738072,32.734525217777794,3.5707463865015914
+USDA_125,2017,Jun,Soybean,continuous,Low_N,Endosphere,1,1,11206,39,3.546217831775047,0.9688833322731388,32.1371172767564,3.50557995343199
+USDA_126,2017,Jun,Soybean,continuous,Low_N,Endosphere,1,2,83,1,0,0,1,0.10908196660088885
+USDA_127,2017,Jun,Soybean,continuous,Std_N,Endosphere,1,1,11501,43,3.5989077467766837,0.971158672055834,34.67246729886716,3.7821409198654385
+USDA_128,2017,Jun,Soybean,continuous,Std_N,Endosphere,1,2,10257,39,3.534591573725767,0.96895207993221,32.20827668380363,3.513342161494855
+USDA_129,2017,Jun,Corn,rotated,Low_N,Endosphere,1,1,721,26,3.1159940482284267,0.9502520963140653,20.101349522446927,2.1926947372403487
+USDA_130,2017,Jun,Corn,rotated,Low_N,Endosphere,1,2,983,30,3.234677844175583,0.9556167978731,22.531046704129455,2.457730884062916
+USDA_131,2017,Jun,Corn,rotated,Std_N,Endosphere,1,1,739,25,3.017618803972615,0.9434319500623488,17.677823455151653,1.9283317477112623
+USDA_132,2017,Jun,Corn,rotated,Std_N,Endosphere,1,2,297,9,2.08149070932849,0.8617941479894342,7.235583627266016,0.7892716915673698
+USDA_137,2017,Jun,Corn,continuous,Low_N,Endosphere,1,1,870,24,3.066352947062034,0.949456995640111,19.78513174404015,2.1582010800975735
+USDA_138,2017,Jun,Corn,continuous,Low_N,Endosphere,1,2,449,17,2.6912468349769894,0.9264140554858359,13.589551735760027,1.4823750285612265
+USDA_139,2017,Jun,Corn,continuous,Std_N,Endosphere,1,1,204,7,1.634424290808556,0.7641291810841984,4.23960880195599,0.4624648657357977
+USDA_140,2017,Jun,Corn,continuous,Std_N,Endosphere,1,2,1064,37,3.510780524378913,0.9674108909491774,30.685097847888546,3.347190818588385
+USDA_141,2017,Jun,Corn,rotated,Low_N,Endosphere,2,1,245,9,2.0285917418380497,0.8512786339025407,6.72398342108211,0.7334653349634092
+USDA_142,2017,Jun,Corn,rotated,Low_N,Endosphere,2,2,42,3,0.9829007277151565,0.5941043083900226,2.4636871508379885,0.2687438395027485
+USDA_143,2017,Jun,Corn,rotated,Std_N,Endosphere,2,1,2284,69,4.083671720870694,0.9811419422710641,53.02773034073352,5.784369109948834
+USDA_144,2017,Jun,Corn,rotated,Std_N,Endosphere,2,2,2340,39,3.518432427536669,0.966774417415443,30.09729016654757,3.2830716007246026
+USDA_149,2017,Jun,Corn,continuous,Low_N,Endosphere,2,1,33,1,0,0,1,0.10908196660088885
+USDA_150,2017,Jun,Corn,continuous,Low_N,Endosphere,2,2,95,3,0.9910502845487692,0.6032132963988919,2.520245741413013,0.27491336179084663
+USDA_151,2017,Jun,Corn,continuous,Std_N,Endosphere,2,1,54,1,0,0,1,0.10908196660088885
+USDA_152,2017,Jun,Corn,continuous,Std_N,Endosphere,2,2,120,8,1.8680667804038442,0.8108333333333333,5.286343612334801,0.5766447573615269
+USDA_153,2017,Jun,Soybean,rotated,Low_N,Endosphere,2,1,9259,68,3.8882022163645673,0.9755497787267777,40.89942536001469,4.461389751116669
+USDA_154,2017,Jun,Soybean,rotated,Low_N,Endosphere,2,2,0,0,0,1,Inf,Inf
+USDA_155,2017,Jun,Soybean,rotated,Std_N,Endosphere,2,1,11764,79,4.127604760724007,0.9813823511491614,53.71247508274702,5.859062413027285
+USDA_156,2017,Jun,Soybean,rotated,Std_N,Endosphere,2,2,11488,68,4.128462805244269,0.9826685748384169,57.69865955493377,6.2938832544873415
+USDA_157,2017,Jun,Soybean,continuous,Low_N,Endosphere,2,1,4947,37,3.524711432927254,0.9684349679679191,31.680626808287542,3.4557850753968458
+USDA_158,2017,Jun,Soybean,continuous,Low_N,Endosphere,2,2,804,34,3.4239072358031084,0.9641067052795723,27.860356865787434,3.0390625171226695
+USDA_159,2017,Jun,Soybean,continuous,Std_N,Endosphere,2,1,441,13,2.399997508142062,0.8993783454424854,9.938218611068526,1.084080430604909
+USDA_160,2017,Jun,Soybean,continuous,Std_N,Endosphere,2,2,89,5,1.3767390656709264,0.7052139881328116,3.3922912205567455,0.3700377976212594
+USDA_161,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,1,1,15158,246,5.093653398664909,0.9914359353761176,116.76698436059564,12.737172288109004
+USDA_162,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,1,2,11893,281,5.399640298846628,0.9944709280950863,180.86218034373718,19.728802315619475
+USDA_163,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,1,1,8974,259,5.403113178038561,0.9948366300407054,193.67196383050359,21.126118690087544
+USDA_164,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,1,2,8474,241,5.376416099649791,0.9949321444110737,197.32211829103417,21.52428471703923
+USDA_165,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,1,1,1846,49,3.710400866339635,0.9712170849918245,34.7428326740345,3.789816513369302
+USDA_166,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,1,2,6094,185,5.077963576219129,0.9929614359176964,142.0744328398179,15.497758537873242
+USDA_167,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,1,1,5948,184,5.0613399613365395,0.9924521260021283,132.48763827827167,14.452012133701075
+USDA_168,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,1,2,7985,247,5.325811337593887,0.9943846026264807,178.08178717960894,19.4255115613527
+USDA_169,2017,Jun,Corn,rotated,Low_N,Rhizosphere,1,1,6379,183,5.072339434175636,0.9929426046002913,141.69533423637685,15.456405716674242
+USDA_170,2017,Jun,Corn,rotated,Low_N,Rhizosphere,1,2,8860,256,5.340188005815572,0.9943360985278906,176.55674360231572,19.2591568087895
+USDA_171,2017,Jun,Corn,rotated,Std_N,Rhizosphere,1,1,4424,101,4.478584463872432,0.9872689121314284,78.54788297146527,8.568157546863901
+USDA_172,2017,Jun,Corn,rotated,Std_N,Rhizosphere,1,2,3723,79,4.254541047019328,0.9843460614517462,63.88168683027998,6.968340029229043
+USDA_177,2017,Jun,Corn,continuous,Low_N,Rhizosphere,1,1,10892,243,5.315244276579995,0.9942730374906487,174.61263250233287,19.047089346712752
+USDA_178,2017,Jun,Corn,continuous,Low_N,Rhizosphere,1,2,9218,214,5.107491497290946,0.9919362867965037,124.01234701234408,13.527510694898355
+USDA_179,2017,Jun,Corn,continuous,Std_N,Rhizosphere,1,1,3803,128,4.716950891804138,0.9898829473582899,98.84301638179073,10.781990611689606
+USDA_180,2017,Jun,Corn,continuous,Std_N,Rhizosphere,1,2,8005,247,5.35060070157805,0.9945311038814357,182.85225726001363,19.945883819333943
+USDA_181,2017,Jun,Corn,rotated,Low_N,Rhizosphere,2,1,2675,70,4.086645851650953,0.9809675604856319,52.541871957353386,5.731370722000201
+USDA_182,2017,Jun,Corn,rotated,Low_N,Rhizosphere,2,2,3462,91,4.3612644929366935,0.9855060855484369,68.994473738746,7.5260528800157935
+USDA_183,2017,Jun,Corn,rotated,Std_N,Rhizosphere,2,1,3663,102,4.465717650870258,0.986876832904679,76.20111766743715,8.312167772349781
+USDA_184,2017,Jun,Corn,rotated,Std_N,Rhizosphere,2,2,8533,203,5.053784226506085,0.9920326279884649,125.51190010359906,13.69108489511489
+USDA_189,2017,Jun,Corn,continuous,Low_N,Rhizosphere,2,1,1893,53,3.828963148262535,0.975249822168531,40.403750098657135,4.407320518812377
+USDA_190,2017,Jun,Corn,continuous,Low_N,Rhizosphere,2,2,2517,75,4.1519836369731165,0.981904377211521,55.26198306016172,6.028085790467446
+USDA_191,2017,Jun,Corn,continuous,Std_N,Rhizosphere,2,1,4169,110,4.5480346833193295,0.9882275951852187,84.94441159077469,9.265903468077042
+USDA_192,2017,Jun,Corn,continuous,Std_N,Rhizosphere,2,2,5171,138,4.770760893263694,0.9903887698233469,104.0449538321459,11.349428178909161
+USDA_193,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,2,1,7228,227,5.284745141481544,0.9942825570117317,174.90336187906343,19.078802678875174
+USDA_194,2017,Jun,Soybean,rotated,Low_N,Rhizosphere,2,2,8778,260,5.4188645976637595,0.9949857296153659,199.43080912916767,21.75430486061611
+USDA_195,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,2,1,8099,247,5.354672281264512,0.9945713925009468,184.2093023255814,20.09391296385211
+USDA_196,2017,Jun,Soybean,rotated,Std_N,Rhizosphere,2,2,7672,212,5.21307608718292,0.9938683222769634,163.0875015239341,17.789905394256188
+USDA_197,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,2,1,2931,71,4.16976597934431,0.9833436176375993,60.037046355116665,6.548959085324852
+USDA_198,2017,Jun,Soybean,continuous,Low_N,Rhizosphere,2,2,5082,144,4.835866716272505,0.9910335511387353,111.52687261955143,12.165570594187495
+USDA_199,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,2,1,5973,159,4.9248387958199125,0.9918800571655546,123.15357637222853,13.433834304615447
+USDA_200,2017,Jun,Soybean,continuous,Std_N,Rhizosphere,2,2,3352,93,4.408872081576756,0.9864333123529714,73.70995972027238,8.040427364359614
+USDA_201,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,1,1,3241,74,4.171521570843406,0.982932252712065,58.59004021619692,6.391116810007927
+USDA_202,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,1,2,4555,116,4.598842729538582,0.9888021630974514,89.30296169721908,9.741342685216507
+USDA_203,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,1,1,3815,100,4.4073721326180575,0.9859984987177263,71.42091264641944,7.790733607901726
+USDA_204,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,1,2,3049,78,4.218226684761235,0.9836572239084781,61.18911465223887,6.67462896083348
+USDA_205,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,1,1,512,13,2.4327593178334865,0.8979949951171875,9.803440538519073,1.0693785733965373
+USDA_206,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,1,2,1292,38,3.442275161814999,0.9624541115126187,26.634074735935155,2.905297250790856
+USDA_207,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,1,1,2831,77,4.1743792980831635,0.9825848227994023,57.42117857782554,6.26361508381004
+USDA_208,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,1,2,3664,92,4.3648322638291015,0.985734563604813,70.09950290321233,7.646591634427118
+USDA_209,2017,Jun,Corn,rotated,Low_N,Bulk Soil,1,1,5577,155,4.880942657676347,0.9914574283341611,117.06076801192326,12.769218786551011
+USDA_210,2017,Jun,Corn,rotated,Low_N,Bulk Soil,1,2,4600,112,4.5265230001811,0.9875006616257089,80.004234628676,8.72701924969491
+USDA_211,2017,Jun,Corn,rotated,Std_N,Bulk Soil,1,1,4139,126,4.6096285968799275,0.9884238349161749,86.38439351536697,9.4229795282813
+USDA_212,2017,Jun,Corn,rotated,Std_N,Bulk Soil,1,2,7159,219,5.187236200491011,0.9934999673471576,153.845381001696,16.781756712128026
+USDA_217,2017,Jun,Corn,continuous,Low_N,Bulk Soil,1,1,1772,41,3.534848404013663,0.9668055633404501,30.12553007771275,3.2861520657711347
+USDA_218,2017,Jun,Corn,continuous,Low_N,Bulk Soil,1,2,1585,26,3.1818180282923167,0.9560242414592642,22.73980104456131,2.480502218053694
+USDA_219,2017,Jun,Corn,continuous,Std_N,Bulk Soil,1,1,484,13,2.463949732558906,0.9047366983129568,10.497221724323355,1.145057589534765
+USDA_220,2017,Jun,Corn,continuous,Std_N,Bulk Soil,1,2,2003,46,3.723128590868247,0.9737555424227613,38.103283219207356,4.156381067501785
+USDA_221,2017,Jun,Corn,rotated,Low_N,Bulk Soil,2,1,2671,54,3.819625027158264,0.975431303764479,40.70220049178737,4.439876074627832
+USDA_222,2017,Jun,Corn,rotated,Low_N,Bulk Soil,2,2,4297,117,4.527986378260398,0.9870228397003089,77.05846093492423,8.405688462019302
+USDA_223,2017,Jun,Corn,rotated,Std_N,Bulk Soil,2,1,3481,96,4.370959934078324,0.985643986343231,69.65721988767339,7.59834653329796
+USDA_224,2017,Jun,Corn,rotated,Std_N,Bulk Soil,2,2,1829,44,3.589584453022583,0.9670059645926855,30.30850842144365,3.306111703350675
+USDA_229,2017,Jun,Corn,continuous,Low_N,Bulk Soil,2,1,2623,62,3.971037362960785,0.9790298990033471,47.68694247870416,5.201785466760515
+USDA_230,2017,Jun,Corn,continuous,Low_N,Bulk Soil,2,2,2831,79,4.137551407244925,0.9816707365506357,54.55756597980953,5.951246590035374
+USDA_231,2017,Jun,Corn,continuous,Std_N,Bulk Soil,2,1,2134,53,3.840696650493513,0.9761710477659424,41.96575620185042,4.577707216391292
+USDA_232,2017,Jun,Corn,continuous,Std_N,Bulk Soil,2,2,828,25,3.091731715416102,0.9504422506942986,20.17847892630092,2.2011081642954964
+USDA_233,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,2,1,4448,110,4.547501084180803,0.9878822548975208,82.523604147723,9.001837031426893
+USDA_234,2017,Jun,Soybean,rotated,Low_N,Bulk Soil,2,2,886,18,2.756710716462651,0.93033849854012,14.355131299831761,1.5658859529996223
+USDA_235,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,2,1,1109,22,3.0044949928793168,0.9472526203754672,18.958287731413684,2.068007309128108
+USDA_236,2017,Jun,Soybean,rotated,Std_N,Bulk Soil,2,2,3285,110,4.401586372083654,0.9850820458289027,67.03332028847767,7.312126404854406
+USDA_237,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,2,1,2400,49,3.7656538485306537,0.9747902777777778,39.667235964960604,4.326980108679409
+USDA_238,2017,Jun,Soybean,continuous,Low_N,Bulk Soil,2,2,4066,108,4.504110657104788,0.9872231156890161,78.26634222087561,8.53744652811129
+USDA_239,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,2,1,4297,121,4.550326245345605,0.9874881723879967,79.92437484038247,8.718307986935521
+USDA_240,2017,Jun,Soybean,continuous,Std_N,Bulk Soil,2,2,1639,43,3.6076862380151193,0.9702161431936094,33.57523528603032,3.662452694087744
+USDA_241,2017,Aug,Soybean,rotated,Low_N,Endosphere,1,1,15202,49,3.6670618299356352,0.9728437898467891,36.82398959052694,4.016833202625339
+USDA_242,2017,Aug,Soybean,rotated,Low_N,Endosphere,1,2,6834,36,3.5663293780656953,0.9712868972974992,34.82730551139296,3.799030976592719
+USDA_243,2017,Aug,Soybean,rotated,Std_N,Endosphere,1,1,1942,39,3.630099611202186,0.972696350710247,36.62514081497883,3.9951423871323715
+USDA_244,2017,Aug,Soybean,rotated,Std_N,Endosphere,1,2,568,18,2.7838719906351224,0.933036599880976,14.933530827624514,1.6289789109722812
+USDA_245,2017,Aug,Soybean,continuous,Low_N,Endosphere,1,1,1596,44,3.740535995758144,0.975449274816113,40.731994371242166,4.443126049591431
+USDA_246,2017,Aug,Soybean,continuous,Low_N,Endosphere,1,2,1031,14,2.469148639181385,0.900806332499499,10.081288707214599,1.0996867980543008
+USDA_247,2017,Aug,Soybean,continuous,Std_N,Endosphere,1,1,21074,149,4.731040933074605,0.9897664352792573,97.71766019841297,10.65923454608029
+USDA_248,2017,Aug,Soybean,continuous,Std_N,Endosphere,1,2,841,30,3.346779208230996,0.9624887420982609,26.65866345030342,2.9079794361103337
+USDA_249,2017,Aug,Corn,rotated,Low_N,Endosphere,1,1,2800,76,4.176661012752901,0.9830698979591836,59.06638941626737,6.443077917540372
+USDA_250,2017,Aug,Corn,rotated,Low_N,Endosphere,1,2,818,24,3.0775532826681062,0.9496505879328794,19.861205105372516,2.166499311957648
+USDA_251,2017,Aug,Corn,rotated,Std_N,Endosphere,1,1,1361,49,3.7640620317079914,0.9744574509493765,39.15036036607275,4.270598301864711
+USDA_252,2017,Aug,Corn,rotated,Std_N,Endosphere,1,2,2474,81,4.309171379059462,0.9852934545138479,67.99693381029618,7.417239262857579
+USDA_257,2017,Aug,Corn,continuous,Low_N,Endosphere,1,1,681,22,2.9259968634369695,0.9400100482791783,16.669458322849646,1.8183372960279938
+USDA_258,2017,Aug,Corn,continuous,Low_N,Endosphere,1,2,6068,110,4.537649457511462,0.9878744043012416,82.47017506137003,8.996008881613822
+USDA_259,2017,Aug,Corn,continuous,Std_N,Endosphere,1,1,894,25,3.0169435884691813,0.9435585984615308,17.71749057858568,1.932658715544846
+USDA_260,2017,Aug,Corn,continuous,Std_N,Endosphere,1,2,406,12,2.463335359008766,0.9129801742337839,11.491634132738428,1.2535300506570075
+USDA_261,2017,Aug,Corn,rotated,Low_N,Endosphere,2,1,574,19,2.789421824377759,0.929997936116743,14.285293097467914,1.558267864541903
+USDA_262,2017,Aug,Corn,rotated,Low_N,Endosphere,2,2,188,8,1.9463877735465762,0.8419533725667723,6.327246688148944,0.6901885119122477
+USDA_263,2017,Aug,Corn,rotated,Std_N,Endosphere,2,1,532,17,2.6868952344286763,0.9225719373622026,12.915214018435703,1.4088169442023348
+USDA_264,2017,Aug,Corn,rotated,Std_N,Endosphere,2,2,909,30,3.2611527538968037,0.957083607150594,23.301119539776092,2.5417319434011745
+USDA_269,2017,Aug,Corn,continuous,Low_N,Endosphere,2,1,88,4,1.2321840358605733,0.6820764462809917,3.1454102355808287,0.34310753426372187
+USDA_270,2017,Aug,Corn,continuous,Low_N,Endosphere,2,2,692,22,2.9516476525289486,0.9423803000434361,17.355175413163238,1.8931366647712398
+USDA_271,2017,Aug,Corn,continuous,Std_N,Endosphere,2,1,4932,115,4.640472422235392,0.9895374333432656,95.57884148401952,10.425927994511467
+USDA_272,2017,Aug,Corn,continuous,Std_N,Endosphere,2,2,2283,75,4.2005913424399965,0.9833554262024305,60.07963989717935,6.553605272657547
+USDA_273,2017,Aug,Soybean,rotated,Low_N,Endosphere,2,1,21739,61,3.7014458337095126,0.9734117410178494,37.61058596094336,4.102636681631483
+USDA_274,2017,Aug,Soybean,rotated,Low_N,Endosphere,2,2,4328,47,3.754253109141828,0.9751631255530766,40.26271510680647,4.391936144541766
+USDA_275,2017,Aug,Soybean,rotated,Std_N,Endosphere,2,1,1725,53,3.879603225525467,0.9776937618147448,44.83050847457627,4.890200028124593
+USDA_276,2017,Aug,Soybean,rotated,Std_N,Endosphere,2,2,1331,37,3.559271693798244,0.970305848909521,33.676665716186676,3.6735169248823736
+USDA_277,2017,Aug,Soybean,continuous,Low_N,Endosphere,2,1,692,32,3.4100906703380254,0.9652469177052357,28.774426150703043,3.1387709923307323
+USDA_278,2017,Aug,Soybean,continuous,Low_N,Endosphere,2,2,32963,45,3.6105294419397076,0.9719982875597477,35.71210161284655,3.8955462753800765
+USDA_279,2017,Aug,Soybean,continuous,Std_N,Endosphere,2,1,1405,42,3.6522182823843967,0.9713321766441662,34.88231344206675,3.8050313498492616
+USDA_280,2017,Aug,Soybean,continuous,Std_N,Endosphere,2,2,282,13,2.3777316696356574,0.8944218097681204,9.471653168175322,1.0331865545461036
+USDA_281,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,1,1,21385,296,5.168653831089,0.9919496779294112,124.21863264991815,13.550012737926453
+USDA_282,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,1,2,13188,218,5.0565202251322985,0.9917045638220939,120.54821211974189,13.14963604824255
+USDA_283,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,1,1,16523,234,5.041790910979456,0.9913817770074977,116.03320091276265,12.657129746560202
+USDA_284,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,1,2,11277,249,5.350767817603127,0.9945272862279495,182.7247032554611,19.931969977669535
+USDA_285,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,1,1,13165,220,5.195488398539567,0.9936866113567189,158.3935437056019,17.277879244290894
+USDA_286,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,1,2,14303,208,5.018506202622523,0.9916386741503733,119.59825726019788,13.046013103981418
+USDA_287,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,1,1,10747,223,5.2083134197375225,0.9935545469013236,155.1481307350387,16.92386321502983
+USDA_288,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,1,2,9850,246,5.35264139420783,0.9946592388363524,187.2392285216935,20.424423271979563
+USDA_289,2017,Aug,Corn,rotated,Low_N,Rhizosphere,1,1,8725,206,5.130258065567239,0.9926192658516761,135.48787693797243,14.779284066973247
+USDA_290,2017,Aug,Corn,rotated,Low_N,Rhizosphere,1,2,15741,227,5.009960393306016,0.9906232641164732,106.64691982599331,11.633255746546673
+USDA_291,2017,Aug,Corn,rotated,Std_N,Rhizosphere,1,1,6721,180,4.998751007550564,0.9920115055749,125.18003353147387,13.65488423677838
+USDA_292,2017,Aug,Corn,rotated,Std_N,Rhizosphere,1,2,8671,238,5.332251776167411,0.9945655349361062,184.01075142499823,20.072254641146117
+USDA_297,2017,Aug,Corn,continuous,Low_N,Rhizosphere,1,1,4786,127,4.754320838241252,0.9907039248930707,107.57228061277203,11.734195920983842
+USDA_298,2017,Aug,Corn,continuous,Low_N,Rhizosphere,1,2,38779,413,5.380567780189541,0.9931594940536806,146.18801706298746,15.946476394714967
+USDA_299,2017,Aug,Corn,continuous,Std_N,Rhizosphere,1,1,1416,36,3.471928727794718,0.9665575425324779,29.902108748173113,3.261780827764366
+USDA_300,2017,Aug,Corn,continuous,Std_N,Rhizosphere,1,2,3457,84,4.266248819696516,0.9830267288959973,58.91616258719713,6.426690879589175
+USDA_301,2017,Aug,Corn,rotated,Low_N,Rhizosphere,2,1,6823,163,4.968842493932788,0.9922729693509137,129.41581901428614,14.116932047343038
+USDA_302,2017,Aug,Corn,rotated,Low_N,Rhizosphere,2,2,8471,189,5.108173582834591,0.9933098182259971,149.47276976626472,16.304783679386038
+USDA_303,2017,Aug,Corn,rotated,Std_N,Rhizosphere,2,1,6251,162,4.952542264815361,0.9919580552282008,124.34803127555777,13.564127794486675
+USDA_304,2017,Aug,Corn,rotated,Std_N,Rhizosphere,2,2,6060,135,4.765639068503646,0.9902977376945615,103.06874505335362,11.242941405505448
+USDA_309,2017,Aug,Corn,continuous,Low_N,Rhizosphere,2,1,15625,302,5.522565490716595,0.995269705728,211.40333824880483,23.06029188217254
+USDA_310,2017,Aug,Corn,continuous,Low_N,Rhizosphere,2,2,12436,279,5.463256704014059,0.9951203878880777,204.93432204512808,22.354638872702463
+USDA_311,2017,Aug,Corn,continuous,Std_N,Rhizosphere,2,1,6332,175,5.029646768994785,0.9926193857748687,135.49007839956747,14.77952420673343
+USDA_312,2017,Aug,Corn,continuous,Std_N,Rhizosphere,2,2,5460,156,4.926289251751222,0.9918164070361872,122.19571579646343,13.329348989281531
+USDA_313,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,2,1,20997,220,4.735187012488705,0.9867135079854525,75.26441132129521,8.209990001985085
+USDA_314,2017,Aug,Soybean,rotated,Low_N,Rhizosphere,2,2,22189,319,5.381937888124266,0.9936824776530029,158.2899030781146,17.266573920824833
+USDA_315,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,2,1,21449,324,5.442710868149389,0.9942536162830781,174.02248949286204,18.98271538666391
+USDA_316,2017,Aug,Soybean,rotated,Std_N,Rhizosphere,2,2,17583,272,5.151202077962194,0.9915594091870747,118.47511888251773,12.923498960979135
+USDA_317,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,2,1,20664,353,5.504707344482335,0.9941220825916018,170.12828362835455,18.557927752614717
+USDA_318,2017,Aug,Soybean,continuous,Low_N,Rhizosphere,2,2,36343,307,4.612895252955445,0.9834765797457322,60.52015772834382,6.601657824003726
+USDA_319,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,2,1,32581,348,4.960394183559539,0.9873351258288762,78.9585420658988,8.61295304848725
+USDA_320,2017,Aug,Soybean,continuous,Std_N,Rhizosphere,2,2,28819,341,4.987809958585543,0.9878680851505022,82.42721881957452,8.991323130280986
+USDA_321,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,1,1,5712,151,4.815036160344588,0.9905883309206035,106.25107954434436,11.590076710164556
+USDA_322,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,1,2,5593,117,4.652648543599586,0.9897120832728479,97.20140884896355,10.602920833621985
+USDA_323,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,1,1,7843,212,5.135063554017816,0.993110343857895,145.14512471655328,15.832715646612913
+USDA_324,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,1,2,8617,223,5.2389009340141,0.9939922041072479,166.45039509521513,18.156736438481012
+USDA_325,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,1,1,10342,288,5.459015036202726,0.9950839479699517,203.4152596204684,22.188936556031067
+USDA_326,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,1,2,9476,248,5.287019551457313,0.9940393949852828,167.768204323375,18.300485660693486
+USDA_327,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,1,1,10336,238,5.309838171039216,0.9943814871404404,177.98304017379658,19.414740043762738
+USDA_328,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,1,2,8918,229,5.223147837172604,0.9937848673425883,160.89761154292788,17.55102788848845
+USDA_329,2017,Aug,Corn,rotated,Low_N,Bulk Soil,1,1,4940,127,4.654978396027185,0.9892712550607288,93.20754716981132,10.16726254732813
+USDA_330,2017,Aug,Corn,rotated,Low_N,Bulk Soil,1,2,3697,90,4.31639636485924,0.9848106598504559,65.83564461356903,7.181481586885325
+USDA_331,2017,Aug,Corn,rotated,Std_N,Bulk Soil,1,1,19812,172,4.303516019275798,0.9808903317675143,52.32953224693028,5.708208288799785
+USDA_332,2017,Aug,Corn,rotated,Std_N,Bulk Soil,1,2,18775,205,4.5271526033699345,0.983943651163739,62.28065983105982,6.793696855572987
+USDA_337,2017,Aug,Corn,continuous,Low_N,Bulk Soil,1,1,6542,137,4.805292792341435,0.9909742013624824,110.7935197937269,12.085575025734236
+USDA_338,2017,Aug,Corn,continuous,Low_N,Bulk Soil,1,2,9658,64,3.981629063452708,0.9791183383713046,47.88890931102004,5.223816406017684
+USDA_339,2017,Aug,Corn,continuous,Std_N,Bulk Soil,1,1,4061,84,4.354206983548248,0.9862677157829677,72.82109692717326,7.943468462850003
+USDA_340,2017,Aug,Corn,continuous,Std_N,Bulk Soil,1,2,1488,33,3.3987500961721047,0.9637403890623193,27.578894923023263,3.0083600948826468
+USDA_341,2017,Aug,Corn,rotated,Low_N,Bulk Soil,2,1,5686,169,4.9715463735659995,0.9920731433469399,126.15341033244889,13.761062092472416
+USDA_342,2017,Aug,Corn,rotated,Low_N,Bulk Soil,2,2,6032,175,4.974161226602052,0.9921742527914782,127.78332513872304,13.938856404932707
+USDA_343,2017,Aug,Corn,rotated,Std_N,Bulk Soil,2,1,8192,151,4.7813939068384315,0.9904157519340515,104.33786700000621,11.381379723302661
+USDA_344,2017,Aug,Corn,rotated,Std_N,Bulk Soil,2,2,5754,137,4.754004676896813,0.9903786687388828,103.93572083328101,11.337512828575267
+USDA_349,2017,Aug,Corn,continuous,Low_N,Bulk Soil,2,1,7280,204,5.116507438575226,0.9932836085617679,148.88947572466415,16.24115681822167
+USDA_350,2017,Aug,Corn,continuous,Low_N,Bulk Soil,2,2,5364,122,4.658523331740792,0.9895661467812873,95.84186963705164,10.454619622715612
+USDA_351,2017,Aug,Corn,continuous,Std_N,Bulk Soil,2,1,5464,137,4.774623305915045,0.9905493484305096,105.81281011653293,11.54226941907784
+USDA_352,2017,Aug,Corn,continuous,Std_N,Bulk Soil,2,2,8562,178,4.910867564760501,0.9913084607971829,115.0544197828482,12.550362376037294
+USDA_353,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,2,1,4808,88,4.225112022287992,0.9821493088335858,56.02023981466224,6.110797928436771
+USDA_354,2017,Aug,Soybean,rotated,Low_N,Bulk Soil,2,2,7042,173,4.951058285229955,0.9918101243635683,122.10197619504893,13.319123689210853
+USDA_355,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,2,1,5540,171,4.914354985807019,0.9909753808859754,110.80800057765903,12.087154618123476
+USDA_356,2017,Aug,Soybean,rotated,Std_N,Bulk Soil,2,2,5201,167,4.834360773045792,0.990378146335058,103.93007780232446,11.336897275660936
+USDA_357,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,2,1,12107,185,4.724637133966943,0.9877792759338316,81.82821202619094,8.925982291251412
+USDA_358,2017,Aug,Soybean,continuous,Low_N,Bulk Soil,2,2,1871,45,3.6591709315472505,0.9708067751020456,34.25452321542149,3.7365507573139793
+USDA_359,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,2,1,5264,112,4.486991509969694,0.98643168080949,73.70109635240735,8.03946053076219
+USDA_360,2017,Aug,Soybean,continuous,Std_N,Bulk Soil,2,2,14502,331,5.680325196309394,0.9962408183000016,266.015340519564,29.017476489879154
+USDA_361,2017,Sep,Soybean,rotated,Low_N,Endosphere,1,1,3835,39,3.624258073319147,0.9724485754450619,36.295763872607694,3.9592133025055407
+USDA_362,2017,Sep,Soybean,rotated,Low_N,Endosphere,1,2,57207,68,3.917993867214763,0.9772437867654326,43.94404243325355,4.793502569012206
+USDA_363,2017,Sep,Soybean,rotated,Std_N,Endosphere,1,1,591,24,2.989470955019723,0.9411390828587871,16.98920180942653,1.8532155443516252
+USDA_364,2017,Sep,Soybean,rotated,Std_N,Endosphere,1,2,13202,42,3.598166014117027,0.9713851640140002,34.94690657983382,3.812077296345816
+USDA_365,2017,Sep,Soybean,continuous,Low_N,Endosphere,1,1,121,4,1.326588177663139,0.7211256061744417,3.5858437423463143,0.39115088733862696
+USDA_366,2017,Sep,Soybean,continuous,Low_N,Endosphere,1,2,4140,66,4.045566251191169,0.9803632523512801,50.9249300285828,5.554991516530471
+USDA_367,2017,Sep,Soybean,continuous,Std_N,Endosphere,1,1,10484,42,3.608902959809071,0.9716849286592997,35.316880821790164,3.8524348142500866
+USDA_368,2017,Sep,Soybean,continuous,Std_N,Endosphere,1,2,5311,44,3.7043922031467167,0.9742200094793011,38.78977376648345,4.231264806451582
+USDA_369,2017,Sep,Corn,rotated,Low_N,Endosphere,1,1,12349,251,5.252062808740146,0.9933303234975828,149.9323092563152,16.354911150691514
+USDA_370,2017,Sep,Corn,rotated,Low_N,Endosphere,1,2,12422,213,5.091896083744807,0.9923301922431004,130.38136439605307,14.22225563642858
+USDA_371,2017,Sep,Corn,rotated,Std_N,Endosphere,1,1,7235,240,5.390957432219947,0.995049500694667,201.99982634534123,22.03453831078786
+USDA_372,2017,Sep,Corn,rotated,Std_N,Endosphere,1,2,6248,153,4.954849472105817,0.9924527449295939,132.49850318709142,14.45319729932207
+USDA_377,2017,Sep,Corn,continuous,Low_N,Endosphere,1,1,4824,110,4.6199556844648475,0.989415914485065,94.4814739628586,10.306224987219291
+USDA_378,2017,Sep,Corn,continuous,Low_N,Endosphere,1,2,37173,316,5.4886592159715475,0.9950266057284018,201.06992234875906,21.933102554090652
+USDA_379,2017,Sep,Corn,continuous,Std_N,Endosphere,1,1,4974,96,4.454504233846932,0.9876167490330499,80.75423833926298,8.808831129403703
+USDA_380,2017,Sep,Corn,continuous,Std_N,Endosphere,1,2,12171,175,4.805104421469468,0.9890473131550535,91.30179782884846,9.959379661367555
+USDA_381,2017,Sep,Corn,rotated,Low_N,Endosphere,2,1,599,11,2.272247561306882,0.889155827324896,9.021674084131654,0.9841019511293536
+USDA_382,2017,Sep,Corn,rotated,Low_N,Endosphere,2,2,5539,125,4.730425453613195,0.9904406121395396,104.60920872728761,11.410978212535397
+USDA_383,2017,Sep,Corn,rotated,Std_N,Endosphere,2,1,8924,126,4.743875296500015,0.9907403993803142,107.99601851876966,11.780418085093405
+USDA_384,2017,Sep,Corn,rotated,Std_N,Endosphere,2,2,11083,294,5.567243556223154,0.9958014095068626,238.17516893693343,25.980615823139633
+USDA_389,2017,Sep,Corn,continuous,Low_N,Endosphere,2,1,1677,44,3.6381684872164763,0.9708835630539671,34.34486169628137,3.7464050564659113
+USDA_390,2017,Sep,Corn,continuous,Low_N,Endosphere,2,2,712,14,2.48345504017228,0.9077136725160965,10.835841313269494,1.1819948802265945
+USDA_391,2017,Sep,Corn,continuous,Std_N,Endosphere,2,1,1024,38,3.25753634728596,0.9506397247314453,20.259206306271494,2.209914065661224
+USDA_392,2017,Sep,Corn,continuous,Std_N,Endosphere,2,2,5493,124,4.724416130506474,0.9902761898540648,102.84034601580794,11.218027189320214
+USDA_393,2017,Sep,Soybean,rotated,Low_N,Endosphere,2,1,16448,40,3.589745766766525,0.9714193531388629,34.98871123731492,3.81663743059693
+USDA_394,2017,Sep,Soybean,rotated,Low_N,Endosphere,2,2,26085,44,3.583882298563778,0.9711610348924531,34.67530808649951,3.782450798567071
+USDA_395,2017,Sep,Soybean,rotated,Std_N,Endosphere,2,1,2652,53,3.845811365411423,0.976858297559655,43.21203258825987,4.713653495549084
+USDA_396,2017,Sep,Soybean,rotated,Std_N,Endosphere,2,2,29005,42,3.5777200890369283,0.9711055780080121,34.608755983327534,3.7751911642716465
+USDA_397,2017,Sep,Soybean,continuous,Low_N,Endosphere,2,1,325,8,1.8668410563435212,0.8281183431952662,5.817956485816579,0.6346341350712688
+USDA_398,2017,Sep,Soybean,continuous,Low_N,Endosphere,2,2,0,0,0,1,Inf,Inf
+USDA_399,2017,Sep,Soybean,continuous,Std_N,Endosphere,2,1,3553,41,3.624380528501083,0.972098199521238,35.83998103495757,3.9094956142317314
+USDA_400,2017,Sep,Soybean,continuous,Std_N,Endosphere,2,2,354,4,1.3626257650580431,0.7381499569089343,3.8189797037849704,0.41658181649774456
+USDA_401,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,1,1,37567,384,5.099210439521434,0.9890264068026854,91.1278541147959,9.940405538960837
+USDA_402,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,1,2,29125,437,5.463868649375501,0.9926573294774264,136.1902317318599,14.855898309142056
+USDA_403,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,1,1,11259,157,4.856347391272642,0.9909868159986424,110.94858374680649,12.102489706685066
+USDA_404,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,1,2,20336,284,5.118114869361837,0.990775433960448,108.40618363100373,11.825159702166973
+USDA_405,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,1,1,601,14,2.4787925324750817,0.9021015999401996,10.214671530782502,1.114236458759867
+USDA_406,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,1,2,2981,67,4.0207442882713185,0.9779294359074542,45.309218006699744,4.942418605319213
+USDA_407,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,1,1,21285,321,5.286297991097184,0.9922720681309272,129.40072673285255,14.115285751603768
+USDA_408,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,1,2,19499,365,5.630832681901546,0.9954483878808126,219.70237661167718,23.965567307690876
+USDA_409,2017,Sep,Corn,rotated,Low_N,Rhizosphere,1,1,7084,129,4.71254252482344,0.9898772605638047,98.78748794267604,10.775933460348698
+USDA_410,2017,Sep,Corn,rotated,Low_N,Rhizosphere,1,2,14466,327,5.648450695955821,0.9960421504667504,252.66246015647639,27.560918040087167
+USDA_411,2017,Sep,Corn,rotated,Std_N,Rhizosphere,1,1,10669,208,5.18448269297175,0.9936408986220833,157.2549233878711,17.15367630082109
+USDA_412,2017,Sep,Corn,rotated,Std_N,Rhizosphere,1,2,10784,218,5.261122540837703,0.9942425041439565,173.6866208857678,18.94607817848257
+USDA_417,2017,Sep,Corn,continuous,Low_N,Rhizosphere,1,1,12814,282,5.473539377538116,0.9951443799190585,205.94691992584842,22.46509504090733
+USDA_418,2017,Sep,Corn,continuous,Low_N,Rhizosphere,1,2,21859,386,5.761305958458872,0.9962616792973442,267.499789220755,29.179403073523208
+USDA_419,2017,Sep,Corn,continuous,Std_N,Rhizosphere,1,1,3985,124,4.593779542820781,0.9879090504070314,82.70648986755691,9.021786565409595
+USDA_420,2017,Sep,Corn,continuous,Std_N,Rhizosphere,1,2,5365,150,4.8946065139991575,0.9916398179842599,119.61462060482147,13.047798049793126
+USDA_421,2017,Sep,Corn,rotated,Low_N,Rhizosphere,2,1,36342,518,5.714739903132151,0.9945142551056666,182.29064954022277,19.884622544800916
+USDA_422,2017,Sep,Corn,rotated,Low_N,Rhizosphere,2,2,35741,465,5.501124874488054,0.992768626101335,138.2863082469869,15.084542457558046
+USDA_423,2017,Sep,Corn,rotated,Std_N,Rhizosphere,2,1,11436,271,5.520402560454637,0.9956947317926453,232.27356620702884,25.336857391264466
+USDA_424,2017,Sep,Corn,rotated,Std_N,Rhizosphere,2,2,13557,335,5.643851180104686,0.9959796726792325,248.73596605788293,27.13260834196581
+USDA_429,2017,Sep,Corn,continuous,Low_N,Rhizosphere,2,1,16602,431,5.8858704061785145,0.9968313703356229,315.5938389526403,34.4255966000782
+USDA_430,2017,Sep,Corn,continuous,Low_N,Rhizosphere,2,2,2550,52,3.83498968022169,0.9758093041138024,41.33820724729816,4.5092529422903995
+USDA_431,2017,Sep,Corn,continuous,Std_N,Rhizosphere,2,1,10236,247,5.38458698978777,0.9949668480369722,198.68265598689302,21.672694844538153
+USDA_432,2017,Sep,Corn,continuous,Std_N,Rhizosphere,2,2,15110,344,5.7173454661323415,0.9963709851558459,275.5568778151658,30.05828614247913
+USDA_433,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,2,1,9893,87,4.251356976702768,0.9837107448976259,61.3901614110182,6.696559536659863
+USDA_434,2017,Sep,Soybean,rotated,Low_N,Rhizosphere,2,2,14499,125,4.43023929513497,0.9849388739234478,66.39609780286246,7.242616922961192
+USDA_435,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,2,1,27792,408,5.477023126275769,0.9930999292093018,144.92604935996857,15.80881847588286
+USDA_436,2017,Sep,Soybean,rotated,Std_N,Rhizosphere,2,2,23527,368,5.4033614165351,0.9930932958669663,144.7868593671405,15.793635357734011
+USDA_437,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,2,1,24372,292,5.013944347133349,0.9894207114254467,94.52431446149753,10.310898113060988
+USDA_438,2017,Sep,Soybean,continuous,Low_N,Rhizosphere,2,2,15615,246,5.144387833517177,0.9921968057635657,128.1526474544041,13.979142809436793
+USDA_439,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,2,1,13947,271,5.262461138313029,0.9931627023276706,146.25661305445257,15.95395898036492
+USDA_440,2017,Sep,Soybean,continuous,Std_N,Rhizosphere,2,2,22490,454,5.7895801313871305,0.9956771301547785,231.32780671280415,25.233692085702973
+USDA_441,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,1,1,1924,30,3.2994536387576248,0.9599078928600758,24.94256529121634,2.7207840740369504
+USDA_442,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,1,2,2481,40,3.6057988344084353,0.9710068995140984,34.49096451365269,3.7623422391107058
+USDA_443,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,1,1,6377,181,4.945373564081586,0.991486453013514,117.4598556380032,12.812752049649891
+USDA_444,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,1,2,9704,228,5.210720583418336,0.9936772318840481,158.15857574739672,17.25224847732168
+USDA_445,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,1,1,9632,268,5.433549530001395,0.9949637524696195,198.560534200839,21.659373559950566
+USDA_446,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,1,2,15316,408,5.879392786201409,0.9968499596998645,317.45625602217245,34.628752716653835
+USDA_447,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,1,1,14908,414,5.857694893213561,0.9966873471845457,301.87286616175334,32.928885904370965
+USDA_448,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,1,2,7527,222,5.217913294317253,0.9937338552293626,159.58775875812998,17.40814657076504
+USDA_449,2017,Sep,Corn,rotated,Low_N,Bulk Soil,1,1,2074,36,3.3884020203121232,0.9612625991636359,25.814845044050223,2.8159340649022075
+USDA_450,2017,Sep,Corn,rotated,Low_N,Bulk Soil,1,2,2258,41,3.5761878878135027,0.9682538063658709,31.499839367354507,3.4360644258031283
+USDA_451,2017,Sep,Corn,rotated,Std_N,Bulk Soil,1,1,9881,264,5.3553280979552005,0.9944815114455687,181.20903760813522,19.76663818814982
+USDA_452,2017,Sep,Corn,rotated,Std_N,Bulk Soil,1,2,5556,127,4.594624896047672,0.9878693721780876,82.43596412987166,8.992277085926732
+USDA_457,2017,Sep,Corn,continuous,Low_N,Bulk Soil,1,1,1035,15,2.6431946732649507,0.9246255455203155,13.267094361121089,1.4472007439906514
+USDA_458,2017,Sep,Corn,continuous,Low_N,Bulk Soil,1,2,2330,48,3.7542148671699676,0.9747311610086757,39.57443396363954,4.3168570838708105
+USDA_459,2017,Sep,Corn,continuous,Std_N,Bulk Soil,1,1,264,5,1.2622976126298884,0.6197199265381084,2.6296408089345,0.2868463908925275
+USDA_460,2017,Sep,Corn,continuous,Std_N,Bulk Soil,1,2,5779,112,4.567423473761127,0.9882825743907935,85.34297834280967,9.309379913210746
+USDA_461,2017,Sep,Corn,rotated,Low_N,Bulk Soil,2,1,3707,86,4.205326625775089,0.9818079066361448,54.968935130183645,5.996119545957118
+USDA_462,2017,Sep,Corn,rotated,Low_N,Bulk Soil,2,2,7988,182,5.029883259290475,0.9923459300116926,130.64944552736327,14.251498453440488
+USDA_463,2017,Sep,Corn,rotated,Std_N,Bulk Soil,2,1,6586,159,4.867647393210341,0.9905573196380731,105.90213389325652,11.552013032307068
+USDA_464,2017,Sep,Corn,rotated,Std_N,Bulk Soil,2,2,6922,165,4.921679093479588,0.9914059924426396,116.36014901377939,12.692793888395533
+USDA_469,2017,Sep,Corn,continuous,Low_N,Bulk Soil,2,1,4454,97,4.346682605208816,0.9842631225666792,63.545007847785,6.9316144237053035
+USDA_470,2017,Sep,Corn,continuous,Low_N,Bulk Soil,2,2,8134,204,5.021615222273764,0.9919150818334331,123.68708988734639,13.492031008052656
+USDA_471,2017,Sep,Corn,continuous,Std_N,Bulk Soil,2,1,4119,104,4.429723292809329,0.9861343411747655,72.12062640543769,7.867059760793137
+USDA_472,2017,Sep,Corn,continuous,Std_N,Bulk Soil,2,2,8972,247,5.3762541675311715,0.9948433219394206,193.92329485227512,21.153534372210196
+USDA_473,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,2,1,217,5,1.5214712201857807,0.7670156512136592,4.292133807310181,0.46819439661555506
+USDA_474,2017,Sep,Soybean,rotated,Low_N,Bulk Soil,2,2,3185,64,3.989587297442842,0.9782448634567944,45.966155993275606,5.014078692829736
+USDA_475,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,2,1,6702,199,5.076771626568113,0.9926082897616669,135.2866884329482,14.757338029187713
+USDA_476,2017,Sep,Soybean,rotated,Std_N,Bulk Soil,2,2,8190,186,5.018975570664074,0.992231599630867,128.72662999881013,14.041753954175183
+USDA_477,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,2,1,3794,69,4.135306148556838,0.9827117922508392,57.84289583450538,6.309616831518208
+USDA_478,2017,Sep,Soybean,continuous,Low_N,Bulk Soil,2,2,2666,71,4.109186905003085,0.9813705301794315,53.678392870629104,5.855344658303355
+USDA_479,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,2,1,2757,74,4.068148058744749,0.9798189697237841,49.55148405770647,5.405173329007213
+USDA_480,2017,Sep,Soybean,continuous,Std_N,Bulk Soil,2,2,2101,88,4.1264918797262755,0.978526804737709,46.569687826389696,5.079913132092061
+USDA_481,2018,Jun,Corn,rotated,Low_N,Endosphere,1,1,8816,197,5.053378662269135,0.9921706192914385,127.72402278337064,13.932387587386803
+USDA_482,2018,Jun,Corn,rotated,Low_N,Endosphere,1,2,378,12,2.2889459713892317,0.8871952073010274,8.864871572155355,0.9669976247550195
+USDA_483,2018,Jun,Corn,rotated,Std_N,Endosphere,1,1,1478,40,3.5309907157363356,0.9671061907525987,30.400857270095745,3.316185297374973
+USDA_484,2018,Jun,Corn,rotated,Std_N,Endosphere,1,2,1803,66,4.024116685240589,0.9789919986071159,47.60091078148566,5.192400960037909
+USDA_485,2018,Jun,Soybean,continuous,Low_N,Endosphere,1,1,3672,41,3.6526913044128824,0.9729471036780726,36.96461880088823,4.032173313453078
+USDA_486,2018,Jun,Soybean,continuous,Low_N,Endosphere,1,2,4188,88,4.429895046798293,0.9875452582491112,80.29070533948583,8.758268038203601
+USDA_487,2018,Jun,Soybean,continuous,Std_N,Endosphere,1,1,569,22,2.943701366162374,0.9401935378257418,16.72060114651655,1.8239160558111023
+USDA_488,2018,Jun,Soybean,continuous,Std_N,Endosphere,1,2,199,7,1.8409421324774715,0.8291709805307947,5.853806356245381,0.6385447094400295
+USDA_489,2018,Jun,Soybean,rotated,Low_N,Endosphere,1,1,12,1,0,0,1,0.10908196660088885
+USDA_490,2018,Jun,Soybean,rotated,Low_N,Endosphere,1,2,7704,92,4.353803937225681,0.9861645216197652,72.27794894526997,7.884220812828689
+USDA_491,2018,Jun,Soybean,rotated,Std_N,Endosphere,1,1,18396,72,4.155858898058134,0.98330816761975115,59.90954002050019,6.535050443590816
+USDA_492,2018,Jun,Soybean,rotated,Std_N,Endosphere,1,2,1210,38,3.6089994271957346,0.972224574824124,36.00304923031525,3.927283413671405
+USDA_497,2018,Jun,Corn,continuous,Low_N,Endosphere,1,1,5613,89,4.222836348554768,0.9831671780492011,59.40774535148803,6.480313694265128
+USDA_498,2018,Jun,Corn,continuous,Low_N,Endosphere,1,2,1131,41,3.586198684047241,0.9695730248186116,32.86557385473138,3.5850414295408544
+USDA_499,2018,Jun,Corn,continuous,Std_N,Endosphere,1,1,980,35,3.354158789693519,0.9602665556018326,25.167714884696018,2.7453438344731045
+USDA_500,2018,Jun,Corn,continuous,Std_N,Endosphere,1,2,6071,123,4.623650138641497,0.9893341681986896,93.75733825815101,10.227234840463867
+USDA_501,2018,Jun,Soybean,rotated,Low_N,Endosphere,2,1,14707,42,3.6265465395457963,0.9725236474602894,36.3949326445254,3.9700308271717186
+USDA_502,2018,Jun,Soybean,rotated,Low_N,Endosphere,2,2,179,5,1.5455153462117166,0.7783152835429605,4.510910882725609,0.49205903024906095
+USDA_503,2018,Jun,Soybean,rotated,Std_N,Endosphere,2,1,7632,72,3.9687386815923227,0.9775444490043027,44.532418740988,4.85768381376125
+USDA_504,2018,Jun,Soybean,rotated,Std_N,Endosphere,2,2,7,1,0,0,1,0.10908196660088885
+USDA_509,2018,Jun,Corn,continuous,Low_N,Endosphere,2,1,3088,66,4.095736959577169,0.982209253939703,56.208997453550886,6.131387982897684
+USDA_510,2018,Jun,Corn,continuous,Low_N,Endosphere,2,2,311,10,2.125323248229756,0.8657478727473868,7.4486715440893345,0.812515740593344
+USDA_511,2018,Jun,Corn,continuous,Std_N,Endosphere,2,1,1919,80,4.191111899549354,0.9822696759130398,56.40054829767356,6.152282725678646
+USDA_512,2018,Jun,Corn,continuous,Std_N,Endosphere,2,2,1680,59,3.91164562285427,0.9774766156462585,44.39830108541765,4.843053996135735
+USDA_513,2018,Jun,Corn,rotated,Low_N,Endosphere,2,1,237,10,2.0957236613978827,0.8492228809485659,6.63230605738576,0.7234649878386263
+USDA_514,2018,Jun,Corn,rotated,Low_N,Endosphere,2,2,518,17,2.630116193834635,0.9177785065815954,12.162269966458163,1.326684326272183
+USDA_515,2018,Jun,Corn,rotated,Std_N,Endosphere,2,1,526,17,2.7465402700048216,0.9300409142824098,14.294069022525314,1.5592251597059061
+USDA_516,2018,Jun,Corn,rotated,Std_N,Endosphere,2,2,191,5,1.569892159678287,0.7839697376716648,4.628981093769827,0.5049383610667463
+USDA_517,2018,Jun,Soybean,continuous,Low_N,Endosphere,2,1,6180,46,3.675625163504817,0.9731283710895361,37.213970293055,4.059373064593496
+USDA_518,2018,Jun,Soybean,continuous,Low_N,Endosphere,2,2,2575,37,3.5725230258584153,0.9710900556131586,34.59017376924321,3.773164179815529
+USDA_519,2018,Jun,Soybean,continuous,Std_N,Endosphere,2,1,573,21,2.8759682322121267,0.9342275583332572,15.203936096318595,1.6584752494606734
+USDA_520,2018,Jun,Soybean,continuous,Std_N,Endosphere,2,2,16845,74,3.9273005691243292,0.97721588971293,43.890236985356566,4.787633364941762
+USDA_521,2018,Jun,Corn,rotated,Low_N,Rhizosphere,1,1,13678,450,5.947010893794671,0.9969896789144068,332.1904778815115,36.23599061340435
+USDA_522,2018,Jun,Corn,rotated,Low_N,Rhizosphere,1,2,12507,344,5.576832416952942,0.9953341679950505,214.32404744517046,23.378888585181404
+USDA_523,2018,Jun,Corn,rotated,Std_N,Rhizosphere,1,1,10674,270,5.417116816861522,0.9947867137015027,191.8175873610204,20.923839657977908
+USDA_524,2018,Jun,Corn,rotated,Std_N,Rhizosphere,1,2,8136,270,5.381678933265795,0.9944361235109336,179.73080494599483,19.60538966226988
+USDA_525,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,1,1,19549,523,5.997255653410662,0.9968739523542183,319.89275702479614,34.894531037645066
+USDA_526,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,1,2,22422,625,6.185791387731067,0.9973536342850957,377.87672141004924,41.219535904104376
+USDA_527,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,1,1,22471,532,5.722524399706482,0.9932374707884761,147.87366807908487,16.13035052255366
+USDA_528,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,1,2,20522,612,6.246942833609779,0.9977613239009175,446.6925788906519,48.726104971415
+USDA_529,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,1,1,16975,461,5.9010586165580206,0.9967575534496932,308.4090930983514,33.64187039276479
+USDA_530,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,1,2,3020,64,3.9945326247781123,0.9786616815051972,46.86404883513005,5.11202260981608
+USDA_531,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,1,1,15001,424,5.784581720565925,0.9961688619465455,261.0190460503804,28.472470863463464
+USDA_532,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,1,2,10408,300,5.511718339596453,0.9954073272436919,217.73813486416302,23.751303954992462
+USDA_537,2018,Jun,Corn,continuous,Low_N,Rhizosphere,1,1,9464,290,5.494743120630806,0.9952366765655178,209.9374551727694,22.90039047343163
+USDA_538,2018,Jun,Corn,continuous,Low_N,Rhizosphere,1,2,11898,384,5.746472118152982,0.996207608907235,263.6858845881608,28.763374855771588
+USDA_539,2018,Jun,Corn,continuous,Std_N,Rhizosphere,1,1,2600,80,4.24377800865314,0.984035798816568,62.640152708537954,6.8329110456273146
+USDA_540,2018,Jun,Corn,continuous,Std_N,Rhizosphere,1,2,8457,282,5.453219726486924,0.9949766116450883,199.06882154994616,21.71481854358953
+USDA_541,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,2,1,19368,503,5.992074027866674,0.9970570598871468,339.7962451334023,37.065642662749234
+USDA_542,2018,Jun,Soybean,rotated,Low_N,Rhizosphere,2,2,22805,536,6.089174030661217,0.9974058951230467,385.489425999788,42.04994469190469
+USDA_543,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,2,1,27,2,0.5722806988018472,0.384087791495199,1.6236080178173722,0.17710635557248994
+USDA_544,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,2,2,7224,182,5.039708858810421,0.9926938888950207,136.87172089656366,14.930236487445137
+USDA_549,2018,Jun,Corn,continuous,Low_N,Rhizosphere,2,1,8331,243,5.300370437475411,0.9942415709311823,173.65847317892147,18.943007771264465
+USDA_550,2018,Jun,Corn,continuous,Low_N,Rhizosphere,2,2,9288,297,5.462011351018359,0.9950230994620605,200.9282669759772,21.917650507448023
+USDA_551,2018,Jun,Corn,continuous,Std_N,Rhizosphere,2,1,5634,142,4.790940666141125,0.9906061869659198,106.453044825574,11.612107480226186
+USDA_552,2018,Jun,Corn,continuous,Std_N,Rhizosphere,2,2,4067,100,4.4284841461483895,0.9863599558634573,73.31354576199067,7.997185750202203
+USDA_553,2018,Jun,Corn,rotated,Low_N,Rhizosphere,2,1,9491,293,5.493702075124788,0.9951958768318251,208.15452997220112,22.70590548625136
+USDA_554,2018,Jun,Corn,rotated,Low_N,Rhizosphere,2,2,8580,288,5.443525798764127,0.9947356567286637,189.9572175402924,20.720906859327954
+USDA_555,2018,Jun,Corn,rotated,Std_N,Rhizosphere,2,1,9167,304,5.501187401673141,0.9951597741715845,206.60193045731583,22.536544877824088
+USDA_556,2018,Jun,Corn,rotated,Std_N,Rhizosphere,2,2,4981,182,4.971967228048149,0.9914848881078353,117.43826888759507,12.81039732446285
+USDA_557,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,2,1,17336,445,5.907605812271794,0.9968224067902798,314.703592939777,34.32848681423648
+USDA_558,2018,Jun,Soybean,continuous,Low_N,Rhizosphere,2,2,14110,372,5.779071620806052,0.9965354125050667,288.6346502902408,31.484835282819283
+USDA_559,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,2,1,13366,408,5.875245681654573,0.996834547219256,315.91057244106184,34.460146511883586
+USDA_560,2018,Jun,Soybean,continuous,Std_N,Rhizosphere,2,2,15729,507,6.044691969246316,0.9972372877165254,361.9631352789104,39.483650633247116
+USDA_561,2018,Jun,Corn,rotated,Low_N,Bulk Soil,1,1,6703,194,5.070482022817885,0.9927279884231119,137.5135324561645,15.000246554553582
+USDA_562,2018,Jun,Corn,rotated,Low_N,Bulk Soil,1,2,8009,245,5.295211790060726,0.99410949546537275,169.76474495885836,18.518272239610603
+USDA_563,2018,Jun,Corn,rotated,Std_N,Bulk Soil,1,1,8400,239,5.336483303999707,0.9945582482993197,183.7643565903586,20.045377408023327
+USDA_564,2018,Jun,Corn,rotated,Std_N,Bulk Soil,1,2,8319,256,5.394131710929536,0.9947192980075749,189.36876222790767,20.656716996596288
+USDA_565,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,1,1,9972,320,5.567631658897168,0.9955312098102524,223.7742112606328,24.409731038872593
+USDA_566,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,1,2,12257,327,5.646983183304229,0.9960480130572797,253.03727327390047,27.601803392043596
+USDA_567,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,1,1,12245,337,5.630034881662568,0.9958230565854581,239.40951570436107,26.11526079599809
+USDA_568,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,1,2,8997,175,4.71789909882374,0.9885322202852521,87.20083790186271,9.51203888758051
+USDA_569,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,1,1,6765,207,5.062807980403001,0.9922654591996434,129.2901577238942,14.103224666661479
+USDA_570,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,1,2,9234,299,5.500497583042537,0.9952646023029186,211.17550498796348,23.03543938202287
+USDA_571,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,1,1,10379,308,5.543081844230111,0.9953840308832488,216.63923104923288,23.631433365754663
+USDA_572,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,1,2,5419,204,5.0888607502079575,0.9921421899619081,127.26192096173764,13.881980611913223
+USDA_577,2018,Jun,Corn,continuous,Low_N,Bulk Soil,1,1,8171,260,5.35921439530148,0.9944050078393336,178.731260256297,19.496357361812162
+USDA_578,2018,Jun,Corn,continuous,Low_N,Bulk Soil,1,2,10423,299,5.506228567317893,0.9951206532973093,204.94546932861965,22.35585484030798
+USDA_579,2018,Jun,Corn,continuous,Std_N,Bulk Soil,1,1,2143,58,3.920991151172075,0.9777358442086129,44.915244457050086,4.899443195734696
+USDA_580,2018,Jun,Corn,continuous,Std_N,Bulk Soil,1,2,3569,97,4.387335880391647,0.9858666684042824,70.75472568003688,7.718064623484836
+USDA_581,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,2,1,8337,276,5.385714049255689,0.9947039207750389,188.8189276487543,20.596739959397066
+USDA_582,2018,Jun,Soybean,rotated,Low_N,Bulk Soil,2,2,7645,279,5.442338039698316,0.9947768047527612,191.4536892965359,20.88414494146168
+USDA_583,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,2,1,7348,255,5.358509915259233,0.9945718994040424,184.22650470861197,20.095789433623303
+USDA_584,2018,Jun,Soybean,rotated,Std_N,Bulk Soil,2,2,8669,267,5.427624365464445,0.9949127470552475,196.56974222826727,21.44221405648918
+USDA_589,2018,Jun,Corn,continuous,Low_N,Bulk Soil,2,1,5579,179,4.889192628661111,0.9907131000206553,107.67855820824266,11.745788890103393
+USDA_590,2018,Jun,Corn,continuous,Low_N,Bulk Soil,2,2,6460,228,5.238719104461329,0.9938040717346088,161.396316607752,17.605427617713286
+USDA_591,2018,Jun,Corn,continuous,Std_N,Bulk Soil,2,1,4163,123,4.567099050969156,0.9873958552659177,79.33898103343297,8.65445207923749
+USDA_592,2018,Jun,Corn,continuous,Std_N,Bulk Soil,2,2,2402,59,3.9067612624757,0.977380423335813,44.20949228387966,4.822458360752415
+USDA_593,2018,Jun,Corn,rotated,Low_N,Bulk Soil,2,1,11328,351,5.670263028345123,0.9959999714471816,249.9982154615837,27.270296989262288
+USDA_594,2018,Jun,Corn,rotated,Low_N,Bulk Soil,2,2,5762,136,4.744138660450827,0.9901908529244192,101.94566278748425,11.120433383289836
+USDA_595,2018,Jun,Corn,rotated,Std_N,Bulk Soil,2,1,9759,297,5.542627691298455,0.9954676638224157,220.63676673979674,24.06749242043861
+USDA_596,2018,Jun,Corn,rotated,Std_N,Bulk Soil,2,2,7460,261,5.36644056220419,0.9943587246368478,177.2648799475069,19.336401713944518
+USDA_597,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,2,1,12192,348,5.695652282598301,0.9961838439301879,262.04379006155995,28.58425195546541
+USDA_598,2018,Jun,Soybean,continuous,Low_N,Bulk Soil,2,2,10455,313,5.5946220137217475,0.9957942410380303,237.76921336729612,25.93633339125101
+USDA_599,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,2,1,9488,274,5.46228176603733,0.9952786505506912,211.80385199964238,23.103980709764596
+USDA_600,2018,Jun,Soybean,continuous,Std_N,Bulk Soil,2,2,9354,292,5.534778296563219,0.9955879332344321,226.65114857373771,24.723553018773554
+USDA_601,2018,Aug,Corn,rotated,Low_N,Endosphere,1,1,9617,159,4.521810346718531,0.9833926263702661,60.21421702764589,6.568285210708342
+USDA_602,2018,Aug,Corn,rotated,Low_N,Endosphere,1,2,2667,86,4.295294408482716,0.984245360780971,63.47336718394446,6.923799719204984
+USDA_603,2018,Aug,Corn,rotated,Std_N,Endosphere,1,1,2365,68,4.106919332698195,0.9819840968314345,55.50651502972204,6.054759818603874
+USDA_604,2018,Aug,Corn,rotated,Std_N,Endosphere,1,2,219,9,1.9158703316940748,0.8162048330935552,5.440839478162224,0.5934974702376893
+USDA_605,2018,Aug,Soybean,continuous,Low_N,Endosphere,1,1,148,5,1.5539079142615748,0.7766617969320672,4.477514309076042,0.4884160663176348
+USDA_606,2018,Aug,Soybean,continuous,Low_N,Endosphere,1,2,170,5,1.446004628432923,0.7516262975778547,4.026191139593202,0.43918484741790026
+USDA_607,2018,Aug,Soybean,continuous,Std_N,Endosphere,1,1,42,2,0.5488743844849944,0.36281179138322006,1.5693950177935945,0.17119269491456224
+USDA_608,2018,Aug,Soybean,continuous,Std_N,Endosphere,1,2,1204,45,3.6787978000487005,0.9708819439079038,34.34295190713101,3.746196732909597
+USDA_609,2018,Aug,Soybean,rotated,Low_N,Endosphere,1,1,165,4,1.369407377663289,0.7415977961432507,3.869936034115139,0.42214023322092387
+USDA_610,2018,Aug,Soybean,rotated,Low_N,Endosphere,1,2,4170,38,3.5842567243188017,0.9715933727837873,35.20305287877561,3.840018238371925
+USDA_611,2018,Aug,Soybean,rotated,Std_N,Endosphere,1,1,45,2,0.6730116670092565,0.48,1.923076923076923,0.20977301269401702
+USDA_612,2018,Aug,Soybean,rotated,Std_N,Endosphere,1,2,683,19,2.7103815315881468,0.923455858551863,13.064357128854285,1.4250857679917672
+USDA_617,2018,Aug,Corn,continuous,Low_N,Endosphere,1,1,1205,67,3.9411808325619995,0.9753096537594049,40.50165964687178,4.418000684880635
+USDA_618,2018,Aug,Corn,continuous,Low_N,Endosphere,1,2,1066,26,3.174144151913098,0.9549630573517454,22.20399390363047,2.4220553214021585
+USDA_619,2018,Aug,Corn,continuous,Std_N,Endosphere,1,1,28434,45,3.6105121761943626,0.9721746781734569,35.938488195528564,3.920240969031085
+USDA_621,2018,Aug,Soybean,rotated,Low_N,Endosphere,2,1,13462,310,5.572140183941415,0.9955630512898619,225.38011262448885,24.58490591780906
+USDA_622,2018,Aug,Soybean,rotated,Low_N,Endosphere,2,2,23994,61,3.692983221844197,0.9733008847499586,37.454424636728305,4.085602297279106
+USDA_623,2018,Aug,Soybean,rotated,Std_N,Endosphere,2,1,12934,82,4.194635829036524,0.9829323207647519,58.59027382790281,6.391142292832227
+USDA_624,2018,Aug,Soybean,rotated,Std_N,Endosphere,2,2,3529,89,4.42171377966611,0.9874611374916381,79.75205082064845,8.699510543970364
+USDA_629,2018,Aug,Corn,continuous,Low_N,Endosphere,2,1,869,27,3.1605746644847605,0.953158333123665,21.348514403641197,2.3287379351565836
+USDA_630,2018,Aug,Corn,continuous,Low_N,Endosphere,2,2,1287,40,3.5267728223314134,0.9659393528857398,29.359395217753512,3.2025805685652844
+USDA_631,2018,Aug,Corn,continuous,Std_N,Endosphere,2,1,3490,149,4.900674992731351,0.9915527787128184,118.3821242516134,12.913354923756767
+USDA_632,2018,Aug,Corn,continuous,Std_N,Endosphere,2,2,1453,50,3.7733633480192563,0.9737169555453771,38.047342716574455,4.150278967461946
+USDA_633,2018,Aug,Corn,rotated,Low_N,Endosphere,2,1,1246,33,3.3381826263902674,0.9602709408469865,25.170492866407265,2.7456468621813483
+USDA_634,2018,Aug,Corn,rotated,Low_N,Endosphere,2,2,707,20,2.924633148607817,0.9430888128214721,17.571237740359265,1.916705168330147
+USDA_635,2018,Aug,Corn,rotated,Std_N,Endosphere,2,1,3270,75,4.224301177992907,0.9844861543641108,64.45855034722221,7.0312654361174065
+USDA_636,2018,Aug,Corn,rotated,Std_N,Endosphere,2,2,380,10,2.201199027876723,0.8806648199445983,8.379758588672239,0.9140805464930567
+USDA_637,2018,Aug,Soybean,continuous,Low_N,Endosphere,2,1,55,1,0,0,1,0.10908196660088885
+USDA_638,2018,Aug,Soybean,continuous,Low_N,Endosphere,2,2,83,4,1.2813199082719697,0.7019886776019741,3.3555772040915732,0.366032960503421
+USDA_639,2018,Aug,Soybean,continuous,Std_N,Endosphere,2,1,1269,36,3.543077484624627,0.9699241350231408,33.24925154336919,3.62689374635835
+USDA_640,2018,Aug,Soybean,continuous,Std_N,Endosphere,2,2,2051,39,3.6170937701226156,0.9723399010269812,36.153160586137254,3.943657855573595
+USDA_641,2018,Aug,Corn,rotated,Low_N,Rhizosphere,1,1,7006,230,5.235806403843005,0.9938035250401984,161.3820771466523,17.603874349293196
+USDA_642,2018,Aug,Corn,rotated,Low_N,Rhizosphere,1,2,3669,110,4.498686298441819,0.986777684995076,75.62972139353795,8.249838743084435
+USDA_643,2018,Aug,Corn,rotated,Std_N,Rhizosphere,1,1,4530,134,4.6683536087151545,0.98907182433519,91.50658176369863,9.981717895709279
+USDA_644,2018,Aug,Corn,rotated,Std_N,Rhizosphere,1,2,3174,95,4.3417078570879575,0.9849730144379606,66.54694621695533,7.259071764629068
+USDA_645,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,1,1,8706,316,5.581696972595211,0.9956873879238313,231.87803176778678,25.29371171677356
+USDA_646,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,1,2,2169,70,4.014799323271143,0.9789236445228364,47.446533205587215,5.175561150459829
+USDA_647,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,1,1,8113,290,5.492832107602457,0.9952456192056948,210.33233206683775,22.94346442160186
+USDA_648,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,1,2,8744,312,5.554945567349486,0.9955017645350224,222.30939393586954,24.249945884376363
+USDA_649,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,1,1,14539,397,5.745738264441661,0.9961442554656635,259.3532821209344,28.290766058146673
+USDA_650,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,1,2,12828,410,5.8429544535406,0.9967077178284289,303.74067224098786,33.132629864722965
+USDA_651,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,1,1,12205,347,5.7186220435453965,0.9963540573511941,274.2774904392689,29.91872805147194
+USDA_652,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,1,2,17426,429,5.870428885627685,0.9967044788456624,303.4421425830589,33.10006566254739
+USDA_657,2018,Aug,Corn,continuous,Low_N,Rhizosphere,1,1,25542,499,5.827821533374491,0.9958325230098306,239.95333444165078,26.174581613336063
+USDA_658,2018,Aug,Corn,continuous,Low_N,Rhizosphere,1,2,20878,410,5.74435271436739,0.9959886015877313,249.2896235241906,27.193002387213916
+USDA_659,2018,Aug,Corn,continuous,Std_N,Rhizosphere,1,1,14411,333,5.577588676691384,0.9954908663153764,221.77208970540653,24.191335682254483
+USDA_660,2018,Aug,Corn,continuous,Std_N,Rhizosphere,1,2,38769,313,5.367532927178902,0.9942009980429196,172.44346654841814,18.810472458576044
+USDA_661,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,2,1,29516,610,6.140048026130814,0.997351424227021,377.5614087397895,41.18514097793826
+USDA_662,2018,Aug,Soybean,rotated,Low_N,Rhizosphere,2,2,39746,640,5.986446765745532,0.9965500902552271,289.86265554196933,31.618788510674047
+USDA_663,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,2,1,25478,621,6.168008739757278,0.9973325157612403,374.8850641625374,40.89320004814998
+USDA_664,2018,Aug,Soybean,rotated,Std_N,Rhizosphere,2,2,18972,439,5.851071690886178,0.9964719138013969,283.4397868158452,30.91816935880908
+USDA_669,2018,Aug,Corn,continuous,Low_N,Rhizosphere,2,1,27115,481,5.858954908572666,0.9964938716401404,285.2148858691583,31.111800654455852
+USDA_670,2018,Aug,Corn,continuous,Low_N,Rhizosphere,2,2,24280,557,6.057438623460776,0.9971234960605131,347.64423099604187,37.92171639450193
+USDA_671,2018,Aug,Corn,continuous,Std_N,Rhizosphere,2,1,20207,324,5.417396720335191,0.9940707089844977,168.6542282012255,18.397134887744766
+USDA_672,2018,Aug,Corn,continuous,Std_N,Rhizosphere,2,2,19038,365,5.5039372433899505,0.9943693429348225,177.599166211781,19.372866317059206
+USDA_673,2018,Aug,Corn,rotated,Low_N,Rhizosphere,2,1,26346,474,5.902262115026938,0.9967197787510044,304.85748493526114,33.25445398973913
+USDA_674,2018,Aug,Corn,rotated,Low_N,Rhizosphere,2,2,20406,457,5.962054361987512,0.997066801596896,340.92477308788784,37.188744711388594
+USDA_675,2018,Aug,Corn,rotated,Std_N,Rhizosphere,2,1,18849,449,5.879570275415545,0.9966904663619427,302.15737604256407,32.95992080168719
+USDA_676,2018,Aug,Corn,rotated,Std_N,Rhizosphere,2,2,22625,477,5.8830012577265745,0.9965371606483319,288.7803615603113,31.500729754714484
+USDA_677,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,2,1,19215,368,5.710077128153321,0.9961574142631462,260.2414281636235,28.387646775111993
+USDA_678,2018,Aug,Soybean,continuous,Low_N,Rhizosphere,2,2,23673,555,6.025693284385698,0.9969701786454632,330.0524628300681,36.0027717269706
+USDA_679,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,2,1,22070,535,6.0176341083246445,0.9970151404816696,335.02414229510003,36.545092300325535
+USDA_680,2018,Aug,Soybean,continuous,Std_N,Rhizosphere,2,2,13530,357,5.703427460764521,0.9963059943439587,270.70884376275455,29.52945305389403
+USDA_681,2018,Aug,Corn,rotated,Low_N,Bulk Soil,1,1,5991,193,5.095919399583584,0.9931460925879444,145.90217519440978,15.915296201553641
+USDA_682,2018,Aug,Corn,rotated,Low_N,Bulk Soil,1,2,5302,188,5.0640713259361725,0.9928368062783792,139.60253468808042,15.228119026244617
+USDA_683,2018,Aug,Corn,rotated,Std_N,Bulk Soil,1,1,6919,265,5.382771163910239,0.9946396642536003,186.55547848316337,20.349838473113266
+USDA_684,2018,Aug,Corn,rotated,Std_N,Bulk Soil,1,2,5317,200,5.030142270210369,0.992185101573588,127.96071624172252,13.958206575305391
+USDA_685,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,1,1,5564,226,5.247819629163011,0.9939420693055542,165.07286901067494,18.006473184135345
+USDA_686,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,1,2,8357,251,5.397922455973653,0.9949840526376432,199.36413358415808,21.747031761042276
+USDA_687,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,1,1,4792,143,4.82687136863179,0.9911380194035133,112.84159213759214,12.308982784743948
+USDA_688,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,1,2,5940,186,5.124239798721737,0.9935039508440182,153.93972181986354,16.792047594104474
+USDA_689,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,1,1,6333,220,5.223425849795751,0.9937207545566549,159.2548036260974,17.37182717017307
+USDA_690,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,1,2,10951,348,5.687857655303359,0.9961609397573726,260.4804136430081,28.413715781192323
+USDA_691,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,1,1,9806,302,5.53920732848904,0.9954792565823893,221.20255622216496,24.129209849857435
+USDA_692,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,1,2,97,5,1.5757531688944508,0.786055903921777,4.674118231495281,0.5098620088165738
+USDA_697,2018,Aug,Corn,continuous,Low_N,Bulk Soil,1,1,4432,134,4.7040133902375825,0.9891739515046463,92.3698060681301,10.075880100454349
+USDA_698,2018,Aug,Corn,continuous,Low_N,Bulk Soil,1,2,7948,294,5.483459289584628,0.9951767198921829,207.32778890019367,22.61572294424706
+USDA_699,2018,Aug,Corn,continuous,Std_N,Bulk Soil,1,1,8951,301,5.560662765102162,0.9956484616196567,229.80378721170698,25.06744904138519
+USDA_700,2018,Aug,Corn,continuous,Std_N,Bulk Soil,1,2,6933,167,4.95196892930525,0.9921249708918827,126.98365761838716,13.851627099187613
+USDA_701,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,2,1,7239,186,5.076301396185943,0.9932132477376682,147.34588229339766,16.072778611106905
+USDA_702,2018,Aug,Soybean,rotated,Low_N,Bulk Soil,2,2,10495,293,5.500691430477858,0.9953219221657992,213.76301024517386,23.317689544069516
+USDA_703,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,2,1,12006,348,5.649125716497964,0.9959811309848435,248.82622355410703,27.142453807154407
+USDA_704,2018,Aug,Soybean,rotated,Std_N,Bulk Soil,2,2,2997,62,3.9492404574422633,0.9782089953372347,45.890495434968095,5.0058254903354324
+USDA_709,2018,Aug,Corn,continuous,Low_N,Bulk Soil,2,1,7983,301,5.518148124758791,0.9954217035389104,218.42185373945648,23.825885354511623
+USDA_710,2018,Aug,Corn,continuous,Low_N,Bulk Soil,2,2,16744,506,5.983956767205646,0.9968809558811947,320.61104681746446,34.97288350081867
+USDA_711,2018,Aug,Corn,continuous,Std_N,Bulk Soil,2,1,9220,259,5.358407871764986,0.9945134363192344,182.26344542499638,19.88165506641238
+USDA_712,2018,Aug,Corn,continuous,Std_N,Bulk Soil,2,2,7373,274,5.480130018064442,0.9952579903187809,210.88105407303098,23.003320097154603
+USDA_713,2018,Aug,Corn,rotated,Low_N,Bulk Soil,2,1,15597,428,5.753984044218776,0.99571540105235,233.39407310186425,25.459084486942967
+USDA_714,2018,Aug,Corn,rotated,Low_N,Bulk Soil,2,2,14309,382,5.76715771556128,0.9964121219151898,278.7162708325109,30.402918946076245
+USDA_715,2018,Aug,Corn,rotated,Std_N,Bulk Soil,2,1,7595,259,5.379265525082087,0.994570437829191,184.1769130808208,20.090379881336904
+USDA_716,2018,Aug,Corn,rotated,Std_N,Bulk Soil,2,2,16718,479,5.902779424120045,0.9963954327287579,277.42581140825416,30.26215309425967
+USDA_717,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,2,1,7165,247,5.377706863539303,0.9948436831168805,193.93687833146336,21.15501608483333
+USDA_718,2018,Aug,Soybean,continuous,Low_N,Bulk Soil,2,2,13238,396,5.776202769062315,0.9964798011173455,284.07485864716256,30.987444243102008
+USDA_719,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,2,1,23064,551,6.037486489491133,0.9969727836003007,330.3364768040181,36.0337525297912
+USDA_720,2018,Aug,Soybean,continuous,Std_N,Bulk Soil,2,2,18441,494,5.9997552334471465,0.996987339221601,331.93249209139526,36.207849016063385
+USDA_721,2018,Sep,Corn,rotated,Low_N,Endosphere,1,1,16188,303,5.2159801086242785,0.9915913348645142,118.9249403903423,12.972566375672017
+USDA_722,2018,Sep,Corn,rotated,Low_N,Endosphere,1,2,13882,346,5.656094248733511,0.9958447495418036,240.65938023722524,26.251598477227613
+USDA_723,2018,Sep,Corn,rotated,Std_N,Endosphere,1,1,22098,331,5.493930570659066,0.994819983430428,193.04957553110995,21.058227350400305
+USDA_724,2018,Sep,Corn,rotated,Std_N,Endosphere,1,2,11838,322,5.565861397138494,0.9954578566005151,220.16037629138071,24.015526813455512
+USDA_725,2018,Sep,Soybean,continuous,Low_N,Endosphere,1,1,23550,104,4.36371627081051,0.9859941345377996,71.39865813353987,7.788306041871077
+USDA_726,2018,Sep,Soybean,continuous,Low_N,Endosphere,1,2,4252,95,4.361078393985908,0.9855864408669618,69.37911661997774,7.568010481939584
+USDA_727,2018,Sep,Soybean,continuous,Std_N,Endosphere,1,1,2759,74,4.213976561693756,0.9840620455825417,62.74330907262552,6.844163544689383
+USDA_728,2018,Sep,Soybean,continuous,Std_N,Endosphere,1,2,1274,45,3.681292880756241,0.9718620693054423,35.539216115612,3.876687585344959
+USDA_729,2018,Sep,Soybean,rotated,Low_N,Endosphere,1,1,7031,201,5.133359315189381,0.9932177755738495,147.44425090745318,16.083508852979882
+USDA_730,2018,Sep,Soybean,rotated,Low_N,Endosphere,1,2,13963,47,3.64191350501341,0.97252670549917,36.39898374655385,3.9704727293478834
+USDA_731,2018,Sep,Soybean,rotated,Std_N,Endosphere,1,1,1872,72,4.182145987942267,0.9832632496895317,59.748755370660845,6.517511737787105
+USDA_732,2018,Sep,Soybean,rotated,Std_N,Endosphere,1,2,982,35,3.3791633659336924,0.9617016687337451,26.11079822376259,2.848217219767019
+USDA_733,2018,Sep,Corn,continuous,Low_N,Endosphere,1,1,13952,302,5.486732489886118,0.9949641603781774,198.5766178228811,21.661127993072988
+USDA_734,2018,Sep,Corn,continuous,Low_N,Endosphere,1,2,17055,242,5.199834256813416,0.9932962948351777,149.17123820532768,16.27189202372679
+USDA_735,2018,Sep,Corn,continuous,Std_N,Endosphere,1,1,17908,216,5.037720063340551,0.9921006300836545,126.59237516283108,13.808945239439131
+USDA_736,2018,Sep,Corn,continuous,Std_N,Endosphere,1,2,20287,274,5.223089712465869,0.9925101923008903,133.51477636987624,14.564054376703984
+USDA_737,2018,Sep,Soybean,rotated,Low_N,Endosphere,2,1,5239,89,4.42196702970533,0.9874236354333848,79.5142343960485,8.67356906068501
+USDA_738,2018,Sep,Soybean,rotated,Low_N,Endosphere,2,2,8078,95,4.233288012589368,0.9827345978835593,57.919299721827244,6.31795111780323
+USDA_739,2018,Sep,Soybean,rotated,Std_N,Endosphere,2,1,1405,33,3.3816492266401643,0.9627649092590013,26.85638681414364,2.9295474894809685
+USDA_740,2018,Sep,Soybean,rotated,Std_N,Endosphere,2,2,15034,134,4.360161955061173,0.9832431438409244,59.67706534607874,6.509691648920023
+USDA_741,2018,Sep,Corn,continuous,Low_N,Endosphere,2,1,5828,186,5.037694382779599,0.9924107885205212,131.76599475505486,14.37329383900379
+USDA_742,2018,Sep,Corn,continuous,Low_N,Endosphere,2,2,10490,204,4.993846218315845,0.9915143661265302,117.8462345784784,12.854899024330095
+USDA_743,2018,Sep,Corn,continuous,Std_N,Endosphere,2,1,9132,222,5.168511367614091,0.993117107171424,145.28774817592006,15.848273294044063
+USDA_744,2018,Sep,Corn,continuous,Std_N,Endosphere,2,2,17621,239,5.276837844375102,0.9942289305255589,173.27810805758085,18.901516795802245
+USDA_745,2018,Sep,Corn,rotated,Low_N,Endosphere,2,1,4867,203,5.127840782819122,0.992975802747157,142.36502250776803,15.529456630327143
+USDA_746,2018,Sep,Corn,rotated,Low_N,Endosphere,2,2,2121,72,4.179939496551741,0.9831635820684513,59.395056838436254,6.478929606308198
+USDA_747,2018,Sep,Corn,rotated,Std_N,Endosphere,2,1,6318,121,4.320132838374475,0.9818729926534787,55.16630411648779,6.017648943129198
+USDA_748,2018,Sep,Corn,rotated,Std_N,Endosphere,2,2,8234,230,5.248134127303913,0.9938824836255108,163.46503037901437,17.831086984216928
+USDA_749,2018,Sep,Soybean,continuous,Low_N,Endosphere,2,1,709,37,3.5077073968102215,0.9668159329674286,30.134943948204544,3.2871789492777057
+USDA_750,2018,Sep,Soybean,continuous,Low_N,Endosphere,2,2,1341,32,3.4311772108390004,0.9666664998406812,29.999849857364495,3.272442620172714
+USDA_751,2018,Sep,Soybean,continuous,Std_N,Endosphere,2,1,161,3,1.0622598747072267,0.6442652675436904,2.8110833965947295,0.30663850517965946
+USDA_752,2018,Sep,Soybean,continuous,Std_N,Endosphere,2,2,550,23,2.884984102754158,0.9282446280991735,13.936238827973831,1.520192338375052
+USDA_753,2018,Sep,Corn,rotated,Low_N,Rhizosphere,1,1,19121,442,5.900707318691502,0.9967912734177043,311.6501123896242,33.995407150848244
+USDA_754,2018,Sep,Corn,rotated,Low_N,Rhizosphere,1,2,11250,333,5.587729362846468,0.9953466785185185,214.90026080932392,23.441743072124975
+USDA_755,2018,Sep,Corn,rotated,Std_N,Rhizosphere,1,1,15791,251,5.16337765047324,0.9928083411101429,139.04997655136032,15.167844898029864
+USDA_756,2018,Sep,Corn,rotated,Std_N,Rhizosphere,1,2,10916,244,5.171742481810142,0.9927458304134266,137.851753817677,15.037140405813796
+USDA_757,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,1,1,24261,314,5.543625333388323,0.9955571793515099,225.08223471497618,24.552412809632457
+USDA_758,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,1,2,3626,130,4.716418936296516,0.9896965867338572,97.05521599196858,10.586973829277971
+USDA_759,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,1,1,21630,385,5.587326398155129,0.9950599296494291,202.42626704383696,22.08105530081843
+USDA_760,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,1,2,23648,342,5.404766821737235,0.9937431770214384,159.82552222212695,17.43408227700367
+USDA_761,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,1,1,35359,486,5.821841034191595,0.996040915145477,252.58362392954498,27.552318429414097
+USDA_762,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,1,2,41308,490,5.75261550527099,0.9956954550468116,232.3125930556902,25.341114516666682
+USDA_763,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,1,1,35305,349,5.532937672419539,0.9950980246369464,203.99939329296586,22.25265500578489
+USDA_764,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,1,2,49773,433,5.527032044847968,0.9945100326535048,182.1504458743999,19.8693288532083
+USDA_765,2018,Sep,Corn,continuous,Low_N,Rhizosphere,1,1,5339,128,4.682674332399938,0.9896512254848908,96.62979887521992,10.540568493557346
+USDA_766,2018,Sep,Corn,continuous,Low_N,Rhizosphere,1,2,32737,579,6.108265961835825,0.9973251048576129,373.8464301473987,40.77990380720007
+USDA_767,2018,Sep,Corn,continuous,Std_N,Rhizosphere,1,1,21356,234,5.025280895444122,0.991628221842818,119.44893679989733,13.029724934518084
+USDA_768,2018,Sep,Corn,continuous,Std_N,Rhizosphere,1,2,17235,224,4.983803352985866,0.9907763641041528,108.41711568972899,11.82635219263172
+USDA_769,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,2,1,49595,468,5.774209701963055,0.9961898255596108,262.4551751225945,28.629126646953285
+USDA_770,2018,Sep,Soybean,rotated,Low_N,Rhizosphere,2,2,48467,499,5.65350262912522,0.9951590785342338,206.57224189067347,22.533306390589175
+USDA_771,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,2,1,41740,435,5.421204982052512,0.9933301355115715,149.928083506778,16.35445019762163
+USDA_772,2018,Sep,Soybean,rotated,Std_N,Rhizosphere,2,2,56447,490,5.529516465959007,0.9946105551739015,185.54786852209267,20.239926396993027
+USDA_773,2018,Sep,Corn,continuous,Low_N,Rhizosphere,2,1,43965,668,6.004636280134884,0.996364690444123,275.0797379506108,30.006238787709787
+USDA_774,2018,Sep,Corn,continuous,Low_N,Rhizosphere,2,2,37041,646,6.056059989733306,0.9966460311027436,298.1542258242218,32.52324930327163
+USDA_775,2018,Sep,Corn,continuous,Std_N,Rhizosphere,2,1,34767,402,5.424950805699247,0.9936242222030469,156.8436090225564,17.108809320961367
+USDA_776,2018,Sep,Corn,continuous,Std_N,Rhizosphere,2,2,33350,529,5.826159193337751,0.9958570124233236,241.37171099176115,26.329300916802687
+USDA_777,2018,Sep,Corn,rotated,Low_N,Rhizosphere,2,1,26424,540,6.0582881266421,0.9971728137037046,353.7085622232804,38.58322557088829
+USDA_778,2018,Sep,Corn,rotated,Low_N,Rhizosphere,2,2,25568,575,6.166638925969236,0.9975124342644749,401.99942687700855,43.850888056174306
+USDA_779,2018,Sep,Corn,rotated,Std_N,Rhizosphere,2,1,30919,427,5.520391952533544,0.994274103135856,174.6451296149031,19.050634195660766
+USDA_780,2018,Sep,Corn,rotated,Std_N,Rhizosphere,2,2,18805,347,5.495730924703083,0.994363356806916,177.41055549284468,19.35229228891562
+USDA_781,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,2,1,67604,478,5.672389688754971,0.9957255951442825,233.950698110028,25.519802237492705
+USDA_782,2018,Sep,Soybean,continuous,Low_N,Rhizosphere,2,2,55856,522,5.672921466769689,0.995473971320532,220.94424733462674,24.10103300841428
+USDA_783,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,2,1,40208,442,5.625935288577158,0.9952795404208502,211.84377987621812,23.108336121063676
+USDA_784,2018,Sep,Soybean,continuous,Std_N,Rhizosphere,2,2,71725,426,5.5768081526590825,0.9954196834201153,218.3255202034925,23.81537710295905
+USDA_785,2018,Sep,Corn,rotated,Low_N,Bulk Soil,1,1,22947,478,5.804314681209943,0.9958443311011314,240.63514787529093,26.248955163532436
+USDA_786,2018,Sep,Corn,rotated,Low_N,Bulk Soil,1,2,30131,484,5.529751098553966,0.9938295429815311,162.062550149348,17.67810168264605
+USDA_787,2018,Sep,Corn,rotated,Std_N,Bulk Soil,1,1,20349,495,5.965933418910601,0.9969023294506005,322.82322605089774,35.21419236207522
+USDA_788,2018,Sep,Corn,rotated,Std_N,Bulk Soil,1,2,16994,383,5.778170312354125,0.9964797370002683,284.06968458782774,30.986879846534457
+USDA_789,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,1,1,19781,433,5.825068645712862,0.9965065651483205,286.25122335378535,31.224846385341188
+USDA_790,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,1,2,15658,465,5.93529647675006,0.9968278720976755,315.2458005451834,34.38763188614016
+USDA_791,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,1,1,19112,537,6.116557522573263,0.997523580897237,403.80887018853406,44.048265691048336
+USDA_792,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,1,2,12142,417,5.861909061728189,0.996759764301209,308.61952430594806,33.66482464272363
+USDA_793,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,1,1,16945,445,5.919755404664193,0.9969646716883228,329.45365288918623,35.93745236099904
+USDA_794,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,1,2,20148,491,5.901096592261319,0.9965753966607005,292.004620951093,31.852438309892335
+USDA_795,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,1,1,11827,369,5.705795038715664,0.9959424120441475,246.45183564231183,26.883450904262407
+USDA_796,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,1,2,21278,433,5.795769859291844,0.9962730342117188,268.31477851079416,29.268303708039337
+USDA_797,2018,Sep,Corn,continuous,Low_N,Bulk Soil,1,1,3300,119,4.5748141605817185,0.9873871441689623,79.2841853895773,8.648474862644552
+USDA_798,2018,Sep,Corn,continuous,Low_N,Bulk Soil,1,2,8202,247,5.350160726207661,0.9945894331979979,184.82351971515232,20.160913004626966
+USDA_799,2018,Sep,Corn,continuous,Std_N,Bulk Soil,1,1,7412,163,4.886406439053686,0.9913209395711626,115.219845304609,12.56840731727694
+USDA_800,2018,Sep,Corn,continuous,Std_N,Bulk Soil,1,2,2099,78,4.215900224450679,0.9832591167871632,59.73400490800873,6.515902728312739
+USDA_801,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,2,1,3430,90,4.3808155334681675,0.9858819029486013,70.83107563004972,7.726393026182117
+USDA_802,2018,Sep,Soybean,rotated,Low_N,Bulk Soil,2,2,3306,133,4.725938810317125,0.9897555600204802,97.61392540725922,10.647918951056306
+USDA_803,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,2,1,6836,240,5.297343238904405,0.994274451746014,174.65576319330245,19.05179412730457
+USDA_804,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,2,2,11,1,0,0,1,0.10908196660088885
+USDA_805,2018,Sep,Corn,continuous,Low_N,Bulk Soil,2,1,7818,279,5.489233359871502,0.9953033586227897,212.91810885377478,23.225526038711877
+USDA_806,2018,Sep,Corn,continuous,Low_N,Bulk Soil,2,2,7767,248,5.392438051425819,0.9949978192757721,199.91280905876468,21.80688236083804
+USDA_807,2018,Sep,Corn,continuous,Std_N,Bulk Soil,2,1,7385,256,5.423051809432166,0.9949882674032754,199.531794783614,21.765320574401592
+USDA_808,2018,Sep,Corn,continuous,Std_N,Bulk Soil,2,2,4264,156,4.79110029680096,0.9907953581448067,108.64083749611606,11.850756207243926
+USDA_809,2018,Sep,Corn,rotated,Low_N,Bulk Soil,2,1,2541,65,4.058941246154632,0.9809079928216989,52.37793966139644,5.713488664767818
+USDA_810,2018,Sep,Corn,rotated,Low_N,Bulk Soil,2,2,8239,319,5.619446314245005,0.9958583035185881,241.4469540411819,26.33750857660655
+USDA_811,2018,Sep,Corn,rotated,Std_N,Bulk Soil,2,1,9329,310,5.485216004851811,0.9951204432491461,204.93664712988235,22.35489249751997
+USDA_812,2018,Sep,Corn,rotated,Std_N,Bulk Soil,2,2,13365,323,5.5057784763870545,0.9951806435025456,207.49658186278896,22.634135212555346
+USDA_813,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,2,1,6179,154,4.877829480751678,0.991429736809345,116.68253095078741,12.727959944080972
+USDA_814,2018,Sep,Soybean,continuous,Low_N,Bulk Soil,2,2,8449,281,5.512685491653573,0.9955064747581238,222.54242408182736,24.275365270974735
+USDA_815,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,2,1,6547,237,5.276216143750735,0.9941411059540596,170.68067661897575,18.618183866368224
+USDA_816,2018,Sep,Soybean,continuous,Std_N,Bulk Soil,2,2,6107,141,4.792768397798233,0.9906163081720775,106.56786458229156,11.624632245093574
