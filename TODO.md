@@ -1,4 +1,32 @@
 
+
+
+
+RHZ all species, use asv rel abundance as response variable
+rel abundance, THEN power transformation boxcox
+do year, month, block(location) fixed, do loop over 1885 ASVs
+select those with high variance component explained by species. shpuld overlap with pres/abs variable microbiome.
+
+
+
+
+
+
+
+
+
+
+asv log transformation coleman
+
+
+
+
+
+
+
+
+
+
 double check funny rhizosphere block effect
 
 do year, month, block(location) fixed
