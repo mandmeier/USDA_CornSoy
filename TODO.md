@@ -1,5 +1,49 @@
 
 
+
+
+RHZ all species, use asv rel abundance as response variable
+rel abundance, THEN power transformation boxcox
+do year, month, block(location) fixed, do loop over 1885 ASVs
+select those with high variance component explained by species. shpuld overlap with pres/abs variable microbiome.
+
+
+
+
+
+
+
+
+
+
+asv log transformation coleman
+
+
+
+
+
+
+
+
+
+
+double check funny rhizosphere block effect
+
+do year, month, block(location) fixed
+
+take variable microbiome
+make ASV table with corn specific and soy specific microbes
+diversity metrics for families
+
+
+
+
+
+
+
+
+
+
 ### Alpha diversity:
 find meaningful response variables: richness, evenness, Shannon diversity, other Alpha diversity indices
 plot frequency distribution of samples in histogram
