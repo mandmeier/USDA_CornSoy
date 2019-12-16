@@ -203,5 +203,8 @@ tax <- arrange(tax, specific_to, desc(total_relab))
 write_csv(tax, "data/RHZ_variable_genera_taxonomy.csv")
 
 
+
+
+tax
 ```
 

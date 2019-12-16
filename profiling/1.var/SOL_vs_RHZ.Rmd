@@ -1,0 +1,401 @@
+---
+title: "SOL_vs_RHZ"
+author: "Michael Meier"
+date: "12/6/2019"
+output: pdf_document
+---
+
+```{r setup}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+
+
+```{r}
+
+
+
+d <- read.csv("data/ASV_perc_var.csv")
+
+m <- d %>%
+  gather("grp", "perc_var", Year:Residual) %>%
+  subset(grp != "Residual")
+
+
+m$grp <- factor(m$grp, levels = c("Year", "Month", "Species", "Rotation", "Nitrogen", "Block", "Rep", "Residual"))
+
+m$Fraction <- factor(m$Fraction, levels = c("rhizosphere", "bulk soil"))
+
+
+p <- ggplot(m, aes(x = grp, y = perc_var, fill = Fraction)) +
+  geom_boxplot(outlier.size = 0.5) +
+  theme_classic() +
+  ggtitle("percent variability explained for Rhizosphere (n=1885) and Bulk Soil (n=1490)") +
+  scale_fill_manual(values=c( "rhizosphere" = "#D9B382", "bulk soil" = "#80471C")) +
+  #theme(legend.position = c(0.9, 0.8), legend.direction = "vertical") +
+  theme(legend.title = element_blank()) +
+  xlab("") +
+  ylab("variance explained")
+
+p
+
+
+```
+
+
+
+
+
+
+### PCoA
+
+```{r}
+
+# outliers <- subset_samples(ps, prev_filter_counts < 100)
+
+
+library("phyloseq")
+
+## load phyloseq object
+load("data/ps_noMCft.RData")
+
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+sample_data(ps) <- d
+# outliers <- subset_samples(ps, ASV_counts < 100)
+ps <- subset_samples(ps, ASV_counts >= 100 & Fraction != "Endosphere" ) ## USDA_168 PCoA outlier
+#Sample_ID != "USDA_168" 
+### Subset RHZ 
+ps
+
+### raelative abundance and log transform
+ps <- transform_sample_counts(ps, function(x) log(x/sum(x) + 0.000001))
+
+sample_data(ps)$Year <- paste0("Y", as.character(sample_data(ps)$Year))
+
+
+betaplot <- function(phyloseq_object, color , title = "", method = "PCoA",distance = "wunifrac") {
+  # distance can be "unifrac","wunifrac", "bray"
+  
+  # Ordinate
+  set.seed(2017) #to randomly root tree wor weighted metrics
+  ord <- ordinate(physeq = phyloseq_object, method = method, distance = distance)
+  # Draw plot
+  pcoa_plot <- plot_ordination(physeq = phyloseq_object, ordination = ord, color = color, title = title) +
+    geom_point(size=2, shape = 21, alpha=0.7, color="black") +
+    stat_ellipse(type = "t") +
+    scale_color_manual(values=c("#80471C", "#D9B382")) +
+    theme_bw() +
+    theme(panel.border = element_blank(),
+      plot.background = element_blank(),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      axis.line = element_line(color = "black"),
+      axis.text.x  = element_text(vjust=0.5, size=16),
+      axis.text.y  = element_text(vjust=0.5, size=16),
+      axis.title.x = element_text(face="bold", size=16),
+      axis.title.y = element_text(face="bold", size=16),
+      legend.title=element_text(size=16, face = "bold"),
+      legend.text=element_text(size=14))
+  return(pcoa_plot)
+}
+
+
+
+
+
+ps_2017 <- subset_samples(ps, Year == "Y2017")
+ps_2018 <- subset_samples(ps, Year == "Y2018")
+
+p2017 <- betaplot(ps_2017, color = "Fraction", title = "PCoA | weighted unifrac")
+p2018 <- betaplot(ps_2018, color = "Fraction", title = "PCoA | weighted unifrac")
+
+p1
+p2017
+p2018
+
+p1 <- betaplot(ps, color = "Fraction", title = "PCoA | weighted unifrac")
+p2 <- betaplot(ps, color = "Species", title = "PCoA | weighted unifrac")
+p3 <- betaplot(ps, color = "Nitrogen", title = "PCoA | weighted unifrac")
+p4 <- betaplot(ps, color = "Year", title = "PCoA | weighted unifrac")
+
+p1
+p2
+p3
+p4
+
+```
+
+
+
+
+
+
+```{r}
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+# diffab families
+
+```{r}
+
+
+
+
+
+
+
+```
+
+
+
+### total relative abundance RHZ vs SOL
+
+```{r}
+
+load("data/plot_object.rda")
+
+taxa <- po %>%
+  subset(grp == "Species") %>%
+  select(taxa2, Fraction, n, total_relab) %>%
+  group_by(taxa2, Fraction) %>%
+  subset(total_relab >= 0.005)
+  
+
+
+#### find descending order for all groups
+in_SOL <- subset(taxa, Fraction == "bulk soil")$taxa2
+in_RHZ <- subset(taxa, Fraction == "rhizosphere")$taxa2
+
+in_both <- intersect(in_SOL, in_RHZ)
+only_in_RHZ <- in_RHZ[!(in_RHZ %in% in_both)]
+only_in_SOL <- in_SOL[!(in_SOL %in% in_both)]
+
+both_order <- arrange(subset(taxa, Fraction == "rhizosphere" & taxa2 %in% in_both), total_relab)$taxa2
+RHZ_order <- arrange(subset(taxa, Fraction == "rhizosphere" & taxa2 %in% only_in_RHZ), total_relab)$taxa2
+SOL_order <- arrange(subset(taxa, Fraction == "bulk soil" & taxa2 %in% only_in_SOL), total_relab)$taxa2
+
+taxa_order <- c(SOL_order, RHZ_order, both_order)
+taxa$taxa2 <- factor(taxa$taxa2, levels = taxa_order)
+taxa$Fraction <- factor(taxa$Fraction, levels = c("rhizosphere", "bulk soil"))
+
+
+px <- ggplot(data = taxa,
+  mapping = aes(x = taxa2, y = ifelse(test = Fraction == "rhizosphere", yes = -total_relab, no = total_relab),
+  fill = Fraction)) +
+  geom_col() +
+  scale_y_continuous(labels = abs, limits = max(taxa$total_relab) * c(-1,1)) +
+  labs(y = "total relative abundance") +
+  theme_classic() +
+  scale_fill_manual(values=c( "rhizosphere" = "#D9B382", "bulk soil" = "#80471C")) +
+  theme(legend.position = c(0.9, 0.5), legend.direction = "vertical") +
+  theme(legend.title = element_blank()) +
+  #theme(axis.text.y=element_text(hjust = 0, vjust = 0)) +
+  coord_flip()
+
+px
+
+
+```
+
+
+
+
+```{r}
+
+
+var <- read.csv("data/ASV_perc_var.csv")
+var$taxa2 <- ifelse(is.na(var$Genus), paste0("f__", var$Family), paste0("g__", var$Genus))
+
+### plot Year, Month, Species, Nitrogen
+
+po <- var %>%
+  select()
+  gather("grp", "perc_var", Year:Residual) %>%
+  group_by(Species, Fraction, grp, taxa2) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE),
+    sd_pc = sd(perc_var, na.rm = TRUE),
+    n = n(),
+    relab_sumsum = sum(relab_sum)) %>%
+  mutate(sem_pc = sd_pc/sqrt(n)) %>%
+  mutate(total_relab = relab_sumsum/sum(relab_sumsum, na.rm = TRUE)) %>% ## relative abundnce in each grp
+  arrange(Fraction, grp,-mean_pc)
+  
+
+
+
+
+#### convert to relative abundance, aka Total Sum Normalization [TSS]
+#asvs_rel <- data.frame(t(apply(asvs, 1, function(x) x/sum(x))))
+
+### merge sample data with asv counts
+sample_dat <- as.data.frame(as.matrix(sample_data(ps)))
+asvs <- rownames_to_column(asvs, var = "Sample_ID")
+dat <- left_join(sample_dat, asvs)
+
+
+data <- dat %>%
+  select(Species, Fraction, 16:ncol(dat)) %>%
+  group_by(Species, Fraction)
+  
+
+test <- data %>%
+  subset(Species == "Soybean" & Fraction == "Rhizosphere")
+
+
+x <- data.frame(colSums(test[, -c(1,2)]))
+
+x
+
+
+
+### merge otu table with raw counts with taxonomy, add tax2
+
+
+## load phyloseq object
+load("data/ps_noMCft.RData")
+
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+sample_data(ps) <- d
+
+# outliers <- subset_samples(ps, ASV_counts < 100)
+ps <- subset_samples(ps, ASV_counts >= 100 & Fraction != "Endosphere") ### remove low samples
+#### prepare data to use as  response variables: add asv relative abundances to sample data
+asvs <- as.data.frame(otu_table(ps))
+
+tax_table <- as.data.frame(as.matrix(tax_table(ps)))
+tax_table$taxa2 <- ifelse(is.na(tax_table$Genus), paste0("f__", tax_table$Family), paste0("g__", tax_table$Genus))
+
+asv_table <- merge(tax_table,t(asvs),by="row.names")
+colnames(asv_table)[1] <- "ASV"
+
+### agglomerate raw counts at taxa levels
+glom <- asv_table %>%
+  gather("sample", "count", -c(1:9)) %>%
+  group_by(taxa2, sample) %>%
+  summarize(count = sum(count)) %>%
+  spread(sample, count)
+
+### relative abundance of agglometared table
+# convert to relative abundance, aka Total Sum Normalization [TSS]
+
+glom <- data.frame(apply( column_to_rownames(glom, var="taxa2"), 1, function(x) x/sum(x)))
+
+### add sample data to agglomerated tax table
+
+glom <- rownames_to_column(glom)
+colnames(glom)[1] <- "Sample_ID"
+  
+relab <- left_join(sample_data(ps), glom)
+
+
+
+### sum relab by sample group C rhz, S rhz, C sol, S sol
+### relab of relab in each group
+
+
+#### check relabsum. did I sum over all samples or only over samples in Species/Fraction group?
+
+
+
+totalra <- relab %>%
+  select(Species, Fraction, Sample_ID, 16:ncol(relab)) %>%
+  gather("taxa2", "relab", -c(1,2,3)) %>% ## relative abundance within each sample
+  group_by(Species, Fraction, taxa2) %>%
+  summarize(relabsum = sum(relab)) %>% ## sum of relative abundances across all samples
+  group_by(Species, Fraction) %>%
+  mutate(total_relab = relabsum/sum(relabsum))
+ 
+  
+### fix taxa names
+library("stringr")
+totalra$taxa2 <- str_replace(totalra$taxa2, "f__.Entotheonellaceae.", "f__[Entotheonellaceae]")
+totalra$taxa2 <- str_replace(totalra$taxa2, "g__Candidatus.Nitrososphaera", "g__Candidatus Nitrososphaera")
+totalra$taxa2 <- str_replace(totalra$taxa2, "f__0319.6A21", "f__0319-6A21")
+
+
+
+
+### order by phylo tree tip order
+#tip_order <- load("data/tip_order.rda")
+totalra$taxa2 <- factor(totalra$taxa2, levels = rev(tip_order))
+
+levels(totalra$taxa2)
+
+str(totalra$taxa2)
+
+rev(tip_order)
+
+
+
+
+
+### plot
+
+### create other category:
+#totalra <- mutate(totalra, taxa = ifelse(total_relab < 0.005, "other", taxa2))
+
+py <- ggplot(data = totalra,
+  mapping = aes(x = taxa2, y = ifelse(test = Species == "Corn", yes = -total_relab, no = total_relab),
+  fill = Species)) +
+  geom_col() +
+  scale_y_continuous(labels = abs, limits = max(totalra$total_relab) * c(-1,1)) +
+  labs(y = "total relative abundance") +
+  theme_classic() +
+  scale_fill_manual(values=c( "Corn" = "#D9B382", "Soybean" = "#80471C")) +
+  theme(legend.position = c(0.9, 0.5), legend.direction = "vertical") +
+  theme(legend.title = element_blank()) +
+  #theme(axis.text.y=element_text(hjust = 0, vjust = 0)) +
+  coord_flip() +
+  facet_wrap(~Fraction, nrow = 1)
+
+py
+
+
+
+
+
+
+```
+
+
+```{r}
+# total number of ASVs
+
+
+
+subset <- subset(po, grp == "Species" & Fraction == "rhizosphere")
+subset$taxa2 <- factor(subset$taxa2, levels = rev(tip_order))
+
+
+
+px <- ggplot(subset, aes(x = taxa2, y = n)) +
+  geom_bar(stat = "identity") +
+  theme_classic() +
+  coord_flip() +
+  geom_text(aes(label=n), hjust = -0.2, vjust= 0.5, fontface = "bold", size = 2)
+
+px
+
+
+
+```
+
+

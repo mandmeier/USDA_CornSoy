@@ -1,0 +1,311 @@
+---
+title: "Nitrogen_effect"
+author: "Michael Meier"
+date: "12/10/2019"
+output: pdf_document
+---
+
+```{r setup}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+
+### Nitrogen effect
+
+```{r}
+
+library("tidyverse")
+
+##################################################################
+##################################################################
+#### variance explained ####
+##################################################################
+##################################################################
+
+
+var <- read.csv("data/ASV_perc_var.csv")
+var$taxa2 <- ifelse(is.na(var$Genus), paste0("f__", var$Family), paste0("g__", var$Genus))
+
+### plot Year, Month, Species, Nitrogen
+
+po <- var %>%
+  gather("grp", "perc_var", Year:Residual) %>%
+  group_by(Fraction, grp, taxa2) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE),
+    sd_pc = sd(perc_var, na.rm = TRUE),
+    n = n(),
+    relab_sumsum = sum(relab_sum)) %>%
+  mutate(sem_pc = sd_pc/sqrt(n)) %>%
+  mutate(total_relab = relab_sumsum/sum(relab_sumsum, na.rm = TRUE)) %>% ## relative abundnce in each grp
+  arrange(Fraction, grp,-mean_pc)
+  
+ 
+  
+plot_by_taxa <- function(po, h, g){
+  #h = "rhizosphere"
+  #g = "Nitrogen"
+  subset <- po %>%
+    subset(Fraction == h & grp == g) %>%
+    top_n(20, mean_pc)
+  
+  p <- ggplot(subset, aes(x = reorder(taxa2, -mean_pc), y = mean_pc)) +
+    geom_bar(stat = "identity") +
+    theme_classic() +
+    ggtitle(paste(h, "| mean percent variability explained by", g)) +
+    geom_text(aes(label = n, y= -2.5), colour = "black", vjust = -1, fontface = "bold", size = 2) +
+    theme(axis.text.x=element_text(angle = -90, hjust = 0, vjust = 0.5)) +
+    scale_y_continuous(limits = c(-5,45), expand = c(0, -2.5)) +
+    geom_errorbar(aes(ymin = mean_pc - sem_pc, ymax = mean_pc + sem_pc), width=0.2) +
+    xlab("taxon")
+  return(p)
+}
+
+
+p1 <- plot_by_taxa(po, "rhizosphere", "Nitrogen")
+p4 <- plot_by_taxa(po, "bulk soil", "Nitrogen")
+
+
+
+
+##################################################################
+##################################################################
+###total abundance 
+##################################################################
+##################################################################
+
+
+plot_totab <- function(po, h, g){
+  #h = "rhizosphere"
+  #g = "Nitrogen"
+  subset <- subset(po, Fraction == h & grp == g & total_relab >= 0.005) #& mean_pc >= 5
+  
+  p <- ggplot(subset, aes(x = reorder(taxa2, -mean_pc), y = total_relab)) +
+    geom_bar(stat = "identity") +
+    theme_classic() +
+    ggtitle(paste(h, "| total relative abundance of taxonomic groups ( var explained by", g, ")")) +
+    #geom_text(aes(label = n, y= -2.5), colour = "black", vjust = -1, fontface = "bold", size = 2) +
+    theme(axis.text.x=element_text(angle = -90, hjust = 0, vjust = 0.5)) +
+    #scale_y_continuous(limits = c(-5,45), expand = c(0, -2.5)) +
+    #geom_errorbar(aes(ymin = mean_pc - sem_pc, ymax = mean_pc + sem_pc), width=0.2) +
+    xlab("taxon")
+  return(p)
+}
+
+
+p2 <- plot_totab(po, "rhizosphere", "Nitrogen")
+p5 <- plot_totab(po, "bulk soil", "Nitrogen")
+
+
+
+##################################################################
+##################################################################
+#### differential abundance ####
+##################################################################
+##################################################################
+
+library("DESeq2")
+
+#### load data
+ 
+#fraction = "Bulk Soil"
+## load phyloseq object
+load("data/ps_noMCft.RData")
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+sample_data(ps) <- d
+# outliers <- subset_samples(ps, ASV_counts < 100)
+
+
+diffab <- function(ps, fraction){
+  
+  #fraction = "Rhizosphere"
+  
+  ### subset by Fraction 
+  ps <- prune_samples(sample_data(ps)$ASV_counts >= 100 & sample_data(ps)$Fraction == fraction, ps) ### subset_samples does not work in function for some reason
+  
+  ps <- prune_taxa(taxa_sums(ps) > 0, ps) ### remove unnecessary ASVs
+
+  ### get sample data
+  sample_data <- as.data.frame(as.matrix(sample_data(ps)))
+    
+  ### get otu table and agglomerate by taxa groups
+  taxa <- subset(var, Fraction == tolower(fraction))
+  
+  otu_table <- as.data.frame(t(as.matrix(otu_table(ps))))
+  otu_table <- rownames_to_column(otu_table, var = "ASV") 
+  otu_table <- left_join(taxa, otu_table, copy = TRUE)
+  
+  bytaxa <- otu_table %>%
+    select(-c(1:20)) %>% ### remove unnecessary columns
+    group_by(taxa2) %>%
+    summarise_all(funs(sum))
+  
+  ## apply pseudocount 
+  bytaxa[, -1] <- lapply(bytaxa[, -1], FUN = function(x) x+1)
+  bytaxa <- column_to_rownames(bytaxa, var = "taxa2")
+  
+  
+  ### deseq2
+  ddsFullCountTable <- DESeqDataSetFromMatrix(
+    countData = bytaxa,
+    colData = sample_data,
+    design = ~ Nitrogen)
+  
+  diagdds <-  DESeq(ddsFullCountTable, test="Wald", fitType="parametric")
+  res <- results(diagdds, cooksCutoff = FALSE)
+  res <- as.data.frame(res)
+  
+  ### subset plot object
+  diffab <- po %>%
+    arrange(Fraction, grp, taxa2) %>%
+    subset(Fraction == tolower(fraction) & grp == "Nitrogen")
+  
+  diffab$log2FoldChange <- res$log2FoldChange
+  diffab$lfcSE <- res$lfcSE
+  diffab$padj <- res$padj
+  diffab$color <- ifelse(diffab$log2FoldChange < 0, "negative","positive")
+  
+  return(diffab)
+
+}
+
+
+
+### calculate differential abundance
+
+diffab_RHZ <- diffab(ps, fraction = "Rhizosphere")
+diffab_SOL <- diffab(ps, fraction = "Bulk Soil")
+
+## significance levels
+diffab_RHZ$signif <- ifelse(diffab_RHZ$padj <= 0.001, "***", ifelse(diffab_RHZ$padj > 0.001 & diffab_RHZ$padj <= 0.01, "**", ifelse(diffab_RHZ$padj > 0.01 & diffab_RHZ$padj <= 0.5, "**", "ns")))
+
+diffab_SOL$signif <- ifelse(diffab_SOL$padj <= 0.001, "***", ifelse(diffab_SOL$padj > 0.001 & diffab_SOL$padj <= 0.01, "**", ifelse(diffab_SOL$padj > 0.01 & diffab_SOL$padj <= 0.5, "**", "ns")))
+
+
+
+plot_diffab <- function(
+  diffab,
+  topn = 20,
+  label_neg = "negative",
+  label_pos = "positive",
+  color_neg = "red",
+  color_pos = "blue"){
+  
+  #subset <- subset(diffab, total_relab >= relab_cutoff)
+  subset <- top_n(diffab, topn, mean_pc)
+  
+  h <- diffab$Fraction[1]
+  g <- diffab$grp[1]
+
+  p <- ggplot(subset, aes(x = reorder(taxa2, -mean_pc), y = log2FoldChange)) +
+    geom_bar(stat = "identity", aes(fill = color)) +
+    theme_classic() +
+    ggtitle(paste0(h, " | differential abundance of taxonomic groups (var explained by ", g, ")")) +
+    geom_errorbar(aes(ymin = log2FoldChange - lfcSE, ymax = log2FoldChange + lfcSE), width=0.2) +
+    theme(axis.text.x=element_text(angle = -90, hjust = 0, vjust = 0.5)) +
+    scale_fill_manual(values=c(positive=color_pos, negative=color_neg), labels = c(label_neg, label_pos)) +
+    geom_text(aes(label = signif,  vjust = ifelse(subset$log2FoldChange >= 0, -1, 2)), colour = "black", fontface = "bold", size = 3) +
+    scale_y_continuous(limits = c(-8,8)) +
+    xlab("") +
+    labs(fill = "") #+
+    #theme(legend.position = c(0.7, 0.1), legend.direction = "horizontal")
+    
+    return(p)
+}
+
+
+## plot differential abundance
+
+p3 <- plot_diffab(diffab_RHZ, label_neg = "more abundant under Low N", label_pos = "more abundant under Std N")
+p6 <- plot_diffab(diffab_SOL, label_neg = "more abundant under Low N", label_pos = "more abundant under Std N")
+
+
+
+
+### Rhizosphere
+
+p1
+p2
+p3
+
+
+```
+
+
+
+
+```{r}
+
+### Bulk Soil
+
+p4
+p5
+p6
+
+```
+
+
+
+# jitterdodge box plot of var_explained instead of mean var explained to see if all ASVs in genus cluster into one group, if not make hypothetical groups.
+
+
+
+
+```{r}
+
+pp <- var %>%
+  gather("grp", "perc_var", Year:Residual) %>%
+  group_by(Fraction, grp, taxa2) #%>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE),
+    sd_pc = sd(perc_var, na.rm = TRUE),
+    n = n(),
+    relab_sumsum = sum(relab_sum)) %>%
+  mutate(sem_pc = sd_pc/sqrt(n)) %>%
+  mutate(total_relab = relab_sumsum/sum(relab_sumsum, na.rm = TRUE)) %>% ## relative abundnce in each grp
+  arrange(Fraction, grp,-mean_pc)
+  
+  
+  
+  
+#### make jitterplot for all factors Year, Month, Species, Year
+  ## for both rhz and sol: 8 plots
+
+h = "rhizosphere"
+g = "Nitrogen"
+subset <- pp %>%
+  subset(Fraction == h & grp == "Nitrogen") #!(taxa2 %in% bimod)) #%>%
+  #top_n(20, mean_pc)
+
+px <- ggplot(subset, aes(x = taxa2, y = perc_var)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(shape = 21, size = 1) +
+  theme_classic() +
+  ggtitle(paste(h, "| percent variability explained by", g)) +
+  #geom_text(aes(label = n, y= -2.5), colour = "black", vjust = -1, fontface = "bold", size = 2) +
+  theme(axis.text.x=element_text(angle = -90, hjust = 0, vjust = 0.5)) +
+  #scale_y_continuous(limits = c(-5,45), expand = c(0, -2.5)) +
+  #geom_errorbar(aes(ymin = mean_pc - sem_pc, ymax = mean_pc + sem_pc), width=0.2) +
+  xlab("")
+
+
+
+px
+
+
+
+# bimodal candidates
+bimod <- c("g__Bradyrhizobium", "f__Chitinophagaceae", "g__Chitinophaga", "g__Kaistobacter", "g__Methylibium", "g__Pantoea","g__Mesorhizobium")
+
+
+## pantoea 
+
+
+```
+
+
+
+
+

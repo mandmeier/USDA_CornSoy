@@ -1,0 +1,615 @@
+---
+title: "ASV_model"
+author: "Michael Meier"
+date: "12/3/2019"
+output: pdf_document
+---
+
+1. subset RHZ, use asv rel abundance as response variable
+
+2. power transformation boxcox, find best transformation for all data
+
+3. linear model, do year, month, block(location) fixed
+
+4. loop over 1885 ASVs, select those with high variance component explained by species, should overlap with specific ones found by relative abundance
+
+
+
+```{r setup}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+
+# 1. subset RHZ, use asv rel abundance as response variable
+
+```{r}
+
+library("phyloseq")
+library("tidyverse")
+library("gridExtra")
+library("lme4")
+
+## load phyloseq object
+load("data/ps_noMCft.RData")
+
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+sample_data(ps) <- d
+
+
+# outliers <- subset_samples(ps, ASV_counts < 100)
+ps <- subset_samples(ps, ASV_counts >= 100 & Sample_ID != "USDA_168" ) ## USDA_168 PCoA outlier
+
+### Subset RHZ 
+ps <- subset_samples(ps, Fraction == "Rhizosphere")
+ps
+
+
+```
+
+
+2. power transformation boxcox, find best transformation for all data
+
+```{r}
+
+#### prepare data to use as  response variables: add asv relative abundances to sample data
+asvs <- as.data.frame(otu_table(ps))
+
+#### convert to relative abundance, aka Total Sum Normalization [TSS]
+asvs_rel <- data.frame(t(apply(asvs, 1, function(x) x/sum(x))))
+
+### merge sample data with asv counts
+sample_dat <- as.data.frame(as.matrix(sample_data(ps)))
+asvs_rel <- rownames_to_column(asvs_rel, var = "Sample_ID")
+dat <- left_join(sample_dat, asvs_rel)
+
+#### plot if normal
+### gather relevant columns
+plot_set <- dat[, c(16:ncol(dat))]
+m <- gather(plot_set, "ASV", "relab")
+
+### histogram
+p1 <- ggplot(m, aes(x=relab)) +
+  geom_histogram(bins = 100, fill = "blue") +
+  xlab("relative abundance") +
+  ggtitle("all values in ASV table, not normalized, PPCC 0.538") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8))
+  
+
+### leave out zero
+
+n <- subset(m, relab > 0)
+
+### histogram
+p2 <- ggplot(n, aes(x=relab)) +
+  geom_histogram(bins = 100, fill = "blue") +
+  xlab("relative abundance") +
+  ggtitle("non-zero values only, not normalized, PPCC 0.7973149") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8))
+  
+
+### boxcox
+
+library("EnvStats")
+#
+b_all_values <- EnvStats::boxcox(m[, "relab"]+ 0.000001)
+b_not_zero <- EnvStats::boxcox(n[, "relab"])
+
+b_all_values ## ln PPCC 0.6817089
+b_not_zero ## ## ln PPCC 0.9872751
+
+### ln transformation is the best whether I include zeroes or not
+
+
+### histogram
+p3 <- ggplot(m, aes(x = log(relab + 0.000001))) +
+  geom_histogram(bins = 100, fill = "red") +
+  xlab("log(relative abundance)") +
+  ggtitle("all values in ASV table, log transformed, PPCC 0.682") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8))
+  
+
+### histogram
+p4 <- ggplot(n, aes(x = log(relab + 0.000001))) +
+  geom_histogram(bins = 100, fill = "red") +
+  xlab("log(relative abundance)") +
+  ggtitle("non-zero values only, log transformed, PPCC 0.999") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8))
+  
+
+grid.arrange(p1,p2,p3,p4, nrow = 2)
+
+
+```
+
+
+```{r}
+
+# plot 9 randomly selected individual ASV distributions
+
+set.seed(1)
+asvs9 <- sample(colnames(plot_set), 9)
+m9 <- gather(plot_set[, asvs9], "ASV", "relab")
+n9 <- subset(m9, relab > 0)
+
+### histogram
+p_rand9 <- ggplot(n9, aes(x = log(relab + 0.000001))) +
+  geom_histogram(bins = 100, fill = "red") +
+  xlab("log(relative abundance)") +
+  ggtitle("randomly selected ASVs, log transformed relative abundance of non-zero samples") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8)) +
+  facet_wrap(~ASV, ncol = 3, scales = "free")
+  
+  
+
+sums <- m %>%
+  group_by(ASV) %>%
+  summarize(relab_sum = sum(relab, na.rm = TRUE)) %>%
+  arrange(-relab_sum)
+
+
+
+## plot the 9 most abundant asvs
+
+top9 <- sums$ASV[1:9]
+mt9 <- gather(plot_set[, top9], "ASV", "relab")
+nt9 <- subset(mt9, relab > 0)
+
+
+### histogram
+p_top9 <- ggplot(nt9, aes(x = log(relab + 0.000001))) +
+  geom_histogram(bins = 100, fill = "red") +
+  xlab("log(relative abundance)") +
+  ggtitle("most abundant ASVs, log transformed relative abundance of non-zero samples") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8)) +
+  facet_wrap(~ASV, ncol = 3, scales = "free")
+  
+
+```
+
+```{r}
+
+### test asvs for normality, rank by most normal
+
+## replace zeros with NAs
+plot_set_na <- plot_set
+plot_set_na[plot_set_na == 0] <- NA
+
+### normalized table with zeros
+log_plot_set <- plot_set
+log_plot_set <- log(log_plot_set + 0.000001)
+
+### normalized table without zeros
+log_plot_set_na <- plot_set_na
+log_plot_set_na <- log(log_plot_set_na + 0.000001)
+
+
+### Shapiro test
+
+library("stats")
+
+shapiro.test(log_plot_set_na[,1])$p
+shapiro <- apply(log_plot_set_na, 2, function(x) return(shapiro.test(x)$p))
+shap <- data_frame("ASV" = names(shapiro), "shap_p" = unname(shapiro))
+
+### add shapiro p's to data frame with total abundance
+sums <- left_join(sums, shap)
+### order
+sums <- sums %>%
+  arrange(-shap_p)
+
+
+### 1638 ASVs have shap_p > 0.05
+
+shap9 <- sums$ASV[1:9]
+ms9 <- gather(plot_set[, top9], "ASV", "relab")
+ns9 <- subset(ms9, relab > 0)
+
+### histogram
+p_shap9 <- ggplot(ns9, aes(x = log(relab + 0.000001))) +
+  geom_histogram(bins = 100, fill = "red") +
+  xlab("log(relative abundance)") +
+  ggtitle("most abundant ASVs, log transformed relative abundance of non-zero samples") +
+  theme_classic() +
+  theme(plot.title = element_text(size = 8)) +
+  facet_wrap(~ASV, ncol = 3, scales = "free")
+  
+p_shap9
+
+
+
+```
+
+
+
+1638 out of 1885 ASVs have Shapiro p > 0.05.
+good to go with log transformed relative abundance
+
+
+
+3. linear model, do year, month, block(location) fixed, loop over 1885 ASVs, 
+
+```{r}
+
+
+### log transformed values in dat
+cols <- colnames(dat)[16:ncol(dat)]
+dat_log <- mutate_at(dat, .vars=cols, .funs = function(x) log(x + 0.000001))
+
+## lmer model fit function ## tweak this to change model
+
+get_fit <- function(dat, Y){
+  formula <- as.formula(paste(Y, "~ (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen)  + (1|Block) + (1|Rep)"))
+  fit <- lmer(data = dat, formula)
+  return(fit)
+}
+
+
+## calculate percent variability for all asvs
+
+#cols_test <- cols[1:10]
+
+df <- data_frame(grp =c("Year", "Month", "Species", "Rotation", "Nitrogen", "Block", "Rep", "Residual"))
+for (Y in cols){
+  fit <- get_fit(dat_log, Y)
+  vc <- as.data.frame(VarCorr(fit))
+  vc[, Y] <- round(vc$vcov/sum(vc$vcov)*100, 8)
+  vc <- vc[, c("grp", Y)]
+  df <- left_join(df, vc)
+  }
+
+pcvar <- as.data.frame(t(df[, -1]))
+colnames(pcvar) <- df$grp
+pcvar <- rownames_to_column(pcvar, var = "ASV")
+
+
+### add total abundance and shapiro p:
+all <- left_join(sums, pcvar)
+
+### add taxonomy
+tax <- as.data.frame(as.matrix(tax_table(ps)))
+tax <- rownames_to_column(tax, var = "ASV")
+tax <- mutate_at(tax, .vars = colnames(tax), .funs = as.character)
+
+colnames(tax)[8] <- "species" ### change this to avoid overlap with plant Species
+all <- left_join(all, tax)
+
+### save data frame with pervent variability of asvs
+write.csv(all, "data/ASV_perc_var_RHZ.csv")
+
+
+### gather to plot
+
+plot_object <- gather(all, "grp", "perc_var", Year:Residual)
+
+mean_pc <- plot_object %>%
+  group_by(grp) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE), sd_pc = sd(perc_var, na.rm = TRUE))
+
+plot_object$grp <- factor(plot_object$grp, levels = c("Year", "Month", "Species", "Rotation", "Nitrogen", "Block", "Rep", "Residual"))
+
+p5 <- ggplot(plot_object, aes(x = grp, y = perc_var)) +
+  geom_boxplot() +
+  theme_classic() +
+  ggtitle("percent variability explained for 1885 ASVs")
+
+p5
+
+```
+
+
+
+
+4. select ASVs with high variance component explained by species, should overlap with specific ones found by relative abundance
+
+
+```{r}
+
+### plot Year, Month, Species, Nitrogen
+
+po <- plot_object %>%
+  group_by(grp, Genus) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE),
+    sd_pc = sd(perc_var, na.rm = TRUE),
+    n = n()) %>%
+  mutate(sem_pc = sd_pc/sqrt(n))%>%
+  arrange(grp,-mean_pc)
+
+?mutate
+  
+  
+plot_by_genus <- function(po, g){
+  subset <- subset(po, grp == g)
+  p <- ggplot(subset, aes(x = reorder(Genus, -mean_pc), y = mean_pc)) +
+    geom_bar(stat = "identity") +
+    theme_classic() +
+    ggtitle(paste("Mean percent variability explained by", g)) +
+    geom_text(aes(label = n, y= -2.5), colour = "black", vjust = -1, fontface = "bold", size = 2) +
+    theme(axis.text.x=element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+    scale_y_continuous(limits = c(-5,45), expand = c(0, -2.5)) +
+    geom_errorbar(aes(ymin = mean_pc - sem_pc, ymax = mean_pc + sem_pc), width=0.2) +
+    xlab("Genus")
+  return(p)
+}
+
+
+p6 <- plot_by_genus(po, "Year")
+p7 <- plot_by_genus(po, "Month")
+p8 <- plot_by_genus(po, "Species")
+p9 <- plot_by_genus(po, "Nitrogen")
+
+
+p6
+p7
+p8
+p9
+
+
+```
+
+
+
+
+#### Bulk Soil ####
+
+```{r}
+
+## load phyloseq object
+load("data/ps_noMCft.RData")
+
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+sample_data(ps) <- d
+
+# outliers <- subset_samples(ps, ASV_counts < 100)
+ps <- subset_samples(ps, ASV_counts >= 100 & Sample_ID != "USDA_168" ) ## USDA_168 PCoA outlier
+
+### Subset RHZ 
+ps <- subset_samples(ps, Fraction == "Bulk Soil")
+ps <- prune_taxa(taxa_sums(ps) > 0, ps) ### remove unused ASVs
+
+#### prepare data to use as  response variables: add asv relative abundances to sample data
+asvs <- as.data.frame(otu_table(ps))
+
+### shapiro test needs at least 3 observations for each ASV. remove OTUs that don't meet this
+### 1490 ASVs retained
+num_obs <- apply(asvs, 2, function(x) sum(x>0))
+obs <- num_obs[num_obs >= 3]
+asvs <- asvs[, names(obs)]
+
+
+#### convert to relative abundance, aka Total Sum Normalization [TSS]
+asvs_rel <- data.frame(t(apply(asvs, 1, function(x) x/sum(x))))
+
+### merge sample data with asv counts
+sample_dat <- as.data.frame(as.matrix(sample_data(ps)))
+asvs_rel <- rownames_to_column(asvs_rel, var = "Sample_ID")
+dat <- left_join(sample_dat, asvs_rel)
+
+#### plot if normal
+### gather relevant columns
+plot_set <- dat[, c(16:ncol(dat))]
+
+m <- gather(plot_set, "ASV", "relab")
+
+
+## plot the 9 most abundant asvs
+sums <- m %>%
+  group_by(ASV) %>%
+  summarize(relab_sum = sum(relab, na.rm = TRUE)) %>%
+  arrange(-relab_sum)
+
+### test asvs for normality, rank by most normal
+
+## replace zeros with NAs
+plot_set_na <- plot_set
+plot_set_na[plot_set_na == 0] <- NA
+
+### normalized table with zeros
+log_plot_set <- plot_set
+log_plot_set <- log(log_plot_set + 0.000001)
+
+### normalized table without zeros
+log_plot_set_na <- plot_set_na
+log_plot_set_na <- log(log_plot_set_na + 0.000001)
+
+
+### Shapiro test
+
+library("stats")
+shapiro <- apply(log_plot_set_na, 2, function(x) return(shapiro.test(x)$p))
+shap <- data_frame("ASV" = names(shapiro), "shap_p" = unname(shapiro))
+
+### add shapiro p's to data frame with total abundance
+sums <- left_join(sums, shap)
+### order
+sums <- sums %>%
+  arrange(-shap_p)
+
+
+
+### log transformed values in dat
+cols <- colnames(dat)[16:ncol(dat)]
+dat_log <- mutate_at(dat, .vars=cols, .funs = function(x) log(x + 0.000001))
+
+## lmer model fit function ## tweak this to change model
+
+get_fit <- function(dat, Y){
+  formula <- as.formula(paste(Y, "~ (1|Year) + (1|Month) + (1|Species) + (1|Rotation) + (1|Nitrogen)  + (1|Block) + (1|Rep)"))
+  fit <- lmer(data = dat, formula)
+  return(fit)
+}
+
+# + (1|Year:Month) + (1|Species:Nitrogen) ## interaction terms
+
+
+
+## calculate percent variability for all asvs
+
+#cols_test <- cols[1:10]
+
+df <- data_frame(grp =c("Year", "Month", "Species", "Rotation", "Nitrogen", "Block", "Rep", "Residual"))
+for (Y in cols){
+  fit <- get_fit(dat_log, Y)
+  vc <- as.data.frame(VarCorr(fit))
+  vc[, Y] <- round(vc$vcov/sum(vc$vcov)*100, 8)
+  vc <- vc[, c("grp", Y)]
+  df <- left_join(df, vc)
+  }
+
+pcvar <- as.data.frame(t(df[, -1]))
+colnames(pcvar) <- df$grp
+pcvar <- rownames_to_column(pcvar, var = "ASV")
+
+
+### add total abundance and shapiro p:
+all <- left_join(sums, pcvar)
+
+### add taxonomy
+tax <- as.data.frame(as.matrix(tax_table(ps)))
+tax <- rownames_to_column(tax, var = "ASV")
+tax <- mutate_at(tax, .vars = colnames(tax), .funs = as.character)
+
+colnames(tax)[8] <- "species" ### change this to avoid overlap with plant Species
+all <- left_join(all, tax)
+
+### save data frame with pervent variability of asvs
+write.csv(all, "data/ASV_perc_var_SOL.csv")
+
+
+### gather to plot
+
+plot_object <- gather(all, "grp", "perc_var", Year:Residual)
+
+mean_pc <- plot_object %>%
+  group_by(grp) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE), sd_pc = sd(perc_var, na.rm = TRUE))
+
+plot_object$grp <- factor(plot_object$grp, levels = c("Year", "Month", "Species", "Rotation", "Nitrogen", "Block", "Rep", "Residual"))
+
+p10 <- ggplot(plot_object, aes(x = grp, y = perc_var)) +
+  geom_boxplot() +
+  theme_classic() +
+  ggtitle("percent variability explained for 1490 ASVs")
+
+p10
+
+
+
+
+```
+
+
+
+
+```{r}
+
+### plot Year, Month, Species, Nitrogen
+
+po <- plot_object %>%
+  group_by(grp, Genus) %>%
+  summarize(mean_pc = mean(perc_var, na.rm = TRUE),
+    sd_pc = sd(perc_var, na.rm = TRUE),
+    n = n()) %>%
+  mutate(sem_pc = sd_pc/sqrt(n))%>%
+  arrange(grp,-mean_pc)
+
+?mutate
+  
+  
+plot_by_genus <- function(po, g){
+  subset <- subset(po, grp == g)
+  p <- ggplot(subset, aes(x = reorder(Genus, -mean_pc), y = mean_pc)) +
+    geom_bar(stat = "identity") +
+    theme_classic() +
+    ggtitle(paste("Mean percent variability explained by", g)) +
+    geom_text(aes(label = n, y= -2.5), colour = "black", vjust = -1, fontface = "bold", size = 2) +
+    theme(axis.text.x=element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+    scale_y_continuous(limits = c(-5,45), expand = c(0, -2.5)) +
+    geom_errorbar(aes(ymin = mean_pc - sem_pc, ymax = mean_pc + sem_pc), width=0.2) +
+    xlab("Genus")
+  return(p)
+}
+
+
+p11 <- plot_by_genus(po, "Year")
+p12 <- plot_by_genus(po, "Month")
+p13 <- plot_by_genus(po, "Species")
+p14 <- plot_by_genus(po, "Nitrogen")
+
+
+p11
+p12
+p13
+p14
+
+```
+
+
+
+### do differential abundance with "winners"
+
+### phylo tree with perc explained bar chart
+
+### do for bulk soil, see if rotation has effect
+
+### include yield data Marty? response by yield, but how to integrate continuous variable in model?
+
+### include unknown genera f_blah g_unk1
+
+### for each genus indicate differential abundance in lowN vs highN, Corn vs Soy
+
+### for each genus indicate abundance in RHZ vs Soil (relative abundance in ALL RHZ samples)
+
+
+```{r}
+
+library("tidyverse")
+### fix tax ranks
+pcvar <- read.csv("data/ASV_perc_var_SOL.csv")[, -1]
+### add last assigned taxonomic rank
+pcvar$taxa <- paste0("f__",pcvar$Family," g__", pcvar$Genus," s__",pcvar$species)
+pcvar$taxa <- str_replace(pcvar$taxa, "s__NA", "")
+pcvar$taxa <- str_replace(pcvar$taxa, "g__NA", "")
+pcvar$taxa <- str_replace(pcvar$taxa, "Candidatus Nitrososphaera", "Nitrososphaera")
+write.csv(pcvar, "data/ASV_perc_var_SOL.csv", row.names = FALSE)
+
+```
+
+
+
+```{r}
+
+#### merge data sets
+
+rhz <- read.csv("data/ASV_perc_var_RHZ.csv")
+rhz$Fraction <- "rhizosphere"
+
+sol <- read.csv("data/ASV_perc_var_SOL.csv")
+sol$Fraction <- "bulk soil"
+
+ASV_perc_var <- rbind(rhz, sol)
+
+ASV_perc_var <- ASV_perc_var %>%
+  select(ncol(ASV_perc_var), 1:(ncol(ASV_perc_var)-1)) %>%
+  arrange(Fraction, -relab_sum)
+
+
+
+write.csv(ASV_perc_var, "data/ASV_perc_var.csv", row.names = FALSE)
+
+
+```
+
+
+
