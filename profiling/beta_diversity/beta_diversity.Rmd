@@ -1,0 +1,43 @@
+---
+title: "beta_diversity"
+author: "Michael Meier"
+date: "11/15/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+### make ASV tables with different transformations of counts
+
+
+
+```{r}
+
+#### import raw asv table (counts)
+asv <- read.csv("data/ASV_table.csv", row.names = 1)
+
+#### natural log
+asv_log2 <- log2(asv + 1)
+
+
+#### relative abundance, aka Total Sum Normalization [TSS]
+asv_rel <- data.frame(apply(asv, 2, function(x) x/sum(x)))
+# use for BC dissimilarity, PCoA and PERMANOVA
+
+
+
+#### natural log
+asv_rel_log2 <- log2(asv_rel + 1)
+# try for beta div if most abundant asvs are evenly distributed across samples
+# this brings out differences in low-abundance microbes.
+
+
+### presence/absence
+asv_pa <- asv
+asv_pa[asv_pa > 0] <- 1
+
+```

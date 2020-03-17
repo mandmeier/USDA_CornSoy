@@ -1,0 +1,210 @@
+---
+title: "variable_microbiome"
+author: "Michael Meier"
+date: "11/25/2019"
+output: html_document
+---
+
+
+Here I subset the phyloseq objects to find the variable microbiome
+Among the variable microbiome I find genera that are unique to Corn and unique to Soybean
+I calculate relative abundances of genera among the variable microbiome (core microbiome, i.e. shared taxa are ignored)
+these relative abundances of species-specific genera can be used as response variable to compare treatments
+
+
+```{r setup}
+# , include=TRUE, warning=FALSE, echo=TRUE, error=FALSE
+knitr::opts_knit$set(root.dir=normalizePath('../../'))
+knitr::opts_chunk$set(warning=FALSE, message=FALSE, error=FALSE, echo=TRUE)
+```
+
+
+```{r}
+
+library("phyloseq")
+library("ggplot2")
+library("tidyverse")
+
+## load phyloseq object
+
+load("data/ps_noMCft.RData")
+
+### add new sample data to ps object
+d <- read.csv("data/sample_data.csv")
+rownames(d) <- d$Sample_ID
+
+### add groups C CS SC S
+d$group <- ""
+d[which(d$Species == "Corn" & d$Rotation == "continuous"), "group"] <- "C"
+d[which(d$Species == "Corn" & d$Rotation == "rotated"), "group"] <- "CS"
+d[which(d$Species == "Soybean" & d$Rotation == "rotated"), "group"] <- "SC"
+d[which(d$Species == "Soybean" & d$Rotation == "continuous"), "group"] <- "S"
+
+sample_data(ps) <- d
+
+## remove outliers with less than 100 ASV counts
+
+# outliers <- subset_samples(ps, ASV_counts < 100)
+ps <- subset_samples(ps, ASV_counts >= 100 & Sample_ID != "USDA_168" ) ## USDA_168 PCoA outlier
+
+### Subset RHZ 
+ps_RHZ <- subset_samples(ps, Fraction == "Rhizosphere")
+ps_RHZ
+
+
+```
+
+
+```{r}
+#### make core and variable microbiome ####
+
+### function
+get_unique_ASVs <- function(ps, rotation){
+  subset <- prune_samples(sample_data(ps)$group == rotation, ps) ### subset_samples does not work in function for some reason
+  selection <- prune_taxa(taxa_sums(subset) > 0, subset)
+  unique <- colnames(otu_table(selection))
+  return(unique)
+}
+
+#### RHZ
+C_unique <- get_unique_ASVs(ps_RHZ, "C")
+CS_unique <- get_unique_ASVs(ps_RHZ, "CS")
+SC_unique <- get_unique_ASVs(ps_RHZ, "SC")
+S_unique <- get_unique_ASVs(ps_RHZ, "S")
+
+intersect_list <- list(C_unique, CS_unique, SC_unique, S_unique)
+
+get_core <- function(intersect_list, count = FALSE){
+  if (count == TRUE){
+    common_asvs <- length(Reduce(intersect,intersect_list))
+  }
+  else{
+    common_asvs <- Reduce(intersect,intersect_list)
+  }
+  return(common_asvs)
+}
+
+### get core microbiome
+core <- get_core(intersect_list)
+
+### get variable microbiome
+### subset anything NOT core, i.e. variable microbiome
+
+pop_taxa = function(physeq, badTaxa){
+  allTaxa <- taxa_names(physeq)
+  myTaxa <- allTaxa[!(allTaxa %in% badTaxa)]
+  return(prune_taxa(myTaxa, physeq))
+}
+
+ps_RHZ_var <-  pop_taxa(ps_RHZ, core)
+
+
+###
+
+asvs <- taxa_names(ps_RHZ)
+tree_data <- data.frame("asv" = asvs, "C" = 0, "CS" = 0, "SC" = 0, "S" = 0)
+
+
+
+### mark with 1 if ASV is found in rotation
+tree_data <- tree_data %>% 
+  mutate(C = case_when(asv %in% C_unique ~ 1, TRUE ~ 0)) %>%
+  mutate(CS = case_when(asv %in% CS_unique ~ 1, TRUE ~ 0)) %>%
+  mutate(SC = case_when(asv %in% SC_unique ~ 1, TRUE ~ 0)) %>%
+  mutate(S = case_when(asv %in% S_unique ~ 1, TRUE ~ 0))
+
+
+rownames(tree_data) <- tree_data$asv ## make asv ids row names
+tree_data <- tree_data[,-1] ## remove asv column
+
+
+
+
+
+### Rhizosphere
+
+### asvs only in Corn:
+Corn_only <- rownames(subset(tree_data, C == 1 & CS == 1 & S == 0 & SC == 0))
+RHZ_C <- prune_taxa(Corn_only, ps_RHZ)
+RHZ_C_glom <- tax_glom(RHZ_C, taxrank = "Genus", NArm = FALSE)
+
+### asvs only in Soybean:
+Soybean_only <- rownames(subset(tree_data, C == 0 & CS == 0 & S == 1 & SC == 1))
+RHZ_S <- prune_taxa(Soybean_only, ps_RHZ)
+RHZ_S_glom <- tax_glom(RHZ_S, taxrank = "Genus", NArm = FALSE)
+
+
+
+### tax glom variable microbiome 
+ps_RHZ_var_genus <- tax_glom(ps_RHZ_var, taxrank = "Genus", NArm = FALSE)
+## use this table to calculate relative abundance of genera
+ps_RHZ_var_genus_rel_ab <- transform_sample_counts(ps_RHZ_var_genus, function(x) x / sum(x) )
+
+
+### subset variable microbiome by C specific
+### IDs in tax_table(ps_RHZ_var_genus) of genera listed in tax_table(RHZ_C_glom)
+ids_C <- c("asv_001346", "asv_002099", "asv_001060", "asv_001681", "asv_001149", "asv_001363", "asv_000650", "asv_001021")
+ps_RHZ_var_genus_rel_ab_C <- prune_taxa(ids_C, ps_RHZ_var_genus_rel_ab)
+
+otu_table(ps_RHZ_var_genus_rel_ab_C)
+
+
+
+### subset variable microbiome by S specific
+### IDs in tax_table(ps_RHZ_var_genus) of genera listed in tax_table(RHZ_S_glom)
+ids_S <- c("asv_000556", "asv_001277", "asv_001577", "asv_003649", "asv_001410")
+ps_RHZ_var_genus_rel_ab_S <- prune_taxa(ids_S, ps_RHZ_var_genus_rel_ab)
+
+otu_table(ps_RHZ_var_genus_rel_ab_S)
+
+
+
+#### add relative abundance of Corn and Soybean specific genera to RHZ response variables
+d_RHZ <- subset(d, Fraction == "Rhizosphere")
+
+### add C data
+table <- as.data.frame(as.matrix(otu_table(ps_RHZ_var_genus_rel_ab_C)))
+table <- rownames_to_column(table, var = "Sample_ID")
+d_RHZ <- left_join(d_RHZ, table)
+
+
+### add S data
+table <- as.data.frame(as.matrix(otu_table(ps_RHZ_var_genus_rel_ab_S)))
+table <- rownames_to_column(table, var = "Sample_ID")
+d_RHZ <- left_join(d_RHZ, table)
+
+d_RHZ
+
+### save as csv
+write_csv(d_RHZ, "data/RHZ_variable_genera_rel_abundances.csv")
+
+
+
+
+### save taxonomy table of Corn and Soybean specific genera
+tax <- as.data.frame(ps_RHZ_var_genus@tax_table@.Data)
+tax <- rownames_to_column(tax, var = "Sample_ID")
+
+### calculate total relative abundance to rank genera
+total_relab <- colSums(otu_table(ps_RHZ_var_genus))/sum(colSums(otu_table(ps_RHZ_var_genus)))
+total_relab <- data_frame("Sample_ID" = names(total_relab), "total_relab" = unname(total_relab))
+
+### add relab to table
+tax <- left_join(tax, total_relab)
+
+tax$specific_to <- NA
+tax[tax$Sample_ID %in% ids_C, "specific_to"] <- "Corn"
+tax[tax$Sample_ID %in% ids_S, "specific_to"] <- "Soybean"
+
+### sort by relab
+tax <- arrange(tax, specific_to, desc(total_relab))
+
+### save as csv
+write_csv(tax, "data/RHZ_variable_genera_taxonomy.csv")
+
+
+
+
+tax
+```
+

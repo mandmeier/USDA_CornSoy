@@ -1,0 +1,11 @@
+Sample_ID,Year,Month,Species,Rotation,Nitrogen,Fraction,Block,Rep,ASV_counts,Observed,Shannon,Simpson,InvSimpson,Evenness
+USDA_126,2017,Jun,Soybean,continuous,Low_N,Endosphere,1,2,83,1,0,0,1,0.10908196660088885
+USDA_149,2017,Jun,Corn,continuous,Low_N,Endosphere,2,1,33,1,0,0,1,0.10908196660088885
+USDA_151,2017,Jun,Corn,continuous,Std_N,Endosphere,2,1,54,1,0,0,1,0.10908196660088885
+USDA_154,2017,Jun,Soybean,rotated,Low_N,Endosphere,2,2,0,0,0,1,Inf,Inf
+USDA_398,2017,Sep,Soybean,continuous,Low_N,Endosphere,2,2,0,0,0,1,Inf,Inf
+USDA_489,2018,Jun,Soybean,rotated,Low_N,Endosphere,1,1,12,1,0,0,1,0.10908196660088885
+USDA_504,2018,Jun,Soybean,rotated,Std_N,Endosphere,2,2,7,1,0,0,1,0.10908196660088885
+USDA_637,2018,Aug,Soybean,continuous,Low_N,Endosphere,2,1,55,1,0,0,1,0.10908196660088885
+USDA_543,2018,Jun,Soybean,rotated,Std_N,Rhizosphere,2,1,27,2,0.5722806988018472,0.384087791495199,1.6236080178173722,0.17710635557248994
+USDA_804,2018,Sep,Soybean,rotated,Std_N,Bulk Soil,2,2,11,1,0,0,1,0.10908196660088885
