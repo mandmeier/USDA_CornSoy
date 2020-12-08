@@ -1,0 +1,57 @@
+---
+title: "PERM ANOVA"
+output: html_notebook
+---
+
+
+# PERM ANOVA
+```{r, eval=FALSE}
+# install.packages("vegan")
+# install.packages("ape")
+library(vegan)
+library(ggplot2)
+library(ape)
+
+gh.map <- read.delim("Iowa_Soil_Mapping_File_ZOTU.txt")
+row.names(gh.map)<-gh.map$SampleID
+
+gh.map$Site <- factor(gh.map$Site)
+gh.map$Depth <- factor(gh.map$Depth)
+gh.map$Crop <- factor(gh.map$Crop)
+
+### Bray-curtis (looking at Depth * Site * Crop)
+gh.bray <- read.table("bray_curtis_dm.txt", header = T, row.names = 1)
+gh.bray <- gh.bray[match(row.names(gh.map), row.names(gh.bray)), match(row.names(gh.map), colnames(gh.bray))]
+bray.cap.whole <- capscale(as.dist(gh.bray) ~ Depth*Site*Crop, data = gh.map, add = T) #change
+anova(bray.cap.whole, by = "terms")
+bray.cap.whole.axes <- data.frame(cbind(gh.map, scores(bray.cap.whole)$sites))
+
+##bray.cap.whole.axes$Site <- factor(bray.cap.whole.axes$Site, levels = c("Ames","COBS","Kanawha")) #change
+bray.cap.whole.axes$Depth <- factor(bray.cap.whole.axes$Depth,levels = c("0-15","15-30","30-60","60-90","90-120","120-150","150-180"))
+
+## Permutation ANOVA
+adonis(gh.bray~Site*Crop,data = gh.map,add = T)
+```
+
+# Ploting the results
+
+```{r}
+percent_explained <- bray.cap.whole$CCA$eig / sum(bray.cap.whole$CCA$eig) * 100
+percent_explained
+comp.col <- c("blue","red","purple4","darkgreen","mediumvioletred","orange","cyan3")
+comp.shape <- c(16,17,18)
+
+
+ggplot(bray.cap.whole.axes, aes(x = CAP1, y = CAP2, color = Depth, shape = Crop)) + #change, or can add "size = Replicate"
+  geom_vline(xintercept = 0, alpha = 0.9) +
+  geom_hline(yintercept = 0, alpha = 0.9) +
+  geom_point(size = 5, alpha = 1) +
+  theme_classic() +
+  labs(x = "Constrained PCo1 (39.18%)", y = "Constrained PCo2 (33.05%)") + #change
+  scale_color_manual(values = comp.col) +
+  theme(text = element_text(size = 30)) +
+  theme(panel.border = element_rect(colour = "black",fill=NA))
+
+```
+
+
